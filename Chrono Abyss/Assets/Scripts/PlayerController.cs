@@ -30,14 +30,8 @@ public class PlayerController : MonoBehaviour
     [Header("Prefabs:")]
     public GameObject bulletPrefab;
     public GameObject slashPrefab;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    // Update stack
     void Update()
     {
         CheckInputs();
@@ -50,45 +44,62 @@ public class PlayerController : MonoBehaviour
 
     void CheckInputs()
     {
+        // Get a movement direction vector from user input and normalize it. Get speed from this vector. 
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0.0f, 1.0f);
         movementDirection.Normalize();
+        movementSpeed = Mathf.Clamp(movementDirection.magnitude, 0.0f, 1.0f);
+        
+        // If player is moving
         if (movementDirection != Vector2.zero)
+        {
+            // Get a look-at vector in the direction of where the player was last looking and normalize it. 
             lookAtDirection = movementDirection;
+            lookAtDirection.Normalize();
+        }
+        // Get the aim direction vector from target position to player position
         aimDirection = Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition);
         aimDirection = aimDirection - (Vector2)transform.position; 
+        // isShooting is true when Fire1 button is pressed
         isShooting = Input.GetButtonUp("Fire1");   
     }
 
     void Move()
     {
+        // Move the player's rigid body in the movement direction (based on user input)
         rb.velocity = movementDirection * movementSpeed * BASE_SPEED;
     }
 
     void Animate()
     {
+        // Hand off movementDirection component values to animator (for blend tree)
         if (movementDirection != Vector2.zero)
         {
             animator.SetFloat("Horizontal", movementDirection.x);
             animator.SetFloat("Vertical", movementDirection.y);
         }
-
+        // Hand off moveSpeed value to animator (for blend tree)
         animator.SetFloat("Speed", movementSpeed);
     }
 
     void Aim()
     {
+        // Change crosshair to position to where mouse is pointing (aimDirection)
         crosshair.transform.localPosition = aimDirection;
     }
 
     void Shoot()
     {
+        // Get normalized shooting direction from crosshair position (which is tied to mouse)
         Vector2 shootingDirection = crosshair.transform.localPosition;
         shootingDirection.Normalize();
+        // If shooting
         if (isShooting)
         {
+            // Instantiate bullet object
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
+            // Give bullet a velocity in the shooting direction, and add player movement component for momentum
+            bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED + (movementDirection * movementSpeed * BASE_SPEED);
+            // Destroy bullet object after some duration
             Destroy(bullet, BULLET_DURATION);
         }
     }
@@ -96,15 +107,22 @@ public class PlayerController : MonoBehaviour
     void Slash()
     {
         if (Input.GetButtonUp("Jump") == true) {
+            // If the player is moving
             if (movementDirection != Vector2.zero)
             {
-                
+                // Instantiate slash game object
                 GameObject slash = Instantiate(slashPrefab, movementDirection + (Vector2)transform.position, Quaternion.identity);
+                // Slash prefab gets velocity from player's movement for momentum
+                slash.GetComponent<Rigidbody2D>().velocity = movementDirection * movementSpeed * BASE_SPEED;
+                // Destroy slash object after some duration
                 Destroy(slash, SLASH_DURATION);
             }
+            // If the player is standing still
             else
             {
+                // Unlike above, this instantiation uses different vectors to determine where the prefab will spawn to account for the player standing still
                 GameObject slash = Instantiate(slashPrefab, lookAtDirection + (Vector2)transform.position, Quaternion.identity);
+                // In this case, slash prefab does not get a velocity from the player, since they are standing still.
                 Destroy(slash, SLASH_DURATION);
             }
         }
