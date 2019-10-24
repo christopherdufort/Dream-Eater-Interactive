@@ -300,14 +300,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ad0ceb02e39e0499efa7e2144ea497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BASE_SPEED: 2.5
+  PLAYER_BASE_SPEED: 2.5
   BULLET_BASE_SPEED: 10
   BULLET_DURATION: 3
   SLASH_DURATION: 0.5
   movementDirection: {x: 0, y: 0}
   movementSpeed: 0
   aimDirection: {x: 0, y: 0}
-  endOfAiming: 0
+  isShooting: 0
   rb: {fileID: 1664642632}
   animator: {fileID: 1664642633}
   crosshair: {fileID: 1816392631}

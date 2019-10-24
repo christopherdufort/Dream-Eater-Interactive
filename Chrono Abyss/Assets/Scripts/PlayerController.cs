@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 
     [Space]
-    [Header("Character attributes:")]
-    public float BASE_SPEED = 2.5f;
+    [Header("Base attributes:")]
+    public float PLAYER_BASE_SPEED = 2.5f;
     public float BULLET_BASE_SPEED = 5.0f;
     public float BULLET_DURATION = 3.0f;
     public float SLASH_DURATION = 0.125f;
@@ -31,6 +31,9 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject slashPrefab;
 
+    // Slash reference
+    private GameObject slash;
+
     // Update stack
     void Update()
     {
@@ -51,22 +54,23 @@ public class PlayerController : MonoBehaviour
         
         // If player is moving
         if (movementDirection != Vector2.zero)
-        {
-            // Get a look-at vector in the direction of where the player was last looking and normalize it. 
+            // Get a look-at vector in the direction of where the player was last moving (already normalized). 
             lookAtDirection = movementDirection;
-            lookAtDirection.Normalize();
-        }
+
         // Get the aim direction vector from target position to player position
         aimDirection = Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition);
         aimDirection = aimDirection - (Vector2)transform.position; 
         // isShooting is true when Fire1 button is pressed
-        isShooting = Input.GetButtonUp("Fire1");   
+        isShooting = Input.GetButtonUp("Fire1");
     }
 
     void Move()
     {
         // Move the player's rigid body in the movement direction (based on user input)
-        rb.velocity = movementDirection * movementSpeed * BASE_SPEED;
+        rb.velocity = movementDirection * movementSpeed * PLAYER_BASE_SPEED;
+        // If Player is slashing (a slash prefab exists), then keep the slash in front of Player at all times
+        if (slash != null)
+            slash.GetComponent<Rigidbody2D>().position = lookAtDirection*0.5f + (Vector2)transform.position;
     }
 
     void Animate()
@@ -89,16 +93,16 @@ public class PlayerController : MonoBehaviour
 
     void Shoot()
     {
-        // Get normalized shooting direction from crosshair position (which is tied to mouse)
-        Vector2 shootingDirection = crosshair.transform.localPosition;
-        shootingDirection.Normalize();
         // If shooting
         if (isShooting)
         {
+            // Get normalized shooting direction from crosshair position (which is tied to mouse)
+            Vector2 shootingDirection = crosshair.transform.localPosition;
+            shootingDirection.Normalize();
             // Instantiate bullet object
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             // Give bullet a velocity in the shooting direction, and add player movement component for momentum
-            bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED + (movementDirection * movementSpeed * BASE_SPEED);
+            bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
             // Destroy bullet object after some duration
             Destroy(bullet, BULLET_DURATION);
         }
@@ -106,27 +110,26 @@ public class PlayerController : MonoBehaviour
 
     void Slash()
     {
-        if (Input.GetButtonUp("Jump") == true) {
-            // If the player is moving
-            if (movementDirection != Vector2.zero)
-            {
-                // Instantiate slash game object
-                GameObject slash = Instantiate(slashPrefab, movementDirection + (Vector2)transform.position, Quaternion.identity);
-                // Slash prefab gets velocity from player's movement for momentum
-                slash.GetComponent<Rigidbody2D>().velocity = movementDirection * movementSpeed * BASE_SPEED;
-                // Destroy slash object after some duration
-                Destroy(slash, SLASH_DURATION);
-            }
-            // If the player is standing still
-            else
-            {
-                // Unlike above, this instantiation uses different vectors to determine where the prefab will spawn to account for the player standing still
-                GameObject slash = Instantiate(slashPrefab, lookAtDirection + (Vector2)transform.position, Quaternion.identity);
-                // In this case, slash prefab does not get a velocity from the player, since they are standing still.
-                Destroy(slash, SLASH_DURATION);
-            }
-        }
-
+        if (Input.GetButton("Jump") == true) 
+            // Prevents user from attacking again until the slash is complete
+            if (slash == null)
+                // If the player is moving
+                if (movementDirection != Vector2.zero)
+                {
+                    // Instantiate slash game object
+                    slash = Instantiate(slashPrefab, movementDirection * 0.5f + (Vector2)transform.position, Quaternion.identity);
+                    // Slash prefab gets velocity from player's movement for momentum
+                    // Destroy slash object after some duration
+                    Destroy(slash, SLASH_DURATION);
+                }
+                // If the player is standing still
+                else
+                {
+                    // Unlike above, this instantiation uses different vectors to determine where the prefab will spawn to account for the player standing still
+                    slash = Instantiate(slashPrefab, lookAtDirection * 0.5f + (Vector2)transform.position, Quaternion.identity);
+                    // In this case, slash prefab does not get a velocity from the player, since they are standing still.
+                    Destroy(slash, SLASH_DURATION);
+                }
     }
 
 }
