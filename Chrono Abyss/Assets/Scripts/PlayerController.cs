@@ -118,7 +118,6 @@ public class PlayerController : MonoBehaviour
                 {
                     // Instantiate slash game object
                     slash = Instantiate(slashPrefab, movementDirection * 0.5f + (Vector2)transform.position, Quaternion.identity);
-                    // Slash prefab gets velocity from player's movement for momentum
                     // Destroy slash object after some duration
                     Destroy(slash, SLASH_DURATION);
                 }
