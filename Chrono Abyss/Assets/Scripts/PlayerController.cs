@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
             shootingDirection.Normalize();
             // Instantiate bullet object
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            // Give bullet a velocity in the shooting direction, and add player movement component for momentum
+            // Give bullet a velocity in the shooting direction
             bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
             // Destroy bullet object after some duration
             Destroy(bullet, BULLET_DURATION);
