@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     Vector2 lookAtDirection;
 
     [Space]
-    [Header("References:")]
+    [Header("Component References:")]
     public Rigidbody2D rb;
     public Animator animator;
     public GameObject crosshair;
