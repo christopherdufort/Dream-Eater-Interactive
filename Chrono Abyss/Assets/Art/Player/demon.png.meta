@@ -1,199 +1,175 @@
 fileFormatVersion: 2
-guid: 69496ba12626f774a9f83d5f2897b703
+guid: 60ea838b22d6045d0b29842f7bfa78ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7870276711496609559
-    second: PlayerRun_0
+      213: 7806903185615573512
+    second: demon_0
   - first:
-      213: 1728719941392088379
-    second: PlayerRun_1
+      213: -236736801239978293
+    second: demon_1
   - first:
-      213: 5511062410843008217
-    second: PlayerRun_2
+      213: -5603497704160264118
+    second: demon_2
   - first:
-      213: 1354115375237695471
-    second: PlayerRun_3
+      213: -2018795354264765380
+    second: demon_3
   - first:
-      213: -4522731149510019502
-    second: PlayerRun_4
+      213: -8577595738134336212
+    second: demon_4
   - first:
-      213: -3909304355900387050
-    second: PlayerRun_5
+      213: -1991875293163762613
+    second: demon_5
   - first:
-      213: -4608814311081262565
-    second: PlayerRun_6
+      213: -5156455615010621453
+    second: demon_6
   - first:
-      213: 2216087602722939322
-    second: PlayerRun_7
+      213: -1981000746284672119
+    second: demon_7
   - first:
-      213: -8985134737584906019
-    second: PlayerRun_8
+      213: -2527962175392877510
+    second: demon_8
   - first:
-      213: -278962620164067431
-    second: PlayerRun_9
+      213: 853774850538355067
+    second: demon_9
   - first:
-      213: 8017326590455878221
-    second: PlayerRun_10
+      213: 2900416932475576895
+    second: demon_10
   - first:
-      213: -2879030362889265365
-    second: PlayerRun_11
+      213: 6231583067537137588
+    second: demon_11
   - first:
-      213: 4619842580307775365
-    second: PlayerRun_12
+      213: 7042099717296298191
+    second: demon_12
   - first:
-      213: -3996970235735911259
-    second: PlayerRun_13
+      213: -2187262854020468276
+    second: demon_13
   - first:
-      213: -1243577275461484478
-    second: PlayerRun_14
+      213: -5616115476733538785
+    second: demon_14
   - first:
-      213: -7902887484998577660
-    second: PlayerRun_15
+      213: -7625559208304345195
+    second: demon_15
   - first:
-      213: -1417283268605903019
-    second: PlayerRun_16
+      213: -1290335901278864271
+    second: demon_16
   - first:
-      213: -6050297838096650867
-    second: PlayerRun_17
+      213: -4066807321307695331
+    second: demon_17
   - first:
-      213: 8159177994627571640
-    second: PlayerRun_18
+      213: -5109784954574471564
+    second: demon_18
   - first:
-      213: -8551054103183335007
-    second: PlayerRun_19
+      213: -291318367402260745
+    second: demon_19
   - first:
-      213: -9094225360813572133
-    second: PlayerRun_20
+      213: 8890253085035678748
+    second: demon_20
   - first:
-      213: 8251023408563896726
-    second: PlayerRun_21
+      213: 6902509391891926272
+    second: demon_21
   - first:
-      213: 5352079357881534325
-    second: PlayerRun_22
+      213: -6736067339568813244
+    second: demon_22
   - first:
-      213: 557240814118910973
-    second: PlayerRun_23
+      213: -1228715333105257936
+    second: demon_23
   - first:
-      213: 5961697505910211052
-    second: PlayerRun_24
+      213: 3124714536013333338
+    second: demon_24
   - first:
-      213: 6400184836309144597
-    second: PlayerRun_25
+      213: 7898115669556986518
+    second: demon_25
   - first:
-      213: -4074353013929867244
-    second: PlayerRun_26
+      213: 7422301580531003913
+    second: demon_26
   - first:
-      213: 2138444879546516059
-    second: PlayerRun_27
+      213: -248630952852138165
+    second: demon_27
   - first:
-      213: -7278963121557226392
-    second: PlayerRun_28
+      213: 4034976787140486097
+    second: demon_28
   - first:
-      213: -6153998360217897598
-    second: PlayerRun_29
+      213: 6419025612644300193
+    second: demon_29
   - first:
-      213: 3055482439984166770
-    second: PlayerRun_30
+      213: 1653659350309895739
+    second: demon_30
   - first:
-      213: -764684450633489890
-    second: PlayerRun_31
+      213: 5179181540752285861
+    second: demon_31
   - first:
-      213: 4583648160667609884
-    second: PlayerRun_32
+      213: 5834958014363049398
+    second: demon_32
   - first:
-      213: -4191245283321381971
-    second: PlayerRun_33
+      213: 5109514920369433594
+    second: demon_33
   - first:
-      213: -1146482120856978087
-    second: PlayerRun_34
+      213: 2161863079626873706
+    second: demon_34
   - first:
-      213: -4900036720065807518
-    second: PlayerRun_35
+      213: -4088420386228434376
+    second: demon_35
   - first:
-      213: -99269364479588539
-    second: PlayerRun_36
+      213: -2429546415198354519
+    second: demon_36
   - first:
-      213: 4182181820123714815
-    second: PlayerRun_37
+      213: 7463663696343806784
+    second: demon_37
   - first:
-      213: -453461743226064050
-    second: PlayerRun_38
+      213: -3272167869813637911
+    second: demon_38
   - first:
-      213: 2639773177052096648
-    second: PlayerRun_39
+      213: -7662192573572914257
+    second: demon_39
   - first:
-      213: 2926480515917152455
-    second: PlayerRun_40
+      213: -5071457569900339110
+    second: demon_40
   - first:
-      213: 3110901742228313913
-    second: PlayerRun_41
+      213: 8520413995675802500
+    second: demon_41
   - first:
-      213: -6349831984995885207
-    second: PlayerRun_42
+      213: 7166682217501247483
+    second: demon_42
   - first:
-      213: 7121529272268949553
-    second: PlayerRun_43
+      213: 8821818336688635444
+    second: demon_43
   - first:
-      213: 1544197318692598202
-    second: PlayerRun_44
+      213: -8751407918290390903
+    second: demon_44
   - first:
-      213: -2707457243028630172
-    second: PlayerRun_45
+      213: -3476820070386758312
+    second: demon_45
   - first:
-      213: -6866596147796914403
-    second: PlayerRun_46
+      213: 7803840231238456178
+    second: demon_46
   - first:
-      213: 3196353818934452705
-    second: PlayerRun_47
+      213: 5027706112963082574
+    second: demon_47
   - first:
-      213: -5683081873994028969
-    second: PlayerRun_48
+      213: -8261164850884127150
+    second: demon_48
   - first:
-      213: -5029995334133478419
-    second: PlayerRun_49
+      213: -2181418802288903825
+    second: demon_49
   - first:
-      213: 6108843609567588320
-    second: PlayerRun_50
+      213: 5108539734676740427
+    second: demon_50
   - first:
-      213: 844976844122964438
-    second: PlayerRun_51
+      213: 3747040938859229615
+    second: demon_51
   - first:
-      213: 8207508615031768748
-    second: PlayerRun_52
+      213: 4818094121503599599
+    second: demon_52
   - first:
-      213: 3351583767752254720
-    second: PlayerRun_53
+      213: -3242528824105308634
+    second: demon_53
   - first:
-      213: -7509254371503438701
-    second: PlayerRun_54
+      213: 729321617231312090
+    second: demon_54
   - first:
-      213: -1158371049894360634
-    second: PlayerRun_55
-  - first:
-      213: -1018070620243931183
-    second: PlayerRun_56
-  - first:
-      213: -8940766532349889187
-    second: PlayerRun_57
-  - first:
-      213: 8407225097312482670
-    second: PlayerRun_58
-  - first:
-      213: -1207547471557547623
-    second: PlayerRun_59
-  - first:
-      213: 8522582458349983076
-    second: PlayerRun_60
-  - first:
-      213: 7678557877762461259
-    second: PlayerRun_61
-  - first:
-      213: 3344673954111067709
-    second: PlayerRun_62
-  - first:
-      213: -7765097883581579761
-    second: PlayerRun_63
+      213: 6996017278831813372
+    second: demon_55
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -223,7 +199,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -237,9 +213,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -254,7 +230,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -266,7 +242,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -278,13 +254,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerRun_0
+      name: demon_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 707
-        width: 40
-        height: 79
+        x: 1
+        y: 204
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 419ac0d399d7c3144b7182e7df00f5ac
-      internalID: -7870276711496609559
+      spriteID: 3177ed27355d04e6397f7591919b3129
+      internalID: 7806903185615573512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_1
+      name: demon_1
       rect:
         serializedVersion: 2
-        x: 129
-        y: 705
-        width: 40
-        height: 84
+        x: 26
+        y: 204
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9eff7d81609dc0439d3e76331e93d0d
-      internalID: 1728719941392088379
+      spriteID: 7ee6929eb084244b2b70d48249ee3943
+      internalID: -236736801239978293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_2
+      name: demon_2
       rect:
         serializedVersion: 2
-        x: 230
-        y: 702
-        width: 38
-        height: 89
+        x: 51
+        y: 204
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dbcd28f1b32f544c9049d9bc72aa338
-      internalID: 5511062410843008217
+      spriteID: d82161da443fa46b8ba7b63ab89edc29
+      internalID: -5603497704160264118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_3
+      name: demon_3
       rect:
         serializedVersion: 2
-        x: 329
-        y: 704
-        width: 40
-        height: 85
+        x: 76
+        y: 204
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +331,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4529036fa638ff9478aef4290bfb84dc
-      internalID: 1354115375237695471
+      spriteID: f5777050f731046b2823c78b4d4a6e0f
+      internalID: -2018795354264765380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_4
+      name: demon_4
       rect:
         serializedVersion: 2
-        x: 429
-        y: 707
-        width: 40
-        height: 80
+        x: 101
+        y: 204
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b88d9b845cfed5a4e9dd483fa65c152f
-      internalID: -4522731149510019502
+      spriteID: fd1291c734a69428eb03d9f5de4d86ab
+      internalID: -8577595738134336212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_5
+      name: demon_5
       rect:
         serializedVersion: 2
-        x: 528
-        y: 704
-        width: 41
-        height: 85
+        x: 126
+        y: 204
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +373,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ba912afafd3a324199ee018109eff36
-      internalID: -3909304355900387050
+      spriteID: 533448fd000eb4771b71efac02525d7f
+      internalID: -1991875293163762613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_6
+      name: demon_6
       rect:
         serializedVersion: 2
-        x: 630
-        y: 702
-        width: 38
-        height: 88
+        x: 151
+        y: 204
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,20 +394,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39d6f7b905d4c1c42bd92f6dff13f755
-      internalID: -4608814311081262565
+      spriteID: 07288d56a009c4f4fa77e48484c5c426
+      internalID: -5156455615010621453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_7
+      name: demon_7
       rect:
         serializedVersion: 2
-        x: 728
-        y: 704
-        width: 40
-        height: 84
+        x: 1
+        y: 175
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,20 +415,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ffed679fd5d2fe43a849da71620c255
-      internalID: 2216087602722939322
+      spriteID: 082f444b252a2404eab56763c0481158
+      internalID: -1981000746284672119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_8
+      name: demon_8
       rect:
         serializedVersion: 2
-        x: 29
-        y: 604
-        width: 45
-        height: 82
+        x: 26
+        y: 175
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,20 +436,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40d5547928317054a9251d6502875367
-      internalID: -8985134737584906019
+      spriteID: 6cc0c4204e20244cbbb1c4a315d262a9
+      internalID: -2527962175392877510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_9
+      name: demon_9
       rect:
         serializedVersion: 2
-        x: 130
-        y: 604
-        width: 41
-        height: 84
+        x: 51
+        y: 175
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,20 +457,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 054c908cf2c19e349a9df9dab57997fa
-      internalID: -278962620164067431
+      spriteID: 31cc33e5077e14396a978e007fec3fb4
+      internalID: 853774850538355067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_10
+      name: demon_10
       rect:
         serializedVersion: 2
-        x: 223
-        y: 604
-        width: 60
-        height: 85
+        x: 76
+        y: 175
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,20 +478,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fdc854ce6d8ab84aacdf100849d54b6
-      internalID: 8017326590455878221
+      spriteID: e19c097c8742341f69894a4ac0b366ca
+      internalID: 2900416932475576895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_11
+      name: demon_11
       rect:
         serializedVersion: 2
-        x: 326
-        y: 604
-        width: 55
-        height: 82
+        x: 101
+        y: 175
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -523,20 +499,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68ab7bb06588ebf43a580cd8d50beed1
-      internalID: -2879030362889265365
+      spriteID: 0a69f76685942479a9fd37dd7cd60a49
+      internalID: 6231583067537137588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_12
+      name: demon_12
       rect:
         serializedVersion: 2
-        x: 425
-        y: 604
-        width: 44
-        height: 80
+        x: 126
+        y: 175
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,20 +520,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5142be9e5b52a2142b537a0397b7e4b9
-      internalID: 4619842580307775365
+      spriteID: 345cae88ac83e458d9f744a375d8c20e
+      internalID: 7042099717296298191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_13
+      name: demon_13
       rect:
         serializedVersion: 2
-        x: 526
-        y: 604
-        width: 47
-        height: 82
+        x: 151
+        y: 175
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,20 +541,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aac1aa0242e3f4f40816ce626f807f37
-      internalID: -3996970235735911259
+      spriteID: 5bfbc5c129b114cf78f9c45c34609a64
+      internalID: -2187262854020468276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_14
+      name: demon_14
       rect:
         serializedVersion: 2
-        x: 623
-        y: 604
-        width: 61
-        height: 84
+        x: 1
+        y: 146
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,20 +562,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9724f52394b5954d8433ed82d9ec162
-      internalID: -1243577275461484478
+      spriteID: f869aeb4fd93c4712bfd5cb5424ca816
+      internalID: -5616115476733538785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_15
+      name: demon_15
       rect:
         serializedVersion: 2
-        x: 725
-        y: 604
-        width: 54
-        height: 83
+        x: 26
+        y: 146
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -607,20 +583,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d5d2c6f926f98c46abb3d0640fa3ea9
-      internalID: -7902887484998577660
+      spriteID: 3d5e721d15f2d4dd9a2169f3cbec5907
+      internalID: -7625559208304345195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_16
+      name: demon_16
       rect:
         serializedVersion: 2
-        x: 25
-        y: 504
-        width: 46
-        height: 77
+        x: 51
+        y: 146
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,20 +604,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b4464cd6b588864fa53ff4a76266d68
-      internalID: -1417283268605903019
+      spriteID: 6068e638e0d09485f9f9eafe156d98a6
+      internalID: -1290335901278864271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_17
+      name: demon_17
       rect:
         serializedVersion: 2
-        x: 127
-        y: 504
-        width: 43
-        height: 81
+        x: 76
+        y: 146
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -649,20 +625,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 813768a278c240a4f8154faac2771f75
-      internalID: -6050297838096650867
+      spriteID: 7ebda18cdf7d14db981306c2a9fadeb0
+      internalID: -4066807321307695331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_18
+      name: demon_18
       rect:
         serializedVersion: 2
-        x: 215
-        y: 504
-        width: 60
-        height: 83
+        x: 101
+        y: 146
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -670,20 +646,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fb8c777fc3d5be499aa1588f6567525
-      internalID: 8159177994627571640
+      spriteID: 2091c8bf47a6b46f0878f66fc5e49c89
+      internalID: -5109784954574471564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_19
+      name: demon_19
       rect:
         serializedVersion: 2
-        x: 317
-        y: 504
-        width: 55
-        height: 81
+        x: 126
+        y: 146
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -691,20 +667,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4a98ac56c0ca6144be18016ca448b8b
-      internalID: -8551054103183335007
+      spriteID: acb8fb767fa354c69a836c8533e192e7
+      internalID: -291318367402260745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_20
+      name: demon_20
       rect:
         serializedVersion: 2
-        x: 429
-        y: 504
-        width: 44
-        height: 80
+        x: 151
+        y: 146
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,20 +688,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1528ef03b8cf3194a81929e5b2d60835
-      internalID: -9094225360813572133
+      spriteID: 4ffcc859078bb4221b375cff216beb21
+      internalID: 8890253085035678748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_21
+      name: demon_21
       rect:
         serializedVersion: 2
-        x: 525
-        y: 504
-        width: 47
-        height: 82
+        x: 1
+        y: 117
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -733,20 +709,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 035f1a8017d0358499eacae4963271af
-      internalID: 8251023408563896726
+      spriteID: a9c5c023e5ee846428065fd18d8a1de5
+      internalID: 6902509391891926272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_22
+      name: demon_22
       rect:
         serializedVersion: 2
-        x: 614
-        y: 504
-        width: 63
-        height: 83
+        x: 26
+        y: 117
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,20 +730,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dcbc7ba29395b84998687f945acae88
-      internalID: 5352079357881534325
+      spriteID: 8ad7b4e64637f4424a340513b5bdbc48
+      internalID: -6736067339568813244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_23
+      name: demon_23
       rect:
         serializedVersion: 2
-        x: 719
-        y: 504
-        width: 55
-        height: 80
+        x: 51
+        y: 117
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,20 +751,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8f8113c6e3a0d5479578f6a3eb005fe
-      internalID: 557240814118910973
+      spriteID: b6c184edf0e95416d9a3d70cbfaa4c8b
+      internalID: -1228715333105257936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_24
+      name: demon_24
       rect:
         serializedVersion: 2
-        x: 28
-        y: 405
-        width: 42
-        height: 88
+        x: 76
+        y: 117
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -796,20 +772,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0ddd5993ca27bb41a3bcc56aa0d6bcb
-      internalID: 5961697505910211052
+      spriteID: 79785ef04002b43d588bace183ffbc0d
+      internalID: 3124714536013333338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_25
+      name: demon_25
       rect:
         serializedVersion: 2
-        x: 128
-        y: 402
-        width: 40
-        height: 93
+        x: 101
+        y: 117
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,20 +793,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 177b74582dbd9a641b78c3fe3a4c11cf
-      internalID: 6400184836309144597
+      spriteID: 32afc8a90aaf24590b25fc9d0805a2f2
+      internalID: 7898115669556986518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_26
+      name: demon_26
       rect:
         serializedVersion: 2
-        x: 228
-        y: 400
-        width: 40
-        height: 97
+        x: 126
+        y: 117
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,20 +814,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b960e00993c38b54f87af4402dbaf392
-      internalID: -4074353013929867244
+      spriteID: 124f87545f9074db895fd73165649fd0
+      internalID: 7422301580531003913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_27
+      name: demon_27
       rect:
         serializedVersion: 2
-        x: 328
-        y: 402
-        width: 40
-        height: 92
+        x: 151
+        y: 117
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -859,20 +835,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78660b203e53ae24e9d76e540a0b57cb
-      internalID: 2138444879546516059
+      spriteID: 32b81dd7b822445e8970914a26458a27
+      internalID: -248630952852138165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_28
+      name: demon_28
       rect:
         serializedVersion: 2
-        x: 428
-        y: 405
-        width: 42
-        height: 88
+        x: 1
+        y: 88
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -880,20 +856,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcda5d069c4ba23458533c178a8a7b95
-      internalID: -7278963121557226392
+      spriteID: b1b8ba6f2ceb64095a6bea3afdfe290a
+      internalID: 4034976787140486097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_29
+      name: demon_29
       rect:
         serializedVersion: 2
-        x: 530
-        y: 401
-        width: 40
-        height: 94
+        x: 26
+        y: 88
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -901,20 +877,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc6db6399ff90c246803917619160e3d
-      internalID: -6153998360217897598
+      spriteID: 766055fde5cb04ffd9dfc2d4baf65b49
+      internalID: 6419025612644300193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_30
+      name: demon_30
       rect:
         serializedVersion: 2
-        x: 630
-        y: 400
-        width: 40
-        height: 97
+        x: 51
+        y: 88
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -922,20 +898,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2297577fd3978b488bf48c91fa13014
-      internalID: 3055482439984166770
+      spriteID: 21cc796af4d4f434db3568b3db74bac8
+      internalID: 1653659350309895739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_31
+      name: demon_31
       rect:
         serializedVersion: 2
-        x: 730
-        y: 402
-        width: 40
-        height: 92
+        x: 76
+        y: 88
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -943,20 +919,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5dfc23efd1425a48b8b54891efea81e
-      internalID: -764684450633489890
+      spriteID: e91e610c42edd41a682ec1afaf3bd710
+      internalID: 5179181540752285861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_32
+      name: demon_32
       rect:
         serializedVersion: 2
-        x: 29
-        y: 305
-        width: 41
-        height: 82
+        x: 101
+        y: 88
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -964,20 +940,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9de6ee26fd392d741b63cb7608842a72
-      internalID: 4583648160667609884
+      spriteID: b33232b50500445d59825c24ca712a0c
+      internalID: 5834958014363049398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_33
+      name: demon_33
       rect:
         serializedVersion: 2
-        x: 127
-        y: 305
-        width: 42
-        height: 85
+        x: 126
+        y: 88
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -985,20 +961,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76cf22ccdff816b42b2ee2270cff17a4
-      internalID: -4191245283321381971
+      spriteID: 77da9d10384524f25b739790a5ee27a7
+      internalID: 5109514920369433594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_34
+      name: demon_34
       rect:
         serializedVersion: 2
-        x: 226
-        y: 301
-        width: 47
-        height: 90
+        x: 151
+        y: 88
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1006,20 +982,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5210eba4b2fadb34dbbba2e0ff3937b6
-      internalID: -1146482120856978087
+      spriteID: 15e1ddfd261924600843864001b62ba9
+      internalID: 2161863079626873706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_35
+      name: demon_35
       rect:
         serializedVersion: 2
-        x: 327
-        y: 304
-        width: 46
-        height: 85
+        x: 1
+        y: 59
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1027,20 +1003,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a62f11b4009d1b74c9c4b3de808f1e78
-      internalID: -4900036720065807518
+      spriteID: 3afce29ca4097456699757848bb51435
+      internalID: -4088420386228434376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_36
+      name: demon_36
       rect:
         serializedVersion: 2
-        x: 430
-        y: 305
-        width: 37
-        height: 81
+        x: 26
+        y: 59
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1048,20 +1024,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66f30c5ac5212d4fba48e090d3ba9cf
-      internalID: -99269364479588539
+      spriteID: 686e8de65e5ec4a318906f969a334eb5
+      internalID: -2429546415198354519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_37
+      name: demon_37
       rect:
         serializedVersion: 2
-        x: 530
-        y: 302
-        width: 37
-        height: 86
+        x: 51
+        y: 59
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1069,20 +1045,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a55459161d1481549af112f7d3599ea7
-      internalID: 4182181820123714815
+      spriteID: afa8e575532514073b9ab4ff8abd862e
+      internalID: 7463663696343806784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_38
+      name: demon_38
       rect:
         serializedVersion: 2
-        x: 624
-        y: 302
-        width: 49
-        height: 88
+        x: 76
+        y: 59
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1090,20 +1066,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 160b2afc68c7fdc4d98ed251f0f1d993
-      internalID: -453461743226064050
+      spriteID: 5b97e826edaea48619af9212e73d49c4
+      internalID: -3272167869813637911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_39
+      name: demon_39
       rect:
         serializedVersion: 2
-        x: 726
-        y: 302
-        width: 47
-        height: 87
+        x: 101
+        y: 59
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1111,20 +1087,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c2bb039414151a40b94b8b75ceda2c6
-      internalID: 2639773177052096648
+      spriteID: 467d7a85065474f769759e97bc84f5b7
+      internalID: -7662192573572914257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_40
+      name: demon_40
       rect:
         serializedVersion: 2
-        x: 34
-        y: 201
-        width: 34
-        height: 89
+        x: 126
+        y: 59
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1132,20 +1108,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e0830700bd7dd743994de28c9411d46
-      internalID: 2926480515917152455
+      spriteID: afe117b98424643f088f148ed1b35ee1
+      internalID: -5071457569900339110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_41
+      name: demon_41
       rect:
         serializedVersion: 2
-        x: 134
-        y: 200
-        width: 35
-        height: 92
+        x: 151
+        y: 59
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1153,20 +1129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a739d3f70c6afa4ab1db0b7ca456425
-      internalID: 3110901742228313913
+      spriteID: 72409f7fa03524df5be4975dda1b14b1
+      internalID: 8520413995675802500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_42
+      name: demon_42
       rect:
         serializedVersion: 2
-        x: 228
-        y: 200
-        width: 49
-        height: 93
+        x: 1
+        y: 30
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,20 +1150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0aebf15e93db3f41b4e21e4be5216c5
-      internalID: -6349831984995885207
+      spriteID: a11b0166c865e473d930f489116330b3
+      internalID: 7166682217501247483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_43
+      name: demon_43
       rect:
         serializedVersion: 2
-        x: 330
-        y: 200
-        width: 47
-        height: 90
+        x: 26
+        y: 30
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1195,20 +1171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a44f70006ed0cc46bb36ebc98584bc7
-      internalID: 7121529272268949553
+      spriteID: 1eb656a18781542ec8d70d8459518cc6
+      internalID: 8821818336688635444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_44
+      name: demon_44
       rect:
         serializedVersion: 2
-        x: 430
-        y: 201
-        width: 38
-        height: 88
+        x: 51
+        y: 30
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1216,20 +1192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef041b1617ece784aaf110189c052356
-      internalID: 1544197318692598202
+      spriteID: d0d6e87cdf6da402d816ea0a523b2451
+      internalID: -8751407918290390903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_45
+      name: demon_45
       rect:
         serializedVersion: 2
-        x: 527
-        y: 202
-        width: 44
-        height: 89
+        x: 76
+        y: 30
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1237,20 +1213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e06acbe0058e08b4d9c263574c4761ea
-      internalID: -2707457243028630172
+      spriteID: 65af683481f954cacb62f1b1449c6caa
+      internalID: -3476820070386758312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_46
+      name: demon_46
       rect:
         serializedVersion: 2
-        x: 628
-        y: 200
-        width: 51
-        height: 93
+        x: 101
+        y: 30
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1258,20 +1234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 485823c30ab865e4d918f49b5d8e4511
-      internalID: -6866596147796914403
+      spriteID: 6dc5f4aa2827943768db4cde20a66a07
+      internalID: 7803840231238456178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_47
+      name: demon_47
       rect:
         serializedVersion: 2
-        x: 731
-        y: 202
-        width: 43
-        height: 89
+        x: 126
+        y: 30
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1279,20 +1255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 487932735349f8741a481853bedf23be
-      internalID: 3196353818934452705
+      spriteID: 83bcce01fab17474bb990e3f648297c6
+      internalID: 5027706112963082574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_48
+      name: demon_48
       rect:
         serializedVersion: 2
-        x: 33
-        y: 104
-        width: 35
-        height: 79
+        x: 151
+        y: 30
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1300,209 +1276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8707690d2a85a164eb82d217291cf4ad
-      internalID: -5683081873994028969
+      spriteID: ad6d17c3e6d654ee5ac2662536ebf224
+      internalID: -8261164850884127150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_49
+      name: demon_49
       rect:
         serializedVersion: 2
-        x: 134
-        y: 102
-        width: 35
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96b0ed4e848066c408da86bb10c47743
-      internalID: -5029995334133478419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_50
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 101
-        width: 47
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b591234521959d94bbc5dbbf7fe7de70
-      internalID: 6108843609567588320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_51
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 101
-        width: 43
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c622885de499bad4cb6f76a77ba07caf
-      internalID: 844976844122964438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_52
-      rect:
-        serializedVersion: 2
-        x: 433
-        y: 104
-        width: 40
-        height: 81
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97cf55a49f1ecbc47814ea7bf88fc86a
-      internalID: 8207508615031768748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_53
-      rect:
-        serializedVersion: 2
-        x: 531
-        y: 105
-        width: 43
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ebb5b0cdab283a47a5dbc578d769f6b
-      internalID: 3351583767752254720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_54
-      rect:
-        serializedVersion: 2
-        x: 627
-        y: 100
-        width: 46
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e7a4caa4926b4a42ad067696bffb45d
-      internalID: -7509254371503438701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_55
-      rect:
-        serializedVersion: 2
-        x: 731
-        y: 102
-        width: 41
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faf47357ba394194bbd72e01322a29b7
-      internalID: -1158371049894360634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_56
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 2
-        width: 43
-        height: 86
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c10574680ae97674da48efe31b17fdcd
-      internalID: -1018070620243931183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_57
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 3
-        width: 42
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8848762f740880c4db53c09eb56d7f8e
-      internalID: -8940766532349889187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayerRun_58
-      rect:
-        serializedVersion: 2
-        x: 224
+        x: 1
         y: 1
-        width: 49
-        height: 92
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1510,20 +1297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebaddbbebdc34f546aa18639e16c6a92
-      internalID: 8407225097312482670
+      spriteID: 71584713e18e94c108f18249c26bbc4f
+      internalID: -2181418802288903825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_59
+      name: demon_50
       rect:
         serializedVersion: 2
-        x: 325
-        y: 3
-        width: 45
-        height: 87
+        x: 26
+        y: 1
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1531,20 +1318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e766e5a6e74567e47943795fc6c81880
-      internalID: -1207547471557547623
+      spriteID: c87d3a8a9731a403cb3561ebdc09b9a2
+      internalID: 5108539734676740427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_60
+      name: demon_51
       rect:
         serializedVersion: 2
-        x: 431
-        y: 2
-        width: 37
-        height: 88
+        x: 51
+        y: 1
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1552,20 +1339,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de8b64a89aa1fae4e989db9184a8ba36
-      internalID: 8522582458349983076
+      spriteID: 3f3620ac0ee754b189c7ace5b14d4f37
+      internalID: 3747040938859229615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_61
+      name: demon_52
       rect:
         serializedVersion: 2
-        x: 532
-        y: 0
-        width: 38
-        height: 92
+        x: 76
+        y: 1
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1573,20 +1360,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ffc20884eeb1f5449bbb5b9cf6ea4c5
-      internalID: 7678557877762461259
+      spriteID: fefd011ef3c654d81823bff043292e57
+      internalID: 4818094121503599599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_62
+      name: demon_53
       rect:
         serializedVersion: 2
-        x: 623
-        y: 0
-        width: 53
-        height: 93
+        x: 101
+        y: 1
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1594,20 +1381,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfc955c4804e25b43bea8aef6d0cf64f
-      internalID: 3344673954111067709
+      spriteID: 625f91f57344b439b9a9feaf21de6a48
+      internalID: -3242528824105308634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerRun_63
+      name: demon_54
       rect:
         serializedVersion: 2
-        x: 725
-        y: 0
-        width: 49
-        height: 90
+        x: 126
+        y: 1
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1615,8 +1402,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c0732900dc18864182a8a213079a45e
-      internalID: -7765097883581579761
+      spriteID: 24a6a1e5849024bcc95f6f3239cb01b8
+      internalID: 729321617231312090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: demon_55
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20be597c878c540b3b8e4d1b40b7c30c
+      internalID: 6996017278831813372
       vertices: []
       indices: 
       edges: []

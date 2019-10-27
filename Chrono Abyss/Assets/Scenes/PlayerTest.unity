@@ -275,5 +275,11 @@ PrefabInstance:
       propertyPath: PLAYER_BASE_ACCELERATION
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6370848749254175032, guid: bd096875a6602174e963256392db9820,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7806903185615573512, guid: 60ea838b22d6045d0b29842f7bfa78ca,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd096875a6602174e963256392db9820, type: 3}
