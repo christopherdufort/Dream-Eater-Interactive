@@ -1,6 +1,10 @@
 # Directories
+**/Chrono Abyss/.vs
 **/Chrono Abyss/Logs
 **/Chrono Abyss/Library
 **/Chrono Abyss/Packages
 **/Chrono Abyss/Temp
 **/Chrono Abyss/Build
+**/Chrono Abyss/obj
+**/Chrono Abyss/Assembly-CSharp.csproj
+**/Chrono Abyss/Chrono Abyss.sln

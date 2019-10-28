@@ -166,7 +166,6 @@ MonoBehaviour:
   enemies:
   - {fileID: 7878037983573983547, guid: 512abcd8b0fcee24a9723a5d9869061e, type: 3}
   spawnValues: {x: 9, y: 5}
-  spawnWait: 0
   spawnWaitMin: 0.5
   spawnWaitMax: 2
   startWait: 0
@@ -302,7 +301,6 @@ MonoBehaviour:
   enemies:
   - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
   spawnValues: {x: 9, y: 5}
-  spawnWait: 0
   spawnWaitMin: 0.5
   spawnWaitMax: 2
   startWait: 0
@@ -347,7 +345,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903429908}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffa4b7184b343714cb5cf7c10f56faae, type: 3}
   m_Name: 
@@ -355,7 +353,6 @@ MonoBehaviour:
   enemies:
   - {fileID: 2315619441715124835, guid: 669be7f057cbb8348a0fde41dca27167, type: 3}
   spawnValues: {x: 9, y: 5}
-  spawnWait: 0
   spawnWaitMin: 0.5
   spawnWaitMax: 2
   startWait: 0

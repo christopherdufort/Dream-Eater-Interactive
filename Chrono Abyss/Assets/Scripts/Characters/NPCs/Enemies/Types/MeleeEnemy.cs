@@ -6,12 +6,13 @@ public abstract class MeleeEnemy : Enemy
 {
 	protected override void AttackPlayer()
 	{
-		bool cooldownActive = attackCooldownTimer > 0f;
+		bool cooldownActive = attackCooldownCountdown > 0f;
 		if (!cooldownActive)
 		{
 			// Instantiate Melee attack animation here, if any
-			attackCooldownTimer = attackCooldown;
+			attackCooldownCountdown = attackCooldown;
 		}
+		SetAttackFacingPlayer();
 		isAttacking = true;
 	}
 }

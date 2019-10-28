@@ -37,19 +37,16 @@ public class NPC : MonoBehaviour
 
 	protected void OnTriggerEnter2D(Collider2D collision)
 	{
-		float slashDamage = 5f, bulletDamage = 2f;      // placeholder
-		bool isSlash = collision.transform.GetComponent<PlayerSlash>() != null;
-		bool isBullet = collision.transform.GetComponent<PlayerBullet>() != null;
+		PlayerSlash slash = collision.transform.GetComponent<PlayerSlash>();
+		PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
 
-		if (isSlash)
+		if (slash != null)
 		{
-			print("You slashed an enemy!");
-			this.curHitPoints -= slashDamage;
-		} else if (isBullet)
+			this.curHitPoints -= slash.attackValue;
+		} else if (bullet != null)
 		{
-			print("You shot an enemy!");
-			this.curHitPoints -= bulletDamage;
-			Destroy(collision.gameObject);		//temp
+			this.curHitPoints -= bullet.attackValue;
+			Destroy(collision.gameObject);
 		}
 	}
 
@@ -58,7 +55,7 @@ public class NPC : MonoBehaviour
 		if (curHitPoints < float.Epsilon)
 		{
 			PlayDeathAnimation();
-			EnemySpawner.EnemiesAmt--;
+			EnemySpawner.ENEMIES_AMT--;
 			Destroy(this.gameObject);
 		}
 	}

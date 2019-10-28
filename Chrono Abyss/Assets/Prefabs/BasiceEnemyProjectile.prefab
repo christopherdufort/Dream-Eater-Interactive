@@ -125,7 +125,7 @@ MonoBehaviour:
   curHealth: 1
   damageValue: 0
   moveSpeed: 1
-  maxDistance: 4
+  maxDistance: 6
   distTravelled: 0
   isIndestructible: 0
   direction: {x: 0, y: 0}

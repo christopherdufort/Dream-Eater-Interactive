@@ -15,7 +15,7 @@ public class Brute : MeleeEnemy
     {
 		EnemyUpdateLoopStart();
 		FlipSprite();
-		AttemptAttackPlayer();
+		ChargeAtPlayer();
 		animator.SetBool("isMoving", isMoving);
 		animator.SetBool("isAttacking", isAttacking);
 	}

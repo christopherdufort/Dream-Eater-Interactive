@@ -153,14 +153,14 @@ MonoBehaviour:
   deathAnimation: {fileID: 2641435792014465527, guid: 115f80347ef548240a5e810a2ce48ead,
     type: 3}
   basicAttack: 0
-  attackRange: 10
+  attackRange: 6
   attackCooldown: 1
   attackCooldownTimer: 0
   playerObj: {fileID: 0}
   playerPos: {x: 0, y: 0}
   projectiles:
   - {fileID: 8260248437830479596, guid: 0fbeba43e075dae49a3d0c4f8424f3eb, type: 3}
-  minComfortDistance: 4
+  minComfortDistance: 3
 --- !u!95 &3388026084925431770
 Animator:
   serializedVersion: 3

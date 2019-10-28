@@ -32,26 +32,20 @@ public class EnemyProjectile : MonoBehaviour
 	{
 		if (!isIndestructible)
 		{
-			float slashDamage = 5f, bulletDamage = 2f;      // placeholder
-			bool isSlash = collision.transform.GetComponent<PlayerSlash>() != null;
-			bool isBullet = collision.transform.GetComponent<PlayerBullet>() != null;
+			PlayerSlash slash = collision.transform.GetComponent<PlayerSlash>();
+			PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
+			PlayerController player = collision.transform.GetComponent<PlayerController>();
 
-			if (isSlash)
+			if (slash != null)
 			{
-				print("Bullet slashed!");
-				this.curHealth -= slashDamage;
-			}
-			else if (isBullet)
+				this.curHealth -= slash.attackValue;
+			} else if (bullet != null)
 			{
-				print("Bullet shot!");
-				this.curHealth -= bulletDamage;
+				this.curHealth -= bullet.attackValue;
 				Destroy(collision.gameObject);      //temp
-			}
-			bool isPlayer = collision.transform.GetComponent<PlayerController>() != null;
-			if (isPlayer)
+			} else if (player)
 			{
 				// TODO: Damage player
-				print("you got shot!");
 				Destroy(this.gameObject);
 			}
 		}
@@ -65,7 +59,7 @@ public class EnemyProjectile : MonoBehaviour
 		}
 	}
 
-	// basic projectile movement: moves towards a specific point in world
+	// basic projectile movement: moves towards a specific set point in world
 	protected void MoveTowardsTarget()
 	{
 		if (distTravelled < maxDistance)
@@ -88,19 +82,17 @@ public class EnemyProjectile : MonoBehaviour
 		ComputeDirection();
 	}
 
+	// Find direction from current point to the target (the player)
 	protected void ComputeDirection()
 	{
 		if (target == null)
 		{
 			target = GameObject.FindWithTag("Player");
 		}
-		bool playerFound = target != null;
-		if (playerFound)
-		{
-			Vector2 targetPos = (Vector2)target.transform.position;
-			float xDist = targetPos.x - transform.position.x;
-			float yDist = targetPos.y - transform.position.y;
-			direction = new Vector2(xDist, yDist).normalized;
-		}
+
+		Vector2 targetPos = (Vector2)target.transform.position;
+		float xDist = targetPos.x - transform.position.x;
+		float yDist = targetPos.y - transform.position.y;
+		direction = new Vector2(xDist, yDist).normalized;
 	}
 }

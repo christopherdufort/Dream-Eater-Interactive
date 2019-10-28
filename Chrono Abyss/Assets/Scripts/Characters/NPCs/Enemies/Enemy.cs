@@ -9,7 +9,7 @@ public abstract class Enemy : NPC
 	[SerializeField] protected float basicAttack;
 	[SerializeField] protected float attackRange;
 	[SerializeField] protected float attackCooldown;
-	[SerializeField] protected float attackCooldownTimer;
+	[SerializeField] protected float attackCooldownCountdown;
 
 	[Header("References")]
 	[SerializeField] protected GameObject playerObj;
@@ -20,7 +20,7 @@ public abstract class Enemy : NPC
 	// for animator
 	protected bool isAttacking;
 	
-	protected void AttemptAttackPlayer()
+	protected void ChargeAtPlayer()
 	{
 		if (playerObj != null)
 		{
@@ -38,63 +38,51 @@ public abstract class Enemy : NPC
 
 	protected abstract void AttackPlayer();
 
-	protected void GetPlayerCoordinates()
-	{
-		if (playerObj == null)
-		{
-			playerObj = GameObject.FindWithTag("Player");
-			if (playerObj != null)
-			{
-				playerPos = playerObj.transform.position;
-			}
-		}
-		else
-		{
-			playerPos = playerObj.transform.position;
-		}
-	}
-
 	protected void MoveTowardsPlayer()
 	{
 		Vector2 movementDirVec = playerPos - (Vector2)this.transform.position;
 		movementDirVecNorm = movementDirVec.normalized;
 		animator.SetFloat("moveX", movementDirVecNorm.x);
 		animator.SetFloat("moveY", movementDirVecNorm.y);
-
-		float xMove = transform.position.x + movementDirVec.x * moveSpeed * Time.deltaTime;
-		float yMove = transform.position.y + movementDirVec.y * moveSpeed * Time.deltaTime;
-		rigidBody.MovePosition(new Vector2(xMove, yMove));
+		moveTowards(movementDirVecNorm);
 		if (movementDirVec.magnitude > Mathf.Epsilon)
 		{
 			isMoving = true;
 		}
 	}
 
+	protected void moveTowards(Vector2 movementDirVec)
+	{
+		float xMove = transform.position.x + movementDirVec.x * moveSpeed * Time.deltaTime;
+		float yMove = transform.position.y + movementDirVec.y * moveSpeed * Time.deltaTime;
+		rigidBody.MovePosition(new Vector2(xMove, yMove));
+
+	}
+
 	// call this thing at the start for every enemy
 	protected void EnemyInitialize()
 	{
-		attackCooldownTimer = attackCooldown;
+		attackCooldownCountdown = attackCooldown;
 		rigidBody.freezeRotation = true;
 		curHitPoints = maxHitPoints;
-		GetPlayerCoordinates();
+		playerObj = GameObject.FindWithTag("Player");
 	}
 
 	// common things for every frame update for enemies
 	protected void EnemyUpdateLoopStart()
 	{
+		CheckDead();
+		CooldownLapse();
 		isMoving = false;       // by default
 		isAttacking = false;	// by default
-		CooldownActive();
-		CheckDead();
-		GetPlayerCoordinates();
+		playerPos = playerObj.transform.position;
 	}
 
-	protected void CooldownActive()
+	protected void CooldownLapse()
 	{
-		bool cooldownActive = attackCooldownTimer > 0f;
-		if (cooldownActive)
+		if (attackCooldownCountdown > 0f)
 		{
-			attackCooldownTimer -= Time.deltaTime;
+			attackCooldownCountdown -= Time.deltaTime;
 		}
 	}
 
@@ -103,12 +91,27 @@ public abstract class Enemy : NPC
 	{
 		if (movementDirVecNorm.x > float.Epsilon)
 		{
-			Vector3 newScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-			transform.localScale = newScale;
+			transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 		} else
 		{
-			Vector3 newScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-			transform.localScale = newScale;
+			transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 		}
+	}
+	
+	// ensures sprite is facing player while attacking
+	protected void SetAttackFacingPlayer()
+	{
+		Vector2 attackDirNorm = (playerPos - (Vector2)transform.position).normalized;
+		animator.SetFloat("dirX", attackDirNorm.x);
+		animator.SetFloat("dirY", attackDirNorm.y);
+		isAttacking = true;
+
+		// flip sprite towards player while attacking
+		int flipSpriteX = -1;
+		if (attackDirNorm.x < float.Epsilon)
+		{
+			flipSpriteX = 1;
+		}
+		transform.localScale = new Vector3(flipSpriteX * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 	}
 }

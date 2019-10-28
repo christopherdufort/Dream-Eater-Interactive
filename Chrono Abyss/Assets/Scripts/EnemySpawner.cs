@@ -6,21 +6,18 @@ public class EnemySpawner : MonoBehaviour
 {
 	public GameObject[] enemies;
 	public Vector2 spawnValues;
-	public float spawnWait;
-	public float spawnWaitMin;
 	public float spawnWaitMax;
+	public float spawnWaitMin;
+	private float spawnTimer;
 
 	public int startWait;
-	public bool stop;
 	public int spawnMax;
 
 	private int randEnemy;              // index number for which enemy is going to be spawned
-	private float spawnTimer;
 
-	[SerializeField]
-	public int curEnemiesAmt;
+	[SerializeField] public int curEnemiesAmt;
 
-	public static int EnemiesAmt = 0;
+	[SerializeField] public static int ENEMIES_AMT = 0;
 	
 	void Start()
     {
@@ -37,7 +34,7 @@ public class EnemySpawner : MonoBehaviour
 			spawnTimer = Random.Range(spawnWaitMin, spawnWaitMax);
 		}
 
-		curEnemiesAmt = EnemiesAmt;
+		curEnemiesAmt = ENEMIES_AMT;
 	}
 	
 	void spawnEnemy()
@@ -50,6 +47,6 @@ public class EnemySpawner : MonoBehaviour
 
 		GameObject enemyCreated = Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), Quaternion.identity);
 		//print("spawned enemy #" + randEnemy + " at (" + xPosEnemy + "," + yPosEnemy + "," + spawnPosition.z + ")");
-		EnemiesAmt++;
+		ENEMIES_AMT++;
 	}
 }

@@ -8,10 +8,9 @@ public class SeekerProjectile : EnemyProjectile
     void Update()
     {
 		CheckDestroyed();
-		ComputeDirection();
-
-		bool playerFound = target != null;
-		if (playerFound)
+		ComputeDirection();		// re-compute direction so projectile can follow player
+		
+		if (target != null)
 		{
 			MoveTowardsTarget();
 		}
