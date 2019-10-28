@@ -43,7 +43,7 @@ public class EnemyProjectile : MonoBehaviour
 			{
 				this.curHealth -= bullet.attackValue;
 				Destroy(collision.gameObject);      //temp
-			} else if (player)
+			} else if (player != null)
 			{
 				// TODO: Damage player
 				Destroy(this.gameObject);
