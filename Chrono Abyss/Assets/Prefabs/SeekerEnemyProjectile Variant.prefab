@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 8260248437830479585, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
         type: 3}
       propertyPath: m_Name
-      value: SeekerEnemyProjectile
+      value: SeekerEnemyProjectile Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8260248437830479599, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
         type: 3}
@@ -87,6 +87,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260248437830479599, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8260248437830479598, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
         type: 3}
