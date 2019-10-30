@@ -35,8 +35,13 @@ public class PlayerController : MonoBehaviour
     private GameObject slash;
     private float acceleratedSpeed;
 
-    // Update stack
-    void Update()
+	void Start()
+	{
+		rigidBody.freezeRotation = true;
+	}
+
+	// Update stack
+	void Update()
     {
         CheckInputs();
         Move();
