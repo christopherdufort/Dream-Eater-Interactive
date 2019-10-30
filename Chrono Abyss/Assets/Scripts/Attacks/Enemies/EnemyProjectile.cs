@@ -33,21 +33,29 @@ public class EnemyProjectile : MonoBehaviour
 		if (!isIndestructible)
 		{
 			PlayerSlash slash = collision.transform.GetComponent<PlayerSlash>();
-			PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
-			PlayerController player = collision.transform.GetComponent<PlayerController>();
-
 			if (slash != null)
 			{
 				this.curHealth -= slash.attackValue;
-			} else if (bullet != null)
+			} else
 			{
-				this.curHealth -= bullet.attackValue;
-				Destroy(collision.gameObject);      //temp
-			} else if (player != null)
-			{
-				// TODO: Damage player
-				Destroy(this.gameObject);
-			}
+				PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
+				if (bullet != null)
+				{
+					this.curHealth -= bullet.attackValue;
+					Destroy(collision.gameObject);      //temp
+				} else
+				{
+					PlayerController player = collision.transform.GetComponent<PlayerController>();
+					if (player != null)
+					{
+						// TODO: Damage player
+						Destroy(this.gameObject);
+					} else
+					{
+						Debug.Log("Enemy projectile hasn't collided with any object of note.");
+					}
+				}
+			} 
 		}
 	}
 

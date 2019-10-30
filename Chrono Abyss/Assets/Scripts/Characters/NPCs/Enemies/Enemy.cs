@@ -33,6 +33,9 @@ public abstract class Enemy : NPC
 			{
 				MoveTowardsPlayer();
 			}
+		} else
+		{
+			Debug.Log("Player could not be found.");
 		}
 	}
 

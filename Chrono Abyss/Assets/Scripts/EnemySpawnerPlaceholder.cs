@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+
+// TEMPORARY FILE
+// This code is just from 376 Assignment #2 and meant only for testing purposes.
+// Delete this when the project has a proper enemy spawner.
+public class EnemySpawnerPlaceholder : MonoBehaviour
 {
 	public GameObject[] enemies;
 	public Vector2 spawnValues;
@@ -17,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
 
 	[SerializeField] public int curEnemiesAmt;
 
-	[SerializeField] public static int ENEMIES_AMT = 0;
+	[SerializeField] public static int enemiesAmt = 0;
 	
 	void Start()
     {
@@ -34,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
 			spawnTimer = Random.Range(spawnWaitMin, spawnWaitMax);
 		}
 
-		curEnemiesAmt = ENEMIES_AMT;
+		curEnemiesAmt = enemiesAmt;
 	}
 	
 	void spawnEnemy()
@@ -47,6 +51,6 @@ public class EnemySpawner : MonoBehaviour
 
 		GameObject enemyCreated = Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), Quaternion.identity);
 		//print("spawned enemy #" + randEnemy + " at (" + xPosEnemy + "," + yPosEnemy + "," + spawnPosition.z + ")");
-		ENEMIES_AMT++;
+		enemiesAmt++;
 	}
 }

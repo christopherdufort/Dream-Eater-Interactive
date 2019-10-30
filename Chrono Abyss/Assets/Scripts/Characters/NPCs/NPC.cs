@@ -55,7 +55,7 @@ public class NPC : MonoBehaviour
 		if (curHitPoints < float.Epsilon)
 		{
 			PlayDeathAnimation();
-			EnemySpawner.ENEMIES_AMT--;
+			EnemySpawnerPlaceholder.enemiesAmt--;
 			Destroy(this.gameObject);
 		}
 	}
