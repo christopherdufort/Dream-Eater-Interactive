@@ -1,0 +1,1063 @@
+fileFormatVersion: 2
+guid: b283056de02b14ddf8468adbbbf8dbfb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6892612197302965870
+    second: lava-ogre_0
+  - first:
+      213: -6572573531972913872
+    second: lava-ogre_1
+  - first:
+      213: 5285934286062733239
+    second: lava-ogre_2
+  - first:
+      213: 3206359135221362769
+    second: lava-ogre_3
+  - first:
+      213: -6450037040690687669
+    second: lava-ogre_4
+  - first:
+      213: 3897940030610546789
+    second: lava-ogre_5
+  - first:
+      213: -4542487300459515162
+    second: lava-ogre_6
+  - first:
+      213: 3836005481039589097
+    second: lava-ogre_7
+  - first:
+      213: 1411845720676095451
+    second: lava-ogre_8
+  - first:
+      213: -3939026629516855234
+    second: lava-ogre_9
+  - first:
+      213: -2486830909268708196
+    second: lava-ogre_10
+  - first:
+      213: 2267080334543981891
+    second: lava-ogre_11
+  - first:
+      213: 5608773483257020175
+    second: lava-ogre_12
+  - first:
+      213: 892934710814692793
+    second: lava-ogre_13
+  - first:
+      213: -5107389486794283458
+    second: lava-ogre_14
+  - first:
+      213: 8626232332422816033
+    second: lava-ogre_15
+  - first:
+      213: -6245052552040801343
+    second: lava-ogre_16
+  - first:
+      213: 8500701932787889811
+    second: lava-ogre_17
+  - first:
+      213: 8990037125730400852
+    second: lava-ogre_18
+  - first:
+      213: 2857997719073244450
+    second: lava-ogre_19
+  - first:
+      213: 932650544428975585
+    second: lava-ogre_20
+  - first:
+      213: 4188362484871756128
+    second: lava-ogre_21
+  - first:
+      213: -2786173617134670435
+    second: lava-ogre_22
+  - first:
+      213: -2205608521728433344
+    second: lava-ogre_23
+  - first:
+      213: 4485900536256393708
+    second: lava-ogre_24
+  - first:
+      213: 9211545023991802655
+    second: lava-ogre_25
+  - first:
+      213: 7144606852157071772
+    second: lava-ogre_26
+  - first:
+      213: -994254224930527396
+    second: lava-ogre_27
+  - first:
+      213: 4333891089407202555
+    second: lava-ogre_28
+  - first:
+      213: 1604245039981364986
+    second: lava-ogre_29
+  - first:
+      213: -2489490931670717588
+    second: lava-ogre_30
+  - first:
+      213: 8716926729397004093
+    second: lava-ogre_31
+  - first:
+      213: 5149864449463897968
+    second: lava-ogre_32
+  - first:
+      213: 4213712967259805746
+    second: lava-ogre_33
+  - first:
+      213: -3036342440332762885
+    second: lava-ogre_34
+  - first:
+      213: 4387698139822494323
+    second: lava-ogre_35
+  - first:
+      213: 7326599079731557429
+    second: lava-ogre_36
+  - first:
+      213: 1128940439258601483
+    second: lava-ogre_37
+  - first:
+      213: -5085396992699805237
+    second: lava-ogre_38
+  - first:
+      213: 6803543171055356767
+    second: lava-ogre_39
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lava-ogre_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5147a09f3a17b4ea6be51ad2cf13bf7c
+      internalID: -6892612197302965870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da11ba50cf3b4900a7a1b6ec52b2681
+      internalID: -6572573531972913872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9180bc5996c4c4b89289af388ef2e7
+      internalID: 5285934286062733239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8016d8f7c749a48ddbcde35df9cc9141
+      internalID: 3206359135221362769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5faece1dbb26d4f9cb2a7e324c3199c3
+      internalID: -6450037040690687669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20547bbee29a645718e8401ca4e56905
+      internalID: 3897940030610546789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd06c36a5b4ec4968abfff5ebaad9cee
+      internalID: -4542487300459515162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ce217ea00d746fb867328110e051c4
+      internalID: 3836005481039589097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1163ba839dd544eabeefbd526f2931d
+      internalID: 1411845720676095451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_9
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61b34af30f13423d9bb185347a39aac
+      internalID: -3939026629516855234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a691da532cc1c4982a90b5bc409d7238
+      internalID: -2486830909268708196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1286bb7bff7c4f9586d4b621d2a712f
+      internalID: 2267080334543981891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_12
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2a3460cbcbf4161a788a0b237362ea
+      internalID: 5608773483257020175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_13
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba695d8e436741e382e1cad8c74a933
+      internalID: 892934710814692793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1348d8ccb3d645ca9dc0ce7140ad4c0
+      internalID: -5107389486794283458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e138ba2a1230c49bbac3c009ff50c948
+      internalID: 8626232332422816033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_16
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ab86e1f6016424687f503f0ce23835
+      internalID: -6245052552040801343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25fb97abdcdb4d49a786bfbc8a5eae1
+      internalID: 8500701932787889811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_18
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d513e24e19d6416cba156b4b570722b
+      internalID: 8990037125730400852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_19
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183497c0b22dd4c828db5f78c72996a8
+      internalID: 2857997719073244450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_20
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c34ba6af02d14e5f935f21f7895a41c
+      internalID: 932650544428975585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ced122c9798450286108a2fca43ba0
+      internalID: 4188362484871756128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_22
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9254d85ad64f8400fbed487d063cf6f8
+      internalID: -2786173617134670435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_23
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fab2658620e45e4acb17b63a024f58
+      internalID: -2205608521728433344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_24
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5776d28078f46d98c59c5a25b74777
+      internalID: 4485900536256393708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_25
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894f2fc0a9de04e63a2a8d840b11241b
+      internalID: 9211545023991802655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_26
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1976c2bd7c5f4c86962d4bc394ae8d5
+      internalID: 7144606852157071772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_27
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23614ba2b24b497599f872d5d573a59
+      internalID: -994254224930527396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce56fbc4ec34d4b03907ddffd01b5af9
+      internalID: 4333891089407202555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_29
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd920d2ed661d4602bdb960351716dff
+      internalID: 1604245039981364986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_30
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f235c6b55926b4177a386020db8b46ab
+      internalID: -2489490931670717588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_31
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0950228b96d644e5b9df2885a07e369f
+      internalID: 8716926729397004093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_32
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a943864fa9442898411261e84789a7
+      internalID: 5149864449463897968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_33
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cec50a039ef74000a0caf6b588c5a38
+      internalID: 4213712967259805746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_34
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533f22414a10541afbf6425e3500f916
+      internalID: -3036342440332762885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415efa691a8c146d3a108c83f347466d
+      internalID: 4387698139822494323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_36
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2143d568a83474b8f605ca7c5d42f9
+      internalID: 7326599079731557429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_37
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192c18e3e81f64d329974630448d5aa8
+      internalID: 1128940439258601483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_38
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4d70358287d4971b99886f25846cd4
+      internalID: -5085396992699805237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava-ogre_39
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f44f97d05f84a44a15cc1f65f577eb
+      internalID: 6803543171055356767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
