@@ -1,79 +1,106 @@
 fileFormatVersion: 2
-guid: 9166fa29e12f34b21a5f6fe07318516e
+guid: 51be7cfdb17b5432d9ef7b5a1d6249c5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5181964569165542286
-    second: chrono_abyss_tiles_0
+      213: -1593880189619134865
+    second: lava_tiles_0
   - first:
-      213: 2250038022633793208
-    second: chrono_abyss_tiles_1
+      213: -8354453913664471296
+    second: lava_tiles_1
   - first:
-      213: 2520913683720665940
-    second: chrono_abyss_tiles_2
+      213: -6333236677932126927
+    second: lava_tiles_2
   - first:
-      213: -5842338242026498673
-    second: chrono_abyss_tiles_3
+      213: 4355741540556493663
+    second: lava_tiles_3
   - first:
-      213: -6942934978650124431
-    second: chrono_abyss_tiles_4
+      213: 503145140491844513
+    second: lava_tiles_4
   - first:
-      213: -8600724750079123739
-    second: chrono_abyss_tiles_5
+      213: 7432956272517093084
+    second: lava_tiles_5
   - first:
-      213: 8266698419378605720
-    second: chrono_abyss_tiles_6
+      213: 2903640499214626936
+    second: lava_tiles_6
   - first:
-      213: 2183415225951900725
-    second: chrono_abyss_tiles_7
+      213: -1696965960035244149
+    second: lava_tiles_7
   - first:
-      213: -6924049127078855141
-    second: chrono_abyss_tiles_8
+      213: 8156060130390371672
+    second: lava_tiles_8
   - first:
-      213: -8945703947640497420
-    second: chrono_abyss_tiles_9
+      213: 2141209934023726391
+    second: lava_tiles_9
   - first:
-      213: 4087268722257437120
-    second: chrono_abyss_tiles_10
+      213: 3868809307720430857
+    second: lava_tiles_10
   - first:
-      213: 995606261740870473
-    second: chrono_abyss_tiles_11
+      213: -9133011624866145584
+    second: lava_tiles_11
   - first:
-      213: 7013436208969037612
-    second: chrono_abyss_tiles_12
+      213: 4862909723552934467
+    second: lava_tiles_12
   - first:
-      213: 8244945324503495172
-    second: chrono_abyss_tiles_13
+      213: 22710033034370286
+    second: lava_tiles_13
   - first:
-      213: -4184810869484794825
-    second: chrono_abyss_tiles_14
+      213: 3289114287413480007
+    second: lava_tiles_14
   - first:
-      213: 726846313433153586
-    second: chrono_abyss_tiles_15
+      213: -975517776286076274
+    second: lava_tiles_15
   - first:
-      213: -6647739893337115630
-    second: chrono_abyss_tiles_16
+      213: -7758656145511610475
+    second: lava_tiles_16
   - first:
-      213: -2805054313160867173
-    second: chrono_abyss_tiles_17
+      213: -5332750656447607035
+    second: lava_tiles_17
   - first:
-      213: -500780339927747989
-    second: chrono_abyss_tiles_18
+      213: 5115578135773142231
+    second: lava_tiles_18
   - first:
-      213: 3247856987824813277
-    second: chrono_abyss_tiles_19
+      213: -6408901757635205594
+    second: lava_tiles_19
   - first:
-      213: -4831628932948255258
-    second: chrono_abyss_tiles_20
+      213: -3275232203864637659
+    second: lava_tiles_20
   - first:
-      213: -3269431314271717859
-    second: chrono_abyss_tiles_21
+      213: 7299576794039037055
+    second: lava_tiles_21
   - first:
-      213: 1158693509864421860
-    second: chrono_abyss_tiles_22
+      213: -3154885881837264833
+    second: lava_tiles_22
   - first:
-      213: -1375579000367646752
-    second: chrono_abyss_tiles_23
+      213: 6282903983949657275
+    second: lava_tiles_23
+  - first:
+      213: 6622886152149046266
+    second: lava_tiles_24
+  - first:
+      213: -4918985081243645050
+    second: lava_tiles_25
+  - first:
+      213: -1041674992635126286
+    second: lava_tiles_26
+  - first:
+      213: 6890002821603724638
+    second: lava_tiles_27
+  - first:
+      213: -103376386496047956
+    second: lava_tiles_28
+  - first:
+      213: -6685468120317213013
+    second: lava_tiles_29
+  - first:
+      213: 4875602928469247452
+    second: lava_tiles_30
+  - first:
+      213: 8713879729148660045
+    second: lava_tiles_31
+  - first:
+      213: -4492797795313611766
+    second: lava_tiles_32
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,8 +161,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 1
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,8 +173,8 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 1
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -158,11 +185,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chrono_abyss_tiles_0
+      name: lava_tiles_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 216
+        x: 0
+        y: 96
         width: 24
         height: 24
       alignment: 0
@@ -172,18 +199,102 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7101bed7aee36434dba707fcf85069fb
-      internalID: -5181964569165542286
+      spriteID: 05cc3a1586d814785961e7e9c1bc28de
+      internalID: -1593880189619134865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_1
+      name: lava_tiles_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1a2c49b62ab4062aa7ef138bc9d703
+      internalID: -8354453913664471296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fca505dba30d468b96080af6d1a953a
+      internalID: -6333236677932126927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c53dc6fea584145a30693df3fcadeb
+      internalID: 4355741540556493663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4404c40f7ac04043b8a0d606955ddfc
+      internalID: 503145140491844513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_5
       rect:
         serializedVersion: 2
         x: 120
-        y: 216
+        y: 96
         width: 24
         height: 24
       alignment: 0
@@ -193,18 +304,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7be90dcc7c3b049a980a6ac54cd656b7
-      internalID: 2250038022633793208
+      spriteID: 039eaa7236a5b4957b33c83bc10c93f8
+      internalID: 7432956272517093084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_2
+      name: lava_tiles_6
       rect:
         serializedVersion: 2
         x: 144
-        y: 216
+        y: 96
         width: 24
         height: 24
       alignment: 0
@@ -214,18 +325,81 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cc6ab68d4b6d49fd87629d668e0a02d
-      internalID: 2520913683720665940
+      spriteID: 97fdb933d09f6424990e8d5d1a2f569b
+      internalID: 2903640499214626936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_3
+      name: lava_tiles_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753b294b3e3a74011a50f0edc55e52ee
+      internalID: -1696965960035244149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0761d68e87e864f61ac572349540ca78
+      internalID: 8156060130390371672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13351eb9b2dd4d84b4ab8151a5183d7
+      internalID: 2141209934023726391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_10
       rect:
         serializedVersion: 2
         x: 96
-        y: 192
+        y: 72
         width: 24
         height: 24
       alignment: 0
@@ -235,18 +409,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f5e8f5bb4e8d4a978f9cd1bee8a879f
-      internalID: -5842338242026498673
+      spriteID: 1384516b8873140b18be9698cb0000c3
+      internalID: 3868809307720430857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_4
+      name: lava_tiles_11
       rect:
         serializedVersion: 2
         x: 120
-        y: 192
+        y: 72
         width: 24
         height: 24
       alignment: 0
@@ -256,18 +430,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34d4b9c49247644958b05cf20e662729
-      internalID: -6942934978650124431
+      spriteID: 8fa89e20f16934ad187f1d6b6776f30a
+      internalID: -9133011624866145584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_5
+      name: lava_tiles_12
       rect:
         serializedVersion: 2
         x: 144
-        y: 192
+        y: 72
         width: 24
         height: 24
       alignment: 0
@@ -277,39 +451,144 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d16e5a86d301a47ea970b355f691119c
-      internalID: -8600724750079123739
+      spriteID: 5b76e63d455bc49b88d631bed0bc361c
+      internalID: 4862909723552934467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_6
+      name: lava_tiles_13
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a74bccb99b6413b88f49153c6aecd3
+      internalID: 22710033034370286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e7d74e45f5c4527883a619be12602c
+      internalID: 3289114287413480007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06d608938a174b528813bab6f16e364
+      internalID: -975517776286076274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_16
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c83e7eb7fb3477eb06ac71f6e38989
+      internalID: -7758656145511610475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d7a3098232b47c298f4fa67f950d3c
+      internalID: -5332750656447607035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efda317dcbc404f63861292287734a51
+      internalID: 5115578135773142231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_tiles_19
       rect:
         serializedVersion: 2
         x: 96
-        y: 144
-        width: 48
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e96ec3930f4a14e90900874f6ec11f75
-      internalID: 8266698419378605720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chrono_abyss_tiles_7
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 168
+        y: 48
         width: 24
         height: 24
       alignment: 0
@@ -319,18 +598,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4c67024368d7445e8fbdcabf7b59d6d
-      internalID: 2183415225951900725
+      spriteID: ba67473307a6446df9ca7d600877e76d
+      internalID: -6408901757635205594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_8
+      name: lava_tiles_20
       rect:
         serializedVersion: 2
-        x: 184
-        y: 168
+        x: 120
+        y: 48
         width: 24
         height: 24
       alignment: 0
@@ -340,18 +619,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e84e7c45cfb59412ca1c5c71473e1230
-      internalID: -6924049127078855141
+      spriteID: 882008a5593cc44a081cd74f5070d14c
+      internalID: -3275232203864637659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_9
+      name: lava_tiles_21
       rect:
         serializedVersion: 2
-        x: 208
-        y: 168
+        x: 144
+        y: 48
         width: 24
         height: 24
       alignment: 0
@@ -361,60 +640,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 861bf4327bbfa4ad8b630e26177db846
-      internalID: -8945703947640497420
+      spriteID: 69d91b327857947a784e04c05c42076f
+      internalID: 7299576794039037055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_10
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 192
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57d20cadfdbca4ed99bed0ac440f704f
-      internalID: 4087268722257437120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chrono_abyss_tiles_11
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 216
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afe5dddb99d5c48a7923db07886c23cd
-      internalID: 995606261740870473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chrono_abyss_tiles_12
+      name: lava_tiles_22
       rect:
         serializedVersion: 2
         x: 192
-        y: 216
+        y: 48
         width: 24
         height: 24
       alignment: 0
@@ -424,18 +661,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b9ff241a20c4ca490fbf76fad2386a
-      internalID: 7013436208969037612
+      spriteID: 7b97fd7f232c24f9f9a44eb321354812
+      internalID: -3154885881837264833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_13
+      name: lava_tiles_23
       rect:
         serializedVersion: 2
-        x: 168
-        y: 216
+        x: 0
+        y: 24
         width: 24
         height: 24
       alignment: 0
@@ -445,18 +682,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a30e9f3a3f8334e23a27e221335213d5
-      internalID: 8244945324503495172
+      spriteID: a4addcf358fab45d6b37626a1674d40e
+      internalID: 6282903983949657275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_14
+      name: lava_tiles_24
       rect:
         serializedVersion: 2
-        x: 168
-        y: 192
+        x: 144
+        y: 24
         width: 24
         height: 24
       alignment: 0
@@ -466,18 +703,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f865d71929bbe49eaaa45b5cc513f2d0
-      internalID: -4184810869484794825
+      spriteID: dd99dec441c504de995aa04068561f72
+      internalID: 6622886152149046266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_15
+      name: lava_tiles_25
       rect:
         serializedVersion: 2
         x: 192
-        y: 192
+        y: 24
         width: 24
         height: 24
       alignment: 0
@@ -487,19 +724,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3510ddb6326864211808451ce29a6853
-      internalID: 726846313433153586
+      spriteID: ac23448c7ecfb4ac2a2e7f0853ca41e7
+      internalID: -4918985081243645050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_16
+      name: lava_tiles_26
       rect:
         serializedVersion: 2
-        x: 152
-        y: 168
-        width: 8
+        x: 0
+        y: 0
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -508,19 +745,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3078b0cf5dda64830a0d77bccc7e419d
-      internalID: -6647739893337115630
+      spriteID: 80f9235d4cc74400fa0947aee683ac96
+      internalID: -1041674992635126286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_17
+      name: lava_tiles_27
       rect:
         serializedVersion: 2
-        x: 152
-        y: 144
-        width: 8
+        x: 24
+        y: 0
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -529,19 +766,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1252682f335764a0ba2071d270a49b23
-      internalID: -2805054313160867173
+      spriteID: 2b01fa3f074f4453fa1819bf7ef1cc37
+      internalID: 6890002821603724638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_18
+      name: lava_tiles_28
       rect:
         serializedVersion: 2
-        x: 232
-        y: 168
-        width: 8
+        x: 48
+        y: 0
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -550,19 +787,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e4337907459499d96b16c7dcd0f1f3
-      internalID: -500780339927747989
+      spriteID: e7bd19e12951e420a94f7752dbd73db7
+      internalID: -103376386496047956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_19
+      name: lava_tiles_29
       rect:
         serializedVersion: 2
-        x: 232
-        y: 144
-        width: 8
+        x: 72
+        y: 0
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -571,20 +808,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0ad182ca85f24f4e96c7d13e257d4e9
-      internalID: 3247856987824813277
+      spriteID: 9f729b574fe83406392ef52c43bee576
+      internalID: -6685468120317213013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_20
+      name: lava_tiles_30
       rect:
         serializedVersion: 2
-        x: 152
-        y: 138
-        width: 23
-        height: 6
+        x: 96
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -592,20 +829,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 346d77d94bc984c558db045d9972a7c7
-      internalID: -4831628932948255258
+      spriteID: 4f64def4753504d6ebf6783d282ba2af
+      internalID: 4875602928469247452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_21
+      name: lava_tiles_31
       rect:
         serializedVersion: 2
-        x: 175
-        y: 138
-        width: 20
-        height: 6
+        x: 120
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -613,20 +850,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 143b7d14c28bc4093823ca71a547d3cc
-      internalID: -3269431314271717859
+      spriteID: b1e312317cde640e5ab89b56a2d55869
+      internalID: 8713879729148660045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chrono_abyss_tiles_22
+      name: lava_tiles_32
       rect:
         serializedVersion: 2
-        x: 218
-        y: 138
-        width: 22
-        height: 7
+        x: 144
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -634,29 +871,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93ced3172712e443bb91df9b98a21b95
-      internalID: 1158693509864421860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: chrono_abyss_tiles_23
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 138
-        width: 23
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae5b9652822584a29bd0a9ac86115c42
-      internalID: -1375579000367646752
+      spriteID: 356db77a8721c46c28eff531d588fa1e
+      internalID: -4492797795313611766
       vertices: []
       indices: 
       edges: []
