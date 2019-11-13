@@ -1,0 +1,1063 @@
+fileFormatVersion: 2
+guid: 46d852e46e2b04ab9906d4af0e4f94bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3885939432947386408
+    second: desert_skelly_0
+  - first:
+      213: -2420423659979939483
+    second: desert_skelly_1
+  - first:
+      213: -4324250481522638231
+    second: desert_skelly_2
+  - first:
+      213: -3695222390194117277
+    second: desert_skelly_3
+  - first:
+      213: -5222050345829363375
+    second: desert_skelly_4
+  - first:
+      213: 6413438480626282804
+    second: desert_skelly_5
+  - first:
+      213: -8080546529731449411
+    second: desert_skelly_6
+  - first:
+      213: -8983237680951643598
+    second: desert_skelly_7
+  - first:
+      213: -5133277585695463688
+    second: desert_skelly_8
+  - first:
+      213: 645353707939797597
+    second: desert_skelly_9
+  - first:
+      213: -3740399593821264607
+    second: desert_skelly_10
+  - first:
+      213: -4595108832162692078
+    second: desert_skelly_11
+  - first:
+      213: -2768150167509814898
+    second: desert_skelly_12
+  - first:
+      213: 1442114553595021539
+    second: desert_skelly_13
+  - first:
+      213: 2612499202778574890
+    second: desert_skelly_14
+  - first:
+      213: -2233406344734236770
+    second: desert_skelly_15
+  - first:
+      213: 6248835324670384371
+    second: desert_skelly_16
+  - first:
+      213: 2521335682781596334
+    second: desert_skelly_17
+  - first:
+      213: -1012811511059732499
+    second: desert_skelly_18
+  - first:
+      213: 5119665313714841427
+    second: desert_skelly_19
+  - first:
+      213: -8871280129178300939
+    second: desert_skelly_20
+  - first:
+      213: -4591884059188153218
+    second: desert_skelly_21
+  - first:
+      213: 2281739249877080768
+    second: desert_skelly_22
+  - first:
+      213: -7272812162241328174
+    second: desert_skelly_23
+  - first:
+      213: 7319573816578566559
+    second: desert_skelly_24
+  - first:
+      213: -6815681260956131344
+    second: desert_skelly_25
+  - first:
+      213: -852568707243747670
+    second: desert_skelly_26
+  - first:
+      213: -7417077089462546414
+    second: desert_skelly_27
+  - first:
+      213: 3011898327085825221
+    second: desert_skelly_28
+  - first:
+      213: -8537352247098241007
+    second: desert_skelly_29
+  - first:
+      213: -3184940399834951665
+    second: desert_skelly_30
+  - first:
+      213: 481072284611778799
+    second: desert_skelly_31
+  - first:
+      213: 8143315102376096571
+    second: desert_skelly_32
+  - first:
+      213: -5375449662209676422
+    second: desert_skelly_33
+  - first:
+      213: 5209022845567108048
+    second: desert_skelly_34
+  - first:
+      213: 1085044390614013049
+    second: desert_skelly_35
+  - first:
+      213: 1387740026374914568
+    second: desert_skelly_36
+  - first:
+      213: 6854624548019901635
+    second: desert_skelly_37
+  - first:
+      213: 4936324882671572056
+    second: desert_skelly_38
+  - first:
+      213: 278431644866696264
+    second: desert_skelly_39
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: desert_skelly_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f4b54480fb24dd9993094aea3989e2
+      internalID: 3885939432947386408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499984dea86e0430892d3a586a4470f3
+      internalID: -2420423659979939483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7270501a44d5f4dfba796e1410f7bb24
+      internalID: -4324250481522638231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8667f988e453e490aa609a642fa88143
+      internalID: -3695222390194117277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786fc03e530ad40f798ab62662448352
+      internalID: -5222050345829363375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4217617d64948453a820168fcd024b60
+      internalID: 6413438480626282804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c55ae20350754fdcaac8a68e1f98a8b
+      internalID: -8080546529731449411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b52eae315cf435a95c9f4ff00641d4
+      internalID: -8983237680951643598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_8
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdba8566416364232a8f0df36eab5ef0
+      internalID: -5133277585695463688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_9
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4cd83bf31e84f678d37299cb231b21
+      internalID: 645353707939797597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a45570c61c94cf6b5222d729fc3ab0
+      internalID: -3740399593821264607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941f1757474db4aada045bcbdeac07a0
+      internalID: -4595108832162692078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f12d504eac64295ae5ab59bc539f2b
+      internalID: -2768150167509814898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_13
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f46997147e4431582e6d72b6317cc9
+      internalID: 1442114553595021539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_14
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a383335153444fc8a4e1f959731fb7
+      internalID: 2612499202778574890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c68ffc63f5834cbf99cfbef5566c43c
+      internalID: -2233406344734236770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23b34e1a52ef4036b9113bdcced8bfa
+      internalID: 6248835324670384371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97ce43bcdea74bfa960bdf7ecd83d6d
+      internalID: 2521335682781596334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_18
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf24837558304b2dbb445fa6744c4c0
+      internalID: -1012811511059732499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0647db76a2ec54468b2b2d1e6162e6fb
+      internalID: 5119665313714841427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f722b2567c24350aa1201c4c4fa07a
+      internalID: -8871280129178300939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dc20977f3cd44648562e82718f38f8
+      internalID: -4591884059188153218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_22
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedecfe7f4af1473a89e6695a2bfb908
+      internalID: 2281739249877080768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_23
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9d0cd614dea4211a8321819393540b
+      internalID: -7272812162241328174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_24
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff7b4a31de0a4f19b98eaad8c6321a1
+      internalID: 7319573816578566559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4746f6edc653743a99adbbe869a3b150
+      internalID: -6815681260956131344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66170cceb9a9243978492c5ac1135617
+      internalID: -852568707243747670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_27
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c581c4434733b4e589f8cad907f185ea
+      internalID: -7417077089462546414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_28
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8f15a9db9f9453a888e5c92234497a
+      internalID: 3011898327085825221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_29
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684f87692af6247ab96191d418c4e1e7
+      internalID: -8537352247098241007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf17506b7bdf4433a54ca8d08975ac0
+      internalID: -3184940399834951665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87615ee270644f9899be984f8d73540
+      internalID: 481072284611778799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_32
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3cf68661cd945dea7805ee94373fe3
+      internalID: 8143315102376096571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_33
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7eabff0e4324ad7a245181c3366edb
+      internalID: -5375449662209676422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_34
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6ee5467861348b780694f2ee5d4acd
+      internalID: 5209022845567108048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c918c60f21d284fbea8556d738120efe
+      internalID: 1085044390614013049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ee49ad6ec9f4431820e8f80277e698
+      internalID: 1387740026374914568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_37
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba955651fae940d4b9055f82996eb79
+      internalID: 6854624548019901635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_38
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee332ea17b1e43ca80263c1d4ce977f
+      internalID: 4936324882671572056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_skelly_39
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3440fdd0643874ffa9988cbbd9d33939
+      internalID: 278431644866696264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
