@@ -1,0 +1,823 @@
+fileFormatVersion: 2
+guid: c12f247dc25334cb792b6664092ec94c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2606543382938363999
+    second: desert_slime_0
+  - first:
+      213: -7797304039482512219
+    second: desert_slime_1
+  - first:
+      213: -8758635377570917939
+    second: desert_slime_2
+  - first:
+      213: 3050779887289264329
+    second: desert_slime_3
+  - first:
+      213: -4319511455400148936
+    second: desert_slime_4
+  - first:
+      213: -5378762390706910189
+    second: desert_slime_5
+  - first:
+      213: -4454599957609736456
+    second: desert_slime_6
+  - first:
+      213: -5310240429602897959
+    second: desert_slime_7
+  - first:
+      213: -3797069480975331546
+    second: desert_slime_8
+  - first:
+      213: 5224416272151995466
+    second: desert_slime_9
+  - first:
+      213: 3980890645933609236
+    second: desert_slime_10
+  - first:
+      213: -1743059374360344062
+    second: desert_slime_11
+  - first:
+      213: -2935620642929114425
+    second: desert_slime_12
+  - first:
+      213: -2171761264463087397
+    second: desert_slime_13
+  - first:
+      213: -4318189131218960566
+    second: desert_slime_14
+  - first:
+      213: 5651940081977076921
+    second: desert_slime_15
+  - first:
+      213: -8571511378532957002
+    second: desert_slime_16
+  - first:
+      213: -6149081464033774887
+    second: desert_slime_17
+  - first:
+      213: 7110245966548430969
+    second: desert_slime_18
+  - first:
+      213: 7093128367609103177
+    second: desert_slime_19
+  - first:
+      213: -5870492917572357229
+    second: desert_slime_20
+  - first:
+      213: -8788133572682703861
+    second: desert_slime_21
+  - first:
+      213: -9154338350730340576
+    second: desert_slime_22
+  - first:
+      213: 5144503002386595264
+    second: desert_slime_23
+  - first:
+      213: 1660975966965925976
+    second: desert_slime_24
+  - first:
+      213: -2090711697626243214
+    second: desert_slime_25
+  - first:
+      213: 5810855413897558198
+    second: desert_slime_26
+  - first:
+      213: -8001238039014936521
+    second: desert_slime_27
+  - first:
+      213: 3047216858908305707
+    second: desert_slime_28
+  - first:
+      213: -2170804834807464042
+    second: desert_slime_29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: desert_slime_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 109
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12f7244c6d12474589747c2643b1147
+      internalID: -2606543382938363999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 109
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7361e58e054104ea6b6515d797eb2e66
+      internalID: -7797304039482512219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 109
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2644dceac7d4025bc37e13589da917
+      internalID: -8758635377570917939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 109
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fd9667166284063901c724c316df1c
+      internalID: 3050779887289264329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 109
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051e09740b1c840b99263fa3ab5c4ad1
+      internalID: -4319511455400148936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_5
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 109
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1baea8b52c2491d8bb9f6ff35a45a3
+      internalID: -5378762390706910189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 82
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2353f01c1cf400aa79350155349372
+      internalID: -4454599957609736456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 82
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e921da8f2564f35b8e4830e9414f15
+      internalID: -5310240429602897959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 82
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e88257294a9e41f7a52eaa8ea18cd61
+      internalID: -3797069480975331546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 82
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4565d4bcf768b4ba89509464de6b5e5f
+      internalID: 5224416272151995466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_10
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 82
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113003897d53a4366a534f012c9dc7a9
+      internalID: 3980890645933609236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 82
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08242efd8c8d4fa8ae9f43c44d8333d
+      internalID: -1743059374360344062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 55
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0073ee07fe064d9ca3a4d279ea35c59
+      internalID: -2935620642929114425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 55
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80e98d87f5b543058f2c2fcb8eeb8c5
+      internalID: -2171761264463087397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_14
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 55
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4d1905cec7a44569902a6f543f502d
+      internalID: -4318189131218960566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_15
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 55
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d693d086782c4bd0a547627b89c8da4
+      internalID: 5651940081977076921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_16
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 55
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69584af9045464cfdab70ffa86c1d373
+      internalID: -8571511378532957002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_17
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 55
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa72fb20cf284898b3af9c7a37d8e47
+      internalID: -6149081464033774887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 28
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3f37f465aea441a82e9a3b4e0cb726
+      internalID: 7110245966548430969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_19
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 28
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a517c012a0848ac82dbb602afacd03
+      internalID: 7093128367609103177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 28
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cc721c5bb8e4122b793bca951d37ce
+      internalID: -5870492917572357229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_21
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 28
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525a26e7f8f9a4db2bede9e5c946e42a
+      internalID: -8788133572682703861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_22
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 28
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed621d4d014b487c98de9b3ef474a45
+      internalID: -9154338350730340576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_23
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 28
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9633211368a4a208799c8dc2859aa7
+      internalID: 5144503002386595264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5959fe1c88c482dbcb0af94906f149
+      internalID: 1660975966965925976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_25
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7095accc631645fda8cebce0ac32262
+      internalID: -2090711697626243214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_26
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edee853289ab84902aae066cff9262d7
+      internalID: 5810855413897558198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_27
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e9d044e167945f69d77ac03d3e86b2
+      internalID: -8001238039014936521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_28
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7969e40f888b043558f35fe2ce4a8dbc
+      internalID: 3047216858908305707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desert_slime_29
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c78cedf931154793bd900d934a842ea
+      internalID: -2170804834807464042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

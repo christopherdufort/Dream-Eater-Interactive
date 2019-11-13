@@ -1,0 +1,1063 @@
+fileFormatVersion: 2
+guid: 6a842d1c7dfca4849ada9d3296610092
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8964570489344039353
+    second: lava_skelly_0
+  - first:
+      213: 2364871931358186121
+    second: lava_skelly_1
+  - first:
+      213: 2565267887953499522
+    second: lava_skelly_2
+  - first:
+      213: -5143661223629353952
+    second: lava_skelly_3
+  - first:
+      213: -9085378876869677821
+    second: lava_skelly_4
+  - first:
+      213: 2602736216286437234
+    second: lava_skelly_5
+  - first:
+      213: 8666773070978764198
+    second: lava_skelly_6
+  - first:
+      213: 6977073562199914790
+    second: lava_skelly_7
+  - first:
+      213: -7389701074281273343
+    second: lava_skelly_8
+  - first:
+      213: 4770999964468318833
+    second: lava_skelly_9
+  - first:
+      213: 5819538635544525554
+    second: lava_skelly_10
+  - first:
+      213: 5237018999254937022
+    second: lava_skelly_11
+  - first:
+      213: 9093637166720607973
+    second: lava_skelly_12
+  - first:
+      213: 2220050904202273426
+    second: lava_skelly_13
+  - first:
+      213: 777362100360309821
+    second: lava_skelly_14
+  - first:
+      213: -2305640669490770031
+    second: lava_skelly_15
+  - first:
+      213: 6738925204335269997
+    second: lava_skelly_16
+  - first:
+      213: -6335349570682570804
+    second: lava_skelly_17
+  - first:
+      213: 5283843770182724956
+    second: lava_skelly_18
+  - first:
+      213: -4837350820234070607
+    second: lava_skelly_19
+  - first:
+      213: -844468141315398326
+    second: lava_skelly_20
+  - first:
+      213: 908192193855718720
+    second: lava_skelly_21
+  - first:
+      213: 8774287699372196767
+    second: lava_skelly_22
+  - first:
+      213: -7459836043317739786
+    second: lava_skelly_23
+  - first:
+      213: 4713845977243631765
+    second: lava_skelly_24
+  - first:
+      213: -1763892754718023274
+    second: lava_skelly_25
+  - first:
+      213: 6900215234723214340
+    second: lava_skelly_26
+  - first:
+      213: -2687054525139376642
+    second: lava_skelly_27
+  - first:
+      213: 4974674878377215175
+    second: lava_skelly_28
+  - first:
+      213: -5638954603102456845
+    second: lava_skelly_29
+  - first:
+      213: -2985308448222322552
+    second: lava_skelly_30
+  - first:
+      213: -3044118463965760281
+    second: lava_skelly_31
+  - first:
+      213: 830486339681380743
+    second: lava_skelly_32
+  - first:
+      213: -7002209372908602325
+    second: lava_skelly_33
+  - first:
+      213: -8649055653416255404
+    second: lava_skelly_34
+  - first:
+      213: -1807692290659691773
+    second: lava_skelly_35
+  - first:
+      213: -4506778955955985393
+    second: lava_skelly_36
+  - first:
+      213: 1621717214066803777
+    second: lava_skelly_37
+  - first:
+      213: 7658887839855596760
+    second: lava_skelly_38
+  - first:
+      213: -1614425563936568406
+    second: lava_skelly_39
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lava_skelly_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eae37537817041079353c1aa9f2ab12
+      internalID: 8964570489344039353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c424a593b4e41c39c4de6ecde75a2a
+      internalID: 2364871931358186121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c97c727eddf241ebb2380e54c47c14c
+      internalID: 2565267887953499522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87db476c48c11484ea9dcf10df436331
+      internalID: -5143661223629353952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 246
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135cd8bd34fd64f36a3150d57b408d46
+      internalID: -9085378876869677821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1199c78fb920e4493990facc7931fa89
+      internalID: 2602736216286437234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4631197df6c4cbda225117302adec7
+      internalID: 8666773070978764198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5776bb7e081a745d9814356c8ba4e147
+      internalID: 6977073562199914790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_8
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48dcb5fd032d403f987cf42cfae6dcb
+      internalID: -7389701074281273343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_9
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 211
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfd1739449d847cdbf228b30b452a44
+      internalID: 4770999964468318833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa7c7441a92d492dbb9d3801b5d4d2c
+      internalID: 5819538635544525554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30dc683febe54de5a08af46c7a83ccb
+      internalID: 5237018999254937022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898443fbca7df4b8aa531bf7f1de6090
+      internalID: 9093637166720607973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_13
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911dd3b4b158544e28cf0cfe3d0d3554
+      internalID: 2220050904202273426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_14
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 176
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7d4b1fcfeff443ea9e5ff7b32ef5ac
+      internalID: 777362100360309821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c35076eb7d247f3822b78d60103286
+      internalID: -2305640669490770031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7309e9c88952b4f27b8ed81994764e09
+      internalID: 6738925204335269997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84c264bea6b4439b9c24da224d8dcd9
+      internalID: -6335349570682570804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_18
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3868a505c674b1eb5dd78a6011dfad
+      internalID: 5283843770182724956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_19
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 141
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648f8f80d19f645b993bcb7e04f01d63
+      internalID: -4837350820234070607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a042ae2e21f2c45fdb87407b1d95dda0
+      internalID: -844468141315398326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe833f07b9bc4bdc821fc6aa29fa768
+      internalID: 908192193855718720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_22
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52338328a05dc44d8858eb3b1f983adf
+      internalID: 8774287699372196767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_23
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9703ca2a363cf4355b4dd0fdb9a3775d
+      internalID: -7459836043317739786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_24
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 106
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f55340c6e004badaba382128611278
+      internalID: 4713845977243631765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48cd669fbd5d44b18ec2b2b7b82d08a
+      internalID: -1763892754718023274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbb5ee8405b74368a30c0113936099d
+      internalID: 6900215234723214340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_27
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9223473dd5a8f49e0b940e6d5078ff2d
+      internalID: -2687054525139376642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_28
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bac09076335848c5bcea97acb78110e
+      internalID: 4974674878377215175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_29
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 71
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337cf75dc21b6401d848097781d02fcd
+      internalID: -5638954603102456845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58aa8cab016194ae988b36b04a67abc3
+      internalID: -2985308448222322552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0864ed27251254f4da0265eb89e45e76
+      internalID: -3044118463965760281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_32
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fae29abad0f413bb2eb9875275a468
+      internalID: 830486339681380743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_33
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88eab965001e4205a471ec544a309a8
+      internalID: -7002209372908602325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_34
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 36
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ba1e1bca24b47b49983af8f2213994
+      internalID: -8649055653416255404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00a7104894aa4517a97d4a6d79891f2
+      internalID: -1807692290659691773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e4c5c0728b54b97866fb75ee787fca
+      internalID: -4506778955955985393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_37
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c782865b7f54dcf88abe4b0706d8e4
+      internalID: 1621717214066803777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_38
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67f61836f077474fad3eb5805b1ef89
+      internalID: 7658887839855596760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava_skelly_39
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822e8dbcc81d14ab1b27dfb92d1ae241
+      internalID: -1614425563936568406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

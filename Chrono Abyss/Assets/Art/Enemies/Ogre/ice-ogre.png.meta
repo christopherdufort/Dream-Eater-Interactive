@@ -1,0 +1,1063 @@
+fileFormatVersion: 2
+guid: e688464f7d1a14c7684f94158cabf290
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5133216145335064462
+    second: ice-ogre_0
+  - first:
+      213: -8911298663128274465
+    second: ice-ogre_1
+  - first:
+      213: 1739813710482718785
+    second: ice-ogre_2
+  - first:
+      213: 7215860777684467242
+    second: ice-ogre_3
+  - first:
+      213: 998767923075536655
+    second: ice-ogre_4
+  - first:
+      213: 5340522927413398646
+    second: ice-ogre_5
+  - first:
+      213: 7594924341331062622
+    second: ice-ogre_6
+  - first:
+      213: -2148152666889418831
+    second: ice-ogre_7
+  - first:
+      213: 4592162803616570718
+    second: ice-ogre_8
+  - first:
+      213: -3264086469487459275
+    second: ice-ogre_9
+  - first:
+      213: -1823768960662409703
+    second: ice-ogre_10
+  - first:
+      213: 3936746649135015805
+    second: ice-ogre_11
+  - first:
+      213: 503567762894432543
+    second: ice-ogre_12
+  - first:
+      213: 624573537901932184
+    second: ice-ogre_13
+  - first:
+      213: 5048162953955320814
+    second: ice-ogre_14
+  - first:
+      213: -8079259759046315338
+    second: ice-ogre_15
+  - first:
+      213: -7324828115541202657
+    second: ice-ogre_16
+  - first:
+      213: 3138974842287569600
+    second: ice-ogre_17
+  - first:
+      213: 7315293968562632479
+    second: ice-ogre_18
+  - first:
+      213: 4286178652912382144
+    second: ice-ogre_19
+  - first:
+      213: 7168484534521637604
+    second: ice-ogre_20
+  - first:
+      213: 4566382045201594728
+    second: ice-ogre_21
+  - first:
+      213: 4905567390623356634
+    second: ice-ogre_22
+  - first:
+      213: 4758248941961947648
+    second: ice-ogre_23
+  - first:
+      213: 7850346654808747471
+    second: ice-ogre_24
+  - first:
+      213: -6713497131335163471
+    second: ice-ogre_25
+  - first:
+      213: 2375004323415475634
+    second: ice-ogre_26
+  - first:
+      213: 1526617262687448363
+    second: ice-ogre_27
+  - first:
+      213: -8999009461907571005
+    second: ice-ogre_28
+  - first:
+      213: 7745057165722489809
+    second: ice-ogre_29
+  - first:
+      213: -7980110477712991980
+    second: ice-ogre_30
+  - first:
+      213: -3640999818557168860
+    second: ice-ogre_31
+  - first:
+      213: -7258982636756437568
+    second: ice-ogre_32
+  - first:
+      213: -8308977147056270332
+    second: ice-ogre_33
+  - first:
+      213: 3240044457138922795
+    second: ice-ogre_34
+  - first:
+      213: -266307542976347033
+    second: ice-ogre_35
+  - first:
+      213: 3234757399163160823
+    second: ice-ogre_36
+  - first:
+      213: 631158927629463341
+    second: ice-ogre_37
+  - first:
+      213: 1131089470759214933
+    second: ice-ogre_38
+  - first:
+      213: 1716103292383572814
+    second: ice-ogre_39
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ice-ogre_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6530ea39d073d477a88a086796a9dc21
+      internalID: 5133216145335064462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48840e045b5248d5a26100167a45092
+      internalID: -8911298663128274465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d7331c457414889b44fb6f5b25e69e
+      internalID: 1739813710482718785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_3
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ec4c544aabc4cf4a154da9566def66
+      internalID: 7215860777684467242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67705d2bbe2a44faabb001f848d1d9d3
+      internalID: 998767923075536655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250ae79981b3645cfaf6e44e0e7ce801
+      internalID: 5340522927413398646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 171
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586819fe8400a42629406e7d05765e99
+      internalID: 7594924341331062622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0c7d11e3b964d1a8123b96697eee60
+      internalID: -2148152666889418831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbb2dd12ffc54eeab291c3106d6b6d1
+      internalID: 4592162803616570718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_9
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbfda69ba18449b880f7f45dfb2b571
+      internalID: -3264086469487459275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd02114fd66941dab90b9f2ba1880a9
+      internalID: -1823768960662409703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df66ba092effe4a63a2efa22a76c79a1
+      internalID: 3936746649135015805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_12
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522d7555e7f424293aaa6162898336b6
+      internalID: 503567762894432543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_13
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 137
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b699f90e91246928453dc807be5894
+      internalID: 624573537901932184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dca96bd313d4bfb997bfe07f18c80b
+      internalID: 5048162953955320814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_15
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55c1a1bf80d2417781a470434a116f0
+      internalID: -8079259759046315338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_16
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd3c7be4ff554aae95dad2881f4029d
+      internalID: -7324828115541202657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0ae8b313a184e15a45a1de046ada3d
+      internalID: 3138974842287569600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_18
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee57ea091ea44d8f9501678f88d5420
+      internalID: 7315293968562632479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_19
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f80041e8610c4af18b8cd4d16f1fac6
+      internalID: 4286178652912382144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_20
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 103
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b195d8014064d2cac765f2694f817a
+      internalID: 7168484534521637604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9946ee82f3847e5beeeb22ec308833
+      internalID: 4566382045201594728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_22
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3a7ea636b0941ff891c997e2a57bde
+      internalID: 4905567390623356634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_23
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9891f38aa4ef2442bb9dde8230377694
+      internalID: 4758248941961947648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_24
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b61ad68c9794996927773826207a8a
+      internalID: 7850346654808747471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_25
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe87557e6bd34f75992093a4b08b635
+      internalID: -6713497131335163471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_26
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f388bee28ed4cdda50b163600e2d0e
+      internalID: 2375004323415475634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_27
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 69
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b7637f7727f433988392f88a57eabd
+      internalID: 1526617262687448363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab446ffdff7e474d8e51738a0927494
+      internalID: -8999009461907571005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_29
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f40c5c3c7e248b8b6e824e3bef8c13
+      internalID: 7745057165722489809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_30
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327e2fb76f1c74f2e992545100af468f
+      internalID: -7980110477712991980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_31
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af45e465650834334822691bc47ecb74
+      internalID: -3640999818557168860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_32
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24fada343f1c4a0bb18e652ddea0c87
+      internalID: -7258982636756437568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_33
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689b42d06dedc45d49701a5e72af62ef
+      internalID: -8308977147056270332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_34
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 35
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7606a9a50e74198aa9f26ae9cea4c3
+      internalID: 3240044457138922795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69f4e57ae932496c951286f26073abf
+      internalID: -266307542976347033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_36
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1427738a5ddea44e783344d98ded1f2d
+      internalID: 3234757399163160823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_37
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6772bebe011ca46d284d76b82e519fe3
+      internalID: 631158927629463341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_38
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f6654c4acf847f281d59cf67a7f8fe
+      internalID: 1131089470759214933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ice-ogre_39
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c407a55746e674b3094e4f2e81f46efd
+      internalID: 1716103292383572814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
