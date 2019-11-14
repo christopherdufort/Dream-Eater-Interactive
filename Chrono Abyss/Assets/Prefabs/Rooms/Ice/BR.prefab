@@ -830,6 +830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8089730196224011564}
   - component: {fileID: 8089730196224011565}
+  - component: {fileID: 8224007061330798914}
   m_Layer: 0
   m_Name: BR
   m_TagString: Untagged
@@ -867,6 +868,28 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!114 &8224007061330798914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089730196224011563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa4b7184b343714cb5cf7c10f56faae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
+  - {fileID: 2315619441715124835, guid: 669be7f057cbb8348a0fde41dca27167, type: 3}
+  - {fileID: 7878037983573983547, guid: 512abcd8b0fcee24a9723a5d9869061e, type: 3}
+  spawnValues: {x: 4, y: 4}
+  spawnWaitMax: 2
+  spawnWaitMin: 1
+  startWait: 0
+  spawnMax: 3
+  curEnemiesAmt: 0
 --- !u!1 &8089730196592109598
 GameObject:
   m_ObjectHideFlags: 0
