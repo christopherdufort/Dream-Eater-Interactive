@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5359794361438081221, guid: f3fd2a4da0c464cd4b382ebc8773d70a,
         type: 3}
       propertyPath: m_Name
-      value: DesertDoor
+      value: DesertDoor Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5359794361438081222, guid: f3fd2a4da0c464cd4b382ebc8773d70a,
         type: 3}
@@ -73,6 +73,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2718832226920268427, guid: 8cd79c36ffe3941ee9bf026941b81737,
         type: 3}
+    - target: {fileID: 5359794361438081209, guid: f3fd2a4da0c464cd4b382ebc8773d70a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5359794361438081223, guid: f3fd2a4da0c464cd4b382ebc8773d70a,
         type: 3}
       propertyPath: closedDoor
