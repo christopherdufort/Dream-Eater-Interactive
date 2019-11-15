@@ -316,7 +316,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 225748529}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1722445855}
+        m_MethodName: resumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &225748529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,7 +760,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Quit?
+  m_Text: Main Menu
 --- !u!222 &809511455
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1131,7 +1142,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Resume?
+  m_Text: Resume
 --- !u!222 &1143089004
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1433,7 +1444,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 3895976831588386956, guid: e8e8a9ac252dd453da946b28f52b8e20,
+    m_PressedSprite: {fileID: 6887805272558070884, guid: e8e8a9ac252dd453da946b28f52b8e20,
       type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -1447,7 +1458,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1615557411}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1722445855}
+        m_MethodName: quitToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1615557411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1466,7 +1488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8808383841745980431, guid: 5cce62fbd060c482ba3d8e0de8cd96e0,
+  m_Sprite: {fileID: -5786970126868546575, guid: 5cce62fbd060c482ba3d8e0de8cd96e0,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -1534,6 +1556,7 @@ GameObject:
   - component: {fileID: 1722445853}
   - component: {fileID: 1722445852}
   - component: {fileID: 1722445851}
+  - component: {fileID: 1722445855}
   m_Layer: 5
   m_Name: PauseScreen
   m_TagString: Untagged
@@ -1622,6 +1645,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1722445855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722445850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e11303fe853d4174a40e3ec26623ad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1732796549
 GameObject:
   m_ObjectHideFlags: 0
