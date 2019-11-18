@@ -52,7 +52,7 @@ public class EnemyProjectile : MonoBehaviour
 						Destroy(this.gameObject);
 					} else
 					{
-						Debug.Log("Enemy projectile hasn't collided with any object of note.");
+						//Debug.Log("Enemy projectile hasn't collided with any object of note.");
 					}
 				}
 			} 

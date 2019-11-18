@@ -19,6 +19,7 @@ public class GameControllerScript : MonoBehaviour
         {
             // Pause Game.
             gamePaused = !gamePaused;
+            Debug.Log("Game has been paused: " + gamePaused);
 
         }
     }

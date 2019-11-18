@@ -15,15 +15,17 @@ public class EnemySpawnerPlaceholder : MonoBehaviour
 	private float spawnTimer;
 
 	public int startWait;
-	public int spawnMax;
+	public int spawnMax = 4; // Initial limit per room.
+
+    public bool canSpawnEnemies = true;
 
 	private int randEnemy;              // index number for which enemy is going to be spawned
 
 	[SerializeField] public int curEnemiesAmt;
 
 	[SerializeField] public static int enemiesAmt = 0;
-	
-	void Start()
+
+    void Start()
     {
 		spawnTimer = Random.Range(spawnWaitMin, spawnWaitMax);
 	}
@@ -32,13 +34,11 @@ public class EnemySpawnerPlaceholder : MonoBehaviour
     {
 		spawnTimer -= Time.deltaTime;
 
-		if ((curEnemiesAmt < spawnMax) && (spawnTimer <= 0f))
+		if ( canSpawnEnemies && (curEnemiesAmt < spawnMax) && (spawnTimer <= 0f))
 		{
 			spawnEnemy();
 			spawnTimer = Random.Range(spawnWaitMin, spawnWaitMax);
 		}
-
-		curEnemiesAmt = enemiesAmt;
 	}
 	
 	void spawnEnemy()
@@ -50,7 +50,13 @@ public class EnemySpawnerPlaceholder : MonoBehaviour
 		Vector3 spawnPosition = new Vector3(xPosEnemy, yPosEnemy, 1);
 
 		GameObject enemyCreated = Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), Quaternion.identity);
-		//print("spawned enemy #" + randEnemy + " at (" + xPosEnemy + "," + yPosEnemy + "," + spawnPosition.z + ")");
-		enemiesAmt++;
-	}
+        //print("spawned enemy #" + randEnemy + " at (" + xPosEnemy + "," + yPosEnemy + "," + spawnPosition.z + ")");
+        curEnemiesAmt++;
+
+        if (curEnemiesAmt >= spawnMax)
+        {
+            canSpawnEnemies = false;
+            //delete this script to prevent future spawns and clean up game?
+        }
+    }
 }
