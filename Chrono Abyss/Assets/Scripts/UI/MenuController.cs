@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class MenuController : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class MenuController : MonoBehaviour
 
     public void quitGame()
     {
+        // Close the Game editor (Used in developing the game)
+        EditorApplication.isPlaying = false;
+
+        // Close the game application (used when demoing the game)
         Application.Quit();
     }
     

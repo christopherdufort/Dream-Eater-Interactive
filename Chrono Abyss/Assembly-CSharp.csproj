@@ -65,13 +65,22 @@
      <Compile Include="Assets\Scripts\Characters\NPCs\Enemies\Types\Mook.cs" />
      <Compile Include="Assets\Scripts\Characters\NPCs\Enemies\Types\Shooter.cs" />
      <Compile Include="Assets\Scripts\Characters\NPCs\NPC.cs" />
-     <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\EnemySpawnerPlaceholder.cs" />
+     <Compile Include="Assets\Scripts\GameControllerScript.cs" />
      <Compile Include="Assets\Scripts\GunRotate.cs" />
+     <Compile Include="Assets\Scripts\MapObjects\HazardDamage.cs" />
+     <Compile Include="Assets\Scripts\MapObjects\HazardSpawnerPlaceholder.cs" />
+     <Compile Include="Assets\Scripts\MapObjects\OpenChest.cs" />
+     <Compile Include="Assets\Scripts\MapObjects\OpenDoor.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\RoomPrefabController.cs" />
-     <Compile Include="Assets\Scripts\RoomSpawner.cs" />
-     <Compile Include="Assets\Scripts\RoomTemplates.cs" />
+     <Compile Include="Assets\Scripts\ProceduralGeneration\Destroyer.cs" />
+     <Compile Include="Assets\Scripts\ProceduralGeneration\RoomPrefabController.cs" />
+     <Compile Include="Assets\Scripts\ProceduralGeneration\RoomSpawner.cs" />
+     <Compile Include="Assets\Scripts\ProceduralGeneration\RoomTemplates.cs" />
+     <Compile Include="Assets\Scripts\TileScripts\AnimatedTile.cs" />
+     <Compile Include="Assets\Scripts\TileScripts\WeightedRandomTile.cs" />
+     <Compile Include="Assets\Scripts\UI\MenuController.cs" />
+     <Compile Include="Assets\Scripts\UI\PauseMenuController.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/dev/Dream-Eater-Interactive/Chrono Abyss/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
@@ -92,6 +101,12 @@
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/dev/Dream-Eater-Interactive/Chrono Abyss/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>C:/dev/Dream-Eater-Interactive/Chrono Abyss/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Tilemap.Editor">
+ <HintPath>C:/dev/Dream-Eater-Interactive/Chrono Abyss/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/dev/Dream-Eater-Interactive/Chrono Abyss/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
