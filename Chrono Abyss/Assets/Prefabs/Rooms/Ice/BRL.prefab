@@ -884,7 +884,7 @@ Tilemap:
   - first: {x: -4, y: -3, z: 0}
     second:
       m_TileIndex: 5
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -983,7 +983,7 @@ Tilemap:
   - first: {x: 7, y: -3, z: 0}
     second:
       m_TileIndex: 3
-      m_TileSpriteIndex: 9
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -992,7 +992,7 @@ Tilemap:
   - first: {x: -4, y: -2, z: 0}
     second:
       m_TileIndex: 4
-      m_TileSpriteIndex: 10
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1091,7 +1091,7 @@ Tilemap:
   - first: {x: 7, y: -2, z: 0}
     second:
       m_TileIndex: 2
-      m_TileSpriteIndex: 8
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -1569,22 +1569,22 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 6540574367038097227, guid: 4858a1278c66d48949d0234a393b6334,
-      type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 6877546630537371398, guid: 4858a1278c66d48949d0234a393b6334,
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -4892819876406787178, guid: 4858a1278c66d48949d0234a393b6334,
       type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: 6877546630537371398, guid: 4858a1278c66d48949d0234a393b6334,
+      type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: -6501249535094144241, guid: 4858a1278c66d48949d0234a393b6334,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -8676406384380644321, guid: 4858a1278c66d48949d0234a393b6334,
       type: 3}
@@ -2329,7 +2329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3304628580617497487}
   - component: {fileID: 3304628580617497486}
-  - component: {fileID: -704463703228482841}
+  - component: {fileID: 2481440644228105832}
   m_Layer: 0
   m_Name: BRL
   m_TagString: Untagged
@@ -2367,7 +2367,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &-704463703228482841
+--- !u!114 &2481440644228105832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2376,18 +2376,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3304628580617497480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa4b7184b343714cb5cf7c10f56faae, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f691ae601336e141a8280b5c6303d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
   - {fileID: 2315619441715124835, guid: 669be7f057cbb8348a0fde41dca27167, type: 3}
   - {fileID: 7878037983573983547, guid: 512abcd8b0fcee24a9723a5d9869061e, type: 3}
+  - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
+  - {fileID: 409236493397324246, guid: 46ca7d52394e6e04697aa7a6c8530912, type: 3}
   spawnValues: {x: 4, y: 4}
-  spawnWaitMax: 2
-  spawnWaitMin: 1
-  startWait: 0
-  spawnMax: 3
+  spawnEnemiesAmtSet: 4
   curEnemiesAmt: 0
 --- !u!1 &5277013984069126398
 GameObject:

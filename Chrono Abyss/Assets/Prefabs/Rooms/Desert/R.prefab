@@ -1571,7 +1571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4764549881607490865}
   - component: {fileID: 4764549881607490864}
-  - component: {fileID: 7976094075353542128}
+  - component: {fileID: -1505043860348471154}
   m_Layer: 0
   m_Name: R
   m_TagString: Untagged
@@ -1609,7 +1609,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &7976094075353542128
+--- !u!114 &-1505043860348471154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1618,18 +1618,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4764549881607490870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa4b7184b343714cb5cf7c10f56faae, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f691ae601336e141a8280b5c6303d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
   - {fileID: 2315619441715124835, guid: 669be7f057cbb8348a0fde41dca27167, type: 3}
   - {fileID: 7878037983573983547, guid: 512abcd8b0fcee24a9723a5d9869061e, type: 3}
+  - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
+  - {fileID: 409236493397324246, guid: 46ca7d52394e6e04697aa7a6c8530912, type: 3}
   spawnValues: {x: 4, y: 4}
-  spawnWaitMax: 2
-  spawnWaitMin: 1
-  startWait: 0
-  spawnMax: 3
+  spawnEnemiesAmtSet: 4
   curEnemiesAmt: 0
 --- !u!1 &4764549881907617902
 GameObject:

@@ -12,15 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b524174f64f6f8b4596a16186b3014be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  curHealth: 1
-  damageValue: 0
+  level: 1
+  maxHitPoints: 1
+  curHitPoints: 1
+  attackValue: 1
   moveSpeed: 3
+  direction: {x: 0, y: 0}
+  rigidBody: {fileID: 0}
+  animator: {fileID: 0}
+  deathAnimation: {fileID: 0}
+  target: {fileID: 0}
+  hitPointUpMin: 0
+  hitPointUpMax: 0
+  attackUpMin: 0
+  attackUpMax: 0
+  moveSpeedUpMin: 0
+  moveSpeedUpMax: 0
   maxDistance: 6
   distTravelled: 0
   isIndestructible: 0
-  direction: {x: 0, y: 0}
-  target: {fileID: 0}
 --- !u!1001 &5234474314341318887
 PrefabInstance:
   m_ObjectHideFlags: 0

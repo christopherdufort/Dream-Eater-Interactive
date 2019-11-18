@@ -202,6 +202,11 @@ PrefabInstance:
       propertyPath: spawnValues.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6967522257432959211, guid: 5bec0b8a215eb4ae08b89ba86b5a4664,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bec0b8a215eb4ae08b89ba86b5a4664, type: 3}
 --- !u!1 &519420028
@@ -257,7 +262,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 60
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -2858,38 +2858,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1156849772903886725}
     m_Modifications:
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: hazards.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: hazards.Array.data[0]
-      value: 
-      objectReference: {fileID: 1130941655423243755, guid: 978d37ff3a2c44a71942357fc3a6275a,
-        type: 3}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: hazards.Array.data[1]
-      value: 
-      objectReference: {fileID: 3497237626641871603, guid: 77767c38656f74273b9890d01ef62c6c,
-        type: 3}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: spawnValues.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: spawnValues.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: canSpawnHazards
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6752188855095497524, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
         type: 3}
       propertyPath: m_Name
@@ -2948,6 +2916,38 @@ PrefabInstance:
     - target: {fileID: 8533280009294346860, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: hazards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: hazards.Array.data[0]
+      value: 
+      objectReference: {fileID: 1130941655423243755, guid: 978d37ff3a2c44a71942357fc3a6275a,
+        type: 3}
+    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: hazards.Array.data[1]
+      value: 
+      objectReference: {fileID: 3497237626641871603, guid: 77767c38656f74273b9890d01ef62c6c,
+        type: 3}
+    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: spawnValues.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: spawnValues.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: canSpawnHazards
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3120,6 +3120,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1156849772903886725}
     m_Modifications:
+    - target: {fileID: 1829027832335481137, guid: 361e751dbcc58fb4ba1670874017aeae,
+        type: 3}
+      propertyPath: spawnValues.x
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4307567153205971111, guid: 361e751dbcc58fb4ba1670874017aeae,
         type: 3}
       propertyPath: m_Name
