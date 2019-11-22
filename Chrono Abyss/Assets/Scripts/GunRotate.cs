@@ -6,13 +6,11 @@ public class GunRotate : MonoBehaviour
 {
     // private attributes
     private Transform transform;
-    private Vector3 playerPos;
     
     // Start is called before the first frame update
     void Start()
     {
         transform = GetComponent<Transform>();
-        //playerPos = GameObject.FindGameObjectsWithTag("Player")GetComponent<Transform>().position;
     }
 
     // Update is called once per frame
@@ -23,12 +21,15 @@ public class GunRotate : MonoBehaviour
 
     private void rotate()
     {
-        // get position of mouse cursor
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        
-        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+
+        Vector3 normalizedAimDir = PlayerController.aimDirection;
+        normalizedAimDir.Normalize();
+        transform.position = normalizedAimDir + PlayerController.playerPosition;
+
+        float angle = Mathf.Atan2(normalizedAimDir.y, normalizedAimDir.x) * Mathf.Rad2Deg;
 
         // rotate sprite to face cursor
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+
     }
 }
