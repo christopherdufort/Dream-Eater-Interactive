@@ -19,12 +19,12 @@ public abstract class EnemyCharacer : Enemy
 
 	protected void Awake()
 	{
-		VerifyDroppableLootLists();
+		ValidateDroppableLootLists();
 	}
 
 	// for animator
 	protected bool isAttacking;
-	
+
 	protected void ChargeAtPlayer()
 	{
 		if (target != null)
@@ -111,15 +111,24 @@ public abstract class EnemyCharacer : Enemy
 			float roll = Random.Range(0f, 1f);
 			if (roll < dropOdds[i])
 			{
+				// TODO:
 				// instantiate drop loot here
 				// probably will have to ensure either the loot doesn't overlap or something, something to discuss with the group
+				Debug.Log("Enemy dropped loot #" + i);
 			}
 		}
 	}
 	
 	// TODO: call this on awake when we have a loot system implemented
-	protected void VerifyDroppableLootLists()
+	protected void ValidateDroppableLootLists()
 	{
+		if (droppableLoot.Count == 0 || dropOdds.Count == 0)
+		{
+			droppableLoot.Clear();
+			dropOdds.Clear();
+			return;
+		}
+
 		// truncate either list if even
 		int difference = droppableLoot.Count - dropOdds.Count;
 
