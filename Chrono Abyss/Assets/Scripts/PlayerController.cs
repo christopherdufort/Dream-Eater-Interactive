@@ -18,7 +18,8 @@ public class PlayerController : MonoBehaviour
     public bool isShooting;
     public float movementSpeed;
     public Vector2 movementDirection;
-    public Vector2 aimDirection;
+    public static Vector2 aimDirection;
+    public static Vector3 playerPosition;
 
     [Space]
     [Header("Component References:")]
@@ -38,17 +39,24 @@ public class PlayerController : MonoBehaviour
 	void Start()
 	{
 		rigidBody.freezeRotation = true;
+        updatePosition();
 	}
 
 	// Update stack
 	void Update()
     {
+        updatePosition();
         CheckInputs();
         Move();
         Animate();
         Aim();
         Shoot();
         Slash();
+    }
+
+    void updatePosition()
+    {
+        playerPosition = transform.position; 
     }
 
     void CheckInputs()
@@ -116,11 +124,12 @@ public class PlayerController : MonoBehaviour
             Vector2 shootingDirection = crosshair.transform.localPosition;
             shootingDirection.Normalize();
             // Instantiate bullet object
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            // Give bullet a velocity in the shooting direction
-            bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
-            // Destroy bullet object after some duration
-            Destroy(bullet, BULLET_DURATION);
+            GameObject bullet = Instantiate(bulletPrefab, transform.position + (Vector3)aimDirection.normalized * 1.4f, Quaternion.identity);
+
+            //// Give bullet a velocity in the shooting direction
+            //bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
+            //// Destroy bullet object after some duration
+            //Destroy(bullet, BULLET_DURATION);
         }
     }
 

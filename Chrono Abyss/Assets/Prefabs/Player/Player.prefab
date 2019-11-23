@@ -135,7 +135,6 @@ MonoBehaviour:
   isShooting: 0
   movementSpeed: 0
   movementDirection: {x: 0, y: 0}
-  aimDirection: {x: 0, y: 0}
   rigidBody: {fileID: 6370848749254175029}
   animator: {fileID: 6370848749254175028}
   crosshair: {fileID: 6370848749210760394}
@@ -178,9 +177,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingLayerID: -619255237
+  m_SortingLayer: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2311659948842064771, guid: 70dcce4dbb479d843bd9788c065c82e5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
