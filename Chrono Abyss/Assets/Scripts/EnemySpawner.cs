@@ -31,13 +31,15 @@ public class EnemySpawner : MonoBehaviour
 		float yPosEnemy = Random.Range(-spawnValues.y, spawnValues.y);
 		Vector3 spawnPosition = new Vector3(xPosEnemy, yPosEnemy, 1);
 		
-		if (!OverlapsACollider(spawnPosition, enemies[randEnemy]))
-		{
+		//if (!OverlapsACollider(spawnPosition, enemies[randEnemy]))
+		//{
 			GameObject enemyCreated = Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), Quaternion.identity);
 			curEnemiesAmt++;
-		}
+		//}
 	}
 
+	// function will be back when desert, ice & lava room prefabs are more complete
+	/*
 	bool OverlapsACollider(Vector3 spawnPosition, GameObject enemyToSpawn)
 	{
 		BoxCollider2D enemyToSpawnCollider = enemyToSpawn.GetComponent<BoxCollider2D>();
@@ -65,4 +67,5 @@ public class EnemySpawner : MonoBehaviour
 		}
 		return false;
 	}
+	*/
 }
