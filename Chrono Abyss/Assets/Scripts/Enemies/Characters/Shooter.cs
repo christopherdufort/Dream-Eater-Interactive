@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooter : Enemy
+public class Shooter : EnemyCharacer
 {
 	[Space]
 	[Header ("Projectiles")]
@@ -21,12 +21,11 @@ public class Shooter : Enemy
     void Update()
 	{
 		EnemyUpdateLoopStart();
-		FlipSprite();
 
-		Vector2 movementDirVec = (Vector2)transform.position - playerPos;
-		if (movementDirVec.magnitude < minComfortDistance)
+		Vector2 playerToEnemy = (Vector2)(transform.position - target.transform.position);
+		if (playerToEnemy.magnitude < minComfortDistance)
 		{
-			MaintainDistanceFromPlayer(movementDirVec.normalized);
+			MaintainDistanceFromPlayer(playerToEnemy);
 
 		} else
 		{
@@ -37,22 +36,22 @@ public class Shooter : Enemy
 		animator.SetBool("isAttacking", isAttacking);
 	}
 	
-	protected void MaintainDistanceFromPlayer(Vector2 movementDirVecNorm)
+	protected void MaintainDistanceFromPlayer(Vector2 playerToEnemy)
 	{
-		moveTowards(movementDirVecNorm);
+		SetDirection((Vector2)transform.position + playerToEnemy);
+		MoveTowardsCurrentDirection();
 		AttackPlayer();
-		isMoving = false;
+		isMoving = false;		// for animator; don't want movement animation
 	}
 
 	protected override void AttackPlayer()
 	{
-		bool cooldownActive = attackCooldownCountdown > 0f;
-		if (!cooldownActive)
+		if (attackCooldownCountdown <= float.Epsilon)
 		{
 			Instantiate(projectiles[0], transform.position, Quaternion.identity);
 			attackCooldownCountdown = attackCooldown;
 		}
-		SetAttackFacingPlayer();
+		FacePlayerWhenAttacking();
 	}
 
 	protected void Strafe()
