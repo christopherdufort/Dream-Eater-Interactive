@@ -2,25 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameControllerScript : MonoBehaviour
+public class GameController : MonoBehaviour
 {
-    bool gamePaused;
+    public GameObject pauseScreen;
+    
+    private bool gamePaused;
 
     // Start is called before the first frame update
     void Start()
     {
-        gamePaused = false;    
+        gamePaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        pause();
+    }
+
+    private void pause()
+    {
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
         {
-            // Pause Game.
-            gamePaused = !gamePaused;
-            Debug.Log("Game has been paused: " + gamePaused);
-
+            // Pause Game and set time scale to 0
+            pauseScreen.SetActive(true);
+            Time.timeScale = 0.0f;
         }
     }
 }
