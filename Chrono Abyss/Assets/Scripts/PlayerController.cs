@@ -35,9 +35,13 @@ public class PlayerController : MonoBehaviour
     // Private attributes
     private GameObject slash;
     private float acceleratedSpeed;
+    private int totalHealth = 10;
+    private int currentHealth;
 
 	void Start()
-	{
+    {
+        currentHealth = totalHealth;
+        
 		rigidBody.freezeRotation = true;
         updatePosition();
 	}
@@ -54,6 +58,26 @@ public class PlayerController : MonoBehaviour
         Slash();
     }
 
+    public void setTotalHealth(int newHealth)
+    {
+        totalHealth = newHealth;
+    }
+
+    public int getTotalHealth()
+    {
+        return totalHealth;
+    }
+
+    public void setCurrentHealth(int newHealth)
+    {
+        currentHealth = newHealth;
+    }
+
+    public int getCurrentHealth()
+    {
+        return currentHealth;
+    }
+    
     void updatePosition()
     {
         playerPosition = transform.position; 
