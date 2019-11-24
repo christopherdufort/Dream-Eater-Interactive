@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public GameObject pauseScreen;
-    
+
+    private int level = 1;
     private bool gamePaused;
 
     // Start is called before the first frame update
@@ -18,6 +19,16 @@ public class GameController : MonoBehaviour
     void Update()
     {
         pause();
+    }
+
+    public void setLevel(int newLevel)
+    {
+        level = newLevel;
+    }
+
+    public int getLevel()
+    {
+        return level;
     }
 
     private void pause()

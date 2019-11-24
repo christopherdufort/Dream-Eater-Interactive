@@ -933,6 +933,7 @@ GameObject:
   - component: {fileID: 4059907244596849600}
   - component: {fileID: 4059907244596849614}
   - component: {fileID: 4059907244596849615}
+  - component: {fileID: 6767707496630611680}
   m_Layer: 5
   m_Name: AmmoNum
   m_TagString: Untagged
@@ -998,7 +999,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 4/6
+  m_Text: 
+--- !u!114 &6767707496630611680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059907244596849601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 659df2e44f927461dbf24181cbbcf58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4059907244663732605
 GameObject:
   m_ObjectHideFlags: 0

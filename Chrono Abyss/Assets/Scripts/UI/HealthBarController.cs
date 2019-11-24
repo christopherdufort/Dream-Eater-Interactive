@@ -13,7 +13,7 @@ public class HealthBarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        playerController = FindObjectOfType<PlayerController>();
         totalHealth = playerController.getTotalHealth();
         rectTransform = GetComponent<RectTransform>();
     }
@@ -31,7 +31,6 @@ public class HealthBarController : MonoBehaviour
         // apply transformations
         rectTransform.localScale = new Vector3(scale, 1, 1);
         rectTransform.position = new Vector3(pos + 100, rectTransform.position.y, rectTransform.position.z);
-        Debug.Log(rectTransform.position);
     }
 
     private float calculateBarPos(float barScale)
