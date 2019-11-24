@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
 
     public void setLevel(int newLevel)
     {
-        level = newLevel;
+        level = newLevel > 0 ? newLevel : level;
     }
 
     public int getLevel()

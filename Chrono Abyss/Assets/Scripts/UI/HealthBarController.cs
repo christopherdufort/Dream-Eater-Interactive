@@ -7,14 +7,14 @@ public class HealthBarController : MonoBehaviour
 {
     // reference to player
     private PlayerController playerController;
-    private int totalHealth;
+    private int maxHealth;
     private RectTransform rectTransform;
     
     // Start is called before the first frame update
     void Start()
     {
         playerController = FindObjectOfType<PlayerController>();
-        totalHealth = playerController.getTotalHealth();
+        maxHealth = playerController.getMaxHealth();
         rectTransform = GetComponent<RectTransform>();
     }
 
@@ -25,7 +25,7 @@ public class HealthBarController : MonoBehaviour
         int currentHealth = playerController.getCurrentHealth();
         
         // calculate health bar's new scale and pos
-        float scale = (float)currentHealth / totalHealth;
+        float scale = (float)currentHealth / maxHealth;
         float pos = calculateBarPos(scale);
         
         // apply transformations

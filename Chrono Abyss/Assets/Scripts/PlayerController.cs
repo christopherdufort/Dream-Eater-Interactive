@@ -35,14 +35,14 @@ public class PlayerController : MonoBehaviour
     // Private attributes
     private GameObject slash;
     private float acceleratedSpeed;
-    private int totalHealth = 10;
+    private int maxHealth = 10;
     private int currentHealth;
     private int maxAmmo = 6;
     private int currentAmmo;
 
 	void Start()
     {
-        currentHealth = totalHealth;
+        currentHealth = maxHealth;
         currentAmmo = maxAmmo;
         
 		rigidBody.freezeRotation = true;
@@ -63,12 +63,12 @@ public class PlayerController : MonoBehaviour
 
     public void setTotalHealth(int newHealth)
     {
-        totalHealth = newHealth;
+        maxHealth = newHealth > 0 ? newHealth : maxHealth;
     }
 
-    public int getTotalHealth()
+    public int getMaxHealth()
     {
-        return totalHealth;
+        return maxHealth;
     }
 
     public void setCurrentHealth(int newHealth)
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
 
     public void setMaxAmmo(int newAmmo)
     {
-        maxAmmo = currentAmmo;
+        maxAmmo = newAmmo > 0 ? newAmmo : maxAmmo;
     }
 
     public int getMaxAmmo()
