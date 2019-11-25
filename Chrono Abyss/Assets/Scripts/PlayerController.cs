@@ -33,14 +33,17 @@ public class PlayerController : MonoBehaviour
     public GameObject slashPrefab;
 
     // Private attributes
-    private GameObject slash;
+    private PlayerSlash sword;
+    private bool slash;
     private float acceleratedSpeed;
 
 	void Start()
 	{
 		rigidBody.freezeRotation = true;
         updatePosition();
-	}
+
+        sword = GetComponentInChildren<PlayerSlash>();
+    }
 
 	// Update stack
 	void Update()
@@ -56,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
     void updatePosition()
     {
-        playerPosition = transform.position; 
+        playerPosition = transform.position;
     }
 
     void CheckInputs()
@@ -71,6 +74,9 @@ public class PlayerController : MonoBehaviour
             movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             movementDirection.Normalize();
             movementSpeed = Mathf.Clamp(acceleratedSpeed, 0.0f, 1.0f);
+            
+            // send player direction to sword
+            sword.setDir(movementDirection);
         }
         // If player is standing still
         else
@@ -92,9 +98,6 @@ public class PlayerController : MonoBehaviour
     {
         // Move the player's rigid body in the movement direction (based on user input)
         rigidBody.velocity = movementDirection * movementSpeed * PLAYER_BASE_SPEED;
-        // If Player is slashing (a slash prefab exists), then keep the slash in front of Player at all times
-        if (slash != null)
-            slash.GetComponent<Rigidbody2D>().position = movementDirection*0.5f + (Vector2)transform.position;
     }
 
     void Animate()
@@ -135,26 +138,19 @@ public class PlayerController : MonoBehaviour
 
     void Slash()
     {
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump") && !slash)
+        {
             // Prevents user from attacking again until the slash is complete
-            if (slash == null)
-            {
-                // If the player is moving
-                if (movementDirection != Vector2.zero)
-                {
-                    // Instantiate slash game object
-                    slash = Instantiate(slashPrefab, movementDirection * 0.5f + (Vector2)transform.position, Quaternion.identity);
-                }
-                // If the player is standing still
-                else
-                {
-                    //Unlike above, this instantiation uses different vectors to determine where the prefab will spawn to account for the player standing still.
-                    //In this case, slash prefab does not get a velocity from the player, since they are standing still.
-                    slash = Instantiate(slashPrefab, movementDirection * 0.5f + (Vector2)transform.position, Quaternion.identity);
-                }
-                // Destroy slash object after some duration
-                Destroy(slash, SLASH_DURATION);
-            }
+            slash = true;
+            GetComponentInChildren<PlayerSlash>().anim.SetTrigger("Slash");
+            StartCoroutine("SlashDelay");
+        }
+    }
+
+    IEnumerator SlashDelay()
+    {
+        yield return new WaitForSeconds(SLASH_DURATION);
+        slash = false;
     }
 
 }
