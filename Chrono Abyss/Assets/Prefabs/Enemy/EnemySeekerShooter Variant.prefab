@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySeekerShooter Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3388026084925431782, guid: 525ad3e643bc2c045a7dc52c264a1ce7,
         type: 3}
       propertyPath: m_LocalPosition.x

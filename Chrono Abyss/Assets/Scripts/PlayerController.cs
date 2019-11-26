@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -205,4 +206,18 @@ public class PlayerController : MonoBehaviour
         slash = false;
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            // decrease health
+            currentHealth--;
+            
+            // check if dead and tell game controller to end game
+            if (currentHealth <= 0)
+            {
+                FindObjectOfType<GameController>().gameOver();
+            }
+        }
+    }
 }
