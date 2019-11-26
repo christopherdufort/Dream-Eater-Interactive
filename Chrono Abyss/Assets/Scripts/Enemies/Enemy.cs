@@ -15,7 +15,7 @@ public abstract class Enemy : MonoBehaviour
 	[Space]
 	[Header("Movement")]
 	[SerializeField] protected float moveSpeed;
-	[SerializeField] protected Vector2 direction;
+	[SerializeField] public Vector2 direction;
 
 	[Space]
 	[Header("References")]
@@ -79,12 +79,9 @@ public abstract class Enemy : MonoBehaviour
 		rigidBody.velocity = Vector3.zero;
 		isMoving = false;
 	}
-	
-	// Set the direction of movement
-	// Input: Enemy's intended destination
-	protected void SetDirection(Vector2 destination)
+	public void SetDirection(Vector2 dir)
 	{
-		direction = (destination - (Vector2)this.transform.position).normalized;
+		direction = dir;
 	}
 
 	protected void PlayDeathAnimation()

@@ -6,16 +6,16 @@ using UnityEngine;
 public class SeekerProjectile : EnemyProjectile
 {
 	// Start is called before the first frame update
-	void Start()
+	new void Awake()
 	{
 		InitProjectile();
 	}
 
-	void Update()
+	new void Update()
     {
 		if (!CheckDead())
 		{
-			SetDirection(target.transform.position);     // re-compute direction so projectile can follow player
+			SetDirection(((Vector2)(target.transform.position - transform.position)).normalized);     // re-compute direction so projectile can follow player
 			MoveTowardsCurrentDirection();
 		}
     }

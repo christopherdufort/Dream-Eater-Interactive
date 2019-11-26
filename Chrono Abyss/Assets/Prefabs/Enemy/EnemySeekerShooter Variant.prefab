@@ -96,7 +96,7 @@ PrefabInstance:
         type: 3}
       propertyPath: projectiles.Array.data[0]
       value: 
-      objectReference: {fileID: 700900072372349873, guid: 781f6904747a44148ba021ffd65e4e8e,
+      objectReference: {fileID: 4181269647366352390, guid: 781f6904747a44148ba021ffd65e4e8e,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}

@@ -5,18 +5,20 @@ using UnityEngine;
 // enemy projectile that goes straight to a static target and keeps traveling until it exceeds its max allowed travel range
 public class EnemyProjectile : Enemy
 {
+	[Header("Projectile Stats")]
 	[SerializeField] protected float maxDistance;
 	[SerializeField] protected float distTravelled;
 	[SerializeField] protected bool isIndestructible;
 
 	// Start is called before the first frame update
-	void Start()
+	protected void Awake()
 	{
 		InitProjectile();
+		print(gameObject.name + " initialized!");
 	}
 
 	// Update is called once per frame
-	void Update()
+	protected void Update()
 	{
 		if (!CheckDead())
 		{
@@ -24,7 +26,7 @@ public class EnemyProjectile : Enemy
 		}
 	}
 	
-	private new void OnTriggerEnter2D(Collider2D collision)
+	protected new void OnTriggerEnter2D(Collider2D collision)
 	{
 		PlayerSlash slash = collision.transform.GetComponent<PlayerSlash>();
 		if (slash != null)
@@ -51,8 +53,13 @@ public class EnemyProjectile : Enemy
 					Destroy(this.gameObject);
 				} else
 				{
-					// TODO: What if it hits a wall?
-					// Debug.Log("Enemy projectile hasn't collided with any object of note.");
+					if (collision.transform.CompareTag("Wall"))
+					{
+						Destroy(this.gameObject);
+					} else
+					{
+						// Debug.Log("Enemy projectile hasn't collided with any object of note.");
+					}
 				}
 			}
 		}
@@ -84,6 +91,7 @@ public class EnemyProjectile : Enemy
 		ScaleLevel();
 		distTravelled = 0f;
 		target = GameObject.FindWithTag("Player");
-		SetDirection(target.transform.position);
+		Vector2 dir = ((Vector2)(target.transform.position - transform.position)).normalized;
+		SetDirection(dir);
 	}
 }

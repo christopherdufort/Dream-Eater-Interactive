@@ -136,6 +136,6 @@ MonoBehaviour:
   attackUpMax: 0
   moveSpeedUpMin: 0
   moveSpeedUpMax: 0
-  maxDistance: 6
+  maxDistance: 12
   distTravelled: 0
   isIndestructible: 0
