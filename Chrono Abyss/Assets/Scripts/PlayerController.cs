@@ -30,7 +30,6 @@ public class PlayerController : MonoBehaviour
     [Space]
     [Header("Prefabs:")]
     public GameObject bulletPrefab;
-    public GameObject slashPrefab;
 
     // Private attributes
     private PlayerSlash sword;
@@ -131,14 +130,18 @@ public class PlayerController : MonoBehaviour
             // Reset accleration timer and set movement speed to zero
             acceleratedSpeed = 0f;
             movementSpeed = 0;
-        }          
+        }
 
-        // Get the aim direction vector from target position to player position
-        aimDirection = Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition);
-        aimDirection = aimDirection - (Vector2)transform.position; 
+        // check that game is not paused or over
+        if (Time.timeScale >= 0.005f)
+        {
+            // Get the aim direction vector from target position to player position
+            aimDirection = Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition);
+            aimDirection = aimDirection - (Vector2)transform.position; 
 
-        // isShooting is true when Fire1 button is pressed
-        isShooting = Input.GetButtonUp("Fire1");
+            // isShooting is true when Fire1 button is pressed
+            isShooting = Input.GetButtonUp("Fire1");
+        }
     }
 
     void Move()
@@ -168,8 +171,10 @@ public class PlayerController : MonoBehaviour
     void Shoot()
     {
         // If shooting
-        if (isShooting)
+        if (isShooting && currentAmmo > 0)
         {
+            currentAmmo--;
+            
             // Get normalized shooting direction from crosshair position (which is tied to mouse)
             Vector2 shootingDirection = crosshair.transform.localPosition;
             shootingDirection.Normalize();

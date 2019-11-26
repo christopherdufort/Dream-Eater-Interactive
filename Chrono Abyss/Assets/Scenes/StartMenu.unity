@@ -437,8 +437,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 91af15bb722004c1f8e7c80e4a4a8611, type: 3}
-    m_FontSize: 64
+    m_Font: {fileID: 12800000, guid: 79750d9c3ebcc425186152e454d5437e, type: 3}
+    m_FontSize: 72
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -818,7 +818,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ac9cde9a4eeae4a37b8b2f6829eff170, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72cda3b3a6c164555a57234fa05f8221, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -837,8 +837,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570705585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.13, y: 0.01, z: 0}
-  m_LocalScale: {x: 0.33920887, y: 0.33920887, z: 0.33920887}
+  m_LocalPosition: {x: 0.93, y: 0.49, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.33920887}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

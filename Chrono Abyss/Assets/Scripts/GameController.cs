@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    [Header("References to UI Menus")]
     public GameObject pauseScreen;
+    public GameObject gameOverScreen;
 
     private int level = 1;
-    private bool gamePaused;
 
     // Start is called before the first frame update
     void Start()
     {
-        gamePaused = false;
     }
 
     // Update is called once per frame
@@ -29,6 +29,13 @@ public class GameController : MonoBehaviour
     public int getLevel()
     {
         return level;
+    }
+
+    public void gameOver()
+    {
+        // show game over menu and set time scale to 0
+        gameOverScreen.SetActive(true);
+        Time.timeScale = 0.0f;
     }
 
     private void pause()
