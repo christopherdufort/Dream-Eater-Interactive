@@ -1887,9 +1887,9 @@ GameObject:
   - component: {fileID: 5757695846621898210}
   - component: {fileID: 5757695846621898209}
   - component: {fileID: 5757695846621898211}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dungeon Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2568,16 +2568,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5757695846657312952}
     m_Modifications:
-    - target: {fileID: 1829027832335481137, guid: 361e751dbcc58fb4ba1670874017aeae,
-        type: 3}
-      propertyPath: spawnValues.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307567153205971111, guid: 361e751dbcc58fb4ba1670874017aeae,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemySpawner
-      objectReference: {fileID: 0}
     - target: {fileID: 4307567153205971110, guid: 361e751dbcc58fb4ba1670874017aeae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2633,6 +2623,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1829027832335481137, guid: 361e751dbcc58fb4ba1670874017aeae,
+        type: 3}
+      propertyPath: spawnValues.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307567153205971111, guid: 361e751dbcc58fb4ba1670874017aeae,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemySpawner
+      objectReference: {fileID: 0}
     - target: {fileID: 4307567153205971109, guid: 361e751dbcc58fb4ba1670874017aeae,
         type: 3}
       propertyPath: canSpawnEnemies
@@ -2653,11 +2653,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5757695846657312952}
     m_Modifications:
-    - target: {fileID: 6752188855095497524, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: m_Name
-      value: HazardSpawner
-      objectReference: {fileID: 0}
     - target: {fileID: 8533280009294346860, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2712,6 +2707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6752188855095497524, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: m_Name
+      value: HazardSpawner
       objectReference: {fileID: 0}
     - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
         type: 3}

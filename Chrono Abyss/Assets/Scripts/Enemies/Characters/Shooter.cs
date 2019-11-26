@@ -6,42 +6,33 @@ public class Shooter : EnemyCharacer
 {
 	[Space]
 	[Header ("Projectiles")]
-	[SerializeField] protected EnemyProjectile[] projectiles;
+	[SerializeField] protected GameObject[] projectiles;
 
 	[Space]
 	[SerializeField] protected float minComfortDistance;
 
 	// Start is called before the first frame update
-	void Start()
+	protected void Start()
 	{
 		EnemyInitialize();
 	}
 
     // Update is called once per frame
-    void Update()
+    protected void Update()
 	{
 		EnemyUpdateLoopStart();
-
-		Vector2 playerToEnemy = (Vector2)(transform.position - target.transform.position);
-		if (playerToEnemy.magnitude < minComfortDistance)
-		{
-			MaintainDistanceFromPlayer(playerToEnemy);
-
-		} else
-		{
-			ChargeAtPlayer();
-		}
-
+		ShooterAction();
 		animator.SetBool("isMoving", isMoving);
 		animator.SetBool("isAttacking", isAttacking);
 	}
 	
 	protected void MaintainDistanceFromPlayer(Vector2 playerToEnemy)
 	{
-		SetDirection((Vector2)transform.position + playerToEnemy);
+		SetDirection(((Vector2)playerToEnemy).normalized);
 		MoveTowardsCurrentDirection();
 		AttackPlayer();
-		isMoving = false;		// for animator; don't want movement animation
+		isMoving = true;
+		isAttacking = false;
 	}
 
 	protected override void AttackPlayer()
@@ -52,6 +43,21 @@ public class Shooter : EnemyCharacer
 			attackCooldownCountdown = attackCooldown;
 		}
 		FacePlayerWhenAttacking();
+	}
+	
+	// determines whether shooter-type enemy should back off or go on the offensive
+	protected void ShooterAction()
+	{
+		Vector2 playerToEnemy = (Vector2)(transform.position - target.transform.position);
+		if (playerToEnemy.magnitude < minComfortDistance)
+		{
+			MaintainDistanceFromPlayer(playerToEnemy);
+
+		}
+		else
+		{
+			ChargeAtPlayer();
+		}
 	}
 
 	protected void Strafe()

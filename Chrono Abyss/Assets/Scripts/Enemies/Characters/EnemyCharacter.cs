@@ -48,7 +48,7 @@ public abstract class EnemyCharacer : Enemy
 
 	protected void MoveTowardsPlayer()
 	{
-		SetDirection(target.transform.position);
+		SetDirection(((Vector2)(target.transform.position - transform.position)).normalized);
 		animator.SetFloat("moveX", direction.x);
 		animator.SetFloat("moveY", direction.y);
 		MoveTowardsCurrentDirection();
