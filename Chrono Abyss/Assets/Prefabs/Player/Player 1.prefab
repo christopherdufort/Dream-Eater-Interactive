@@ -271,6 +271,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8300647409870469604}
   - component: {fileID: 6282009064523031030}
+  - component: {fileID: 3223191909323308426}
+  - component: {fileID: 3805315180165961068}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -329,7 +331,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -3753825769889500098, guid: af2a85d5f91ea4482b1fc3592a9a2bea,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -342,6 +344,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3223191909323308426
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8690850466014025546}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 741ff58438c62c74099fe8712e331ef4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3805315180165961068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8690850466014025546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5394af48c0d6cc4eaf9a384a622cf27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackValue: 5
+  anim: {fileID: 3223191909323308426}
 --- !u!1001 &467803152599147076
 PrefabInstance:
   m_ObjectHideFlags: 0
