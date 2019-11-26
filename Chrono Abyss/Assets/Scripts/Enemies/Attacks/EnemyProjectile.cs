@@ -14,7 +14,6 @@ public class EnemyProjectile : Enemy
 	protected void Awake()
 	{
 		InitProjectile();
-		print(gameObject.name + " initialized!");
 	}
 
 	// Update is called once per frame
