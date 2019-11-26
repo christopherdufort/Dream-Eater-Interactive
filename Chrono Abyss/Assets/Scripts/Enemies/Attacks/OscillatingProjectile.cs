@@ -36,6 +36,6 @@ public class OscillatingProjectile : EnemyProjectile
 
 		Vector2 origPosition = transform.position;
 		transform.Translate(new Vector3(moveSpeed * Time.deltaTime, amplitude * oscillation, 0f));
-		return ((Vector2)transform.position - origPosition).normalized;
+		return ((Vector2)transform.position - origPosition).magnitude;
 	}
 }
