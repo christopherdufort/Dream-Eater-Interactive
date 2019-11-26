@@ -19,10 +19,11 @@ public class OscillatingProjectile : EnemyProjectile
 	{
 		if (!CheckDead())
 		{
-			MoveTowardsCurrentDirection();
+			distTravelled += MoveTowardsCurrentDirection();
 		}
 	}
 
+	// returns distance travelled
 	protected new float MoveTowardsCurrentDirection()
 	{
 		if (sinTimerCur > 2 * Mathf.PI)
