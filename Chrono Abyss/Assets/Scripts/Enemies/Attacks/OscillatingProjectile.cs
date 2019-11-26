@@ -33,7 +33,8 @@ public class OscillatingProjectile : EnemyProjectile
 		float oscillation = Mathf.Cos(frequency * sinTimerCur) * moveSpeed * Time.deltaTime;
 		sinTimerCur += Time.deltaTime;
 
+		Vector2 origPosition = transform.position;
 		transform.Translate(new Vector3(moveSpeed * Time.deltaTime, amplitude * oscillation, 0f));
-		return 0f;
+		return ((Vector2)transform.position - origPosition).normalized;
 	}
 }
