@@ -36,9 +36,16 @@ public class PlayerController : MonoBehaviour
     private PlayerSlash sword;
     private bool slash;
     private float acceleratedSpeed;
+    private int maxHealth = 10;
+    private int currentHealth;
+    private int maxAmmo = 6;
+    private int currentAmmo;
 
 	void Start()
-	{
+    {
+        currentHealth = maxHealth;
+        currentAmmo = maxAmmo;
+        
 		rigidBody.freezeRotation = true;
         updatePosition();
 
@@ -57,6 +64,46 @@ public class PlayerController : MonoBehaviour
         Slash();
     }
 
+    public void setTotalHealth(int newHealth)
+    {
+        maxHealth = newHealth > 0 ? newHealth : maxHealth;
+    }
+
+    public int getMaxHealth()
+    {
+        return maxHealth;
+    }
+
+    public void setCurrentHealth(int newHealth)
+    {
+        currentHealth = newHealth;
+    }
+
+    public int getCurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    public void setMaxAmmo(int newAmmo)
+    {
+        maxAmmo = newAmmo > 0 ? newAmmo : maxAmmo;
+    }
+
+    public int getMaxAmmo()
+    {
+        return maxAmmo;
+    }
+    
+    public void setCurrentAmmo(int newAmmo)
+    {
+        currentAmmo = newAmmo;
+    }
+
+    public int getCurrentAmmo()
+    {
+        return currentAmmo;
+    }
+    
     void updatePosition()
     {
         playerPosition = transform.position;
