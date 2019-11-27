@@ -41,12 +41,12 @@ public class PlayerController : MonoBehaviour
     private int maxAmmo = 6;
     private int currentAmmo;
 
-	void Start()
+    void Start()
     {
         currentHealth = maxHealth;
         currentAmmo = maxAmmo;
-        
-		rigidBody.freezeRotation = true;
+
+	rigidBody.freezeRotation = true;
         updatePosition();
 
         sword = GetComponentInChildren<PlayerSlash>();
@@ -205,10 +205,11 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(SLASH_DURATION);
         slash = false;
     }
-
-    private void OnCollisionEnter2D(Collision2D other)
+    
+    //subroutine for collision, as both are the same.
+    private collision_subroutine(Collision2D input)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (input.gameObject.CompareTag("Enemy"))
         {
             // decrease health
             currentHealth--;
@@ -221,18 +222,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        collision_subroutine(other);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            // decrease health
-            currentHealth--;
-            
-            // check if dead and tell game controller to end game
-            if (currentHealth <= 0)
-            {
-                FindObjectOfType<GameController>().gameOver();
-            }
-        }
+        collision_subroutine(other);
     }
 }
