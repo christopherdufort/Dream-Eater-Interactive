@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1021725994392096418}
   m_Layer: 0
   m_Name: EnemyMook
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -147,17 +147,25 @@ MonoBehaviour:
   level: 1
   maxHitPoints: 10
   curHitPoints: 10
+  attackValue: 0
   moveSpeed: 1
+  direction: {x: 0, y: 0}
   rigidBody: {fileID: 2315619441715124839}
   animator: {fileID: 1021725994392096418}
   deathAnimation: {fileID: 2641435792014465527, guid: 115f80347ef548240a5e810a2ce48ead,
     type: 3}
-  basicAttack: 0
+  target: {fileID: 0}
+  hitPointUpMin: 0
+  hitPointUpMax: 0
+  attackUpMin: 0
+  attackUpMax: 0
+  moveSpeedUpMin: 0
+  moveSpeedUpMax: 0
   attackRange: 1.25
   attackCooldown: 0
   attackCooldownCountdown: 0
-  playerObj: {fileID: 0}
-  playerPos: {x: 0, y: 0}
+  droppableLoot: []
+  dropOdds: []
 --- !u!95 &1021725994392096418
 Animator:
   serializedVersion: 3

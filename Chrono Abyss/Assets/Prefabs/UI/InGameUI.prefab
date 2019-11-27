@@ -1097,6 +1097,7 @@ GameObject:
   - component: {fileID: 372063246565024445}
   - component: {fileID: 5719032165493820735}
   - component: {fileID: 6954948048265273217}
+  - component: {fileID: 3268831229860402628}
   m_Layer: 5
   m_Name: TimerFull
   m_TagString: Untagged
@@ -1159,6 +1160,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3268831229860402628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7228508385291581841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32bc162fea64c4201a6263d1a1e46f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9022737886836022227
 GameObject:
   m_ObjectHideFlags: 0
