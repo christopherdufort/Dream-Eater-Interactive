@@ -12,7 +12,7 @@ TagManager:
   - ClosedRoom
   - Destroyer
   - RoomTemplates
-  - Enemy
+  - Wall
   layers:
   - Default
   - TransparentFX
