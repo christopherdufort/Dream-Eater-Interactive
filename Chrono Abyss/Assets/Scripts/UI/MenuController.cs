@@ -9,7 +9,9 @@ public class MenuController : MonoBehaviour
 {
     public void startGame()
     {
-        SceneManager.LoadScene("Level");
+        //Have GameController choose a random floor type from the enum list, then load the scene associated with that theme.
+        SceneManager.LoadScene("DungeonFloor");
+        //SceneManager.LoadScene("LavaFloor");
     }
 
     public void quitGame()
