@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -43,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = movementSpeed;
         currentHealth = maxHealth;
         currentAmmo = maxAmmo;
 
@@ -112,7 +111,7 @@ public class PlayerController : MonoBehaviour
     void CheckInputs()
     {
         // How long the player has been accelerating
-        acceleratedSpeed += Mathf.Clamp(Time.deltaTime * PLAYER_BASE_ACCELERATION, 0.0f, 1.0f);
+        acceleratedSpeed += Mathf.Clamp(Time.deltaTime * PLAYER_BASE_ACCELERATION, 0.0125f, 1.0f);
             
         // If player is moving
         if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
@@ -120,8 +119,8 @@ public class PlayerController : MonoBehaviour
             // Get a movement direction vector from user input and normalize it. Get speed from this vector. 
             movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             movementDirection.Normalize();
-            movementSpeed = Mathf.Clamp(acceleratedSpeed, 0.0f, 1.0f);
-            
+            movementSpeed = Mathf.Clamp(acceleratedSpeed, 0.0125f, 1.0f);
+
             // send player direction to sword
             sword.setDir(movementDirection);
         }
@@ -130,8 +129,9 @@ public class PlayerController : MonoBehaviour
         {
             // Reset accleration timer and set movement speed to zero
             acceleratedSpeed = 0f;
-            movementSpeed = 0;
+            movementSpeed = 0.0125f;
         }
+        Time.timeScale = movementSpeed;
 
         // check that game is not paused or over
         if (Time.timeScale >= 0.005f)
