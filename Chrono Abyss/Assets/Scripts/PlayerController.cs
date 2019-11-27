@@ -205,11 +205,10 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(SLASH_DURATION);
         slash = false;
     }
-    
-    //subroutine for collision, as both are the same.
-    private collision_subroutine(Collision2D input)
+
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (input.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             // decrease health
             currentHealth--;
@@ -222,13 +221,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        collision_subroutine(other);
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        collision_subroutine(other);
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            // decrease health
+            currentHealth--;
+            
+            // check if dead and tell game controller to end game
+            if (currentHealth <= 0)
+            {
+                FindObjectOfType<GameController>().gameOver();
+            }
+        }
     }
 }
