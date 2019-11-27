@@ -10,6 +10,7 @@ public class TimerController : MonoBehaviour
     private float maxTime;
     private float currentTime;
     private bool timerGo;
+    private bool reset;
     private RectTransform rectTransform;
     private Vector3 originalPos;
     
@@ -36,7 +37,7 @@ public class TimerController : MonoBehaviour
             rectTransform.localScale = new Vector3(scale, 1, 1);
             rectTransform.position = new Vector3(pos + 100, rectTransform.position.y, rectTransform.position.z);
         }
-        else
+        else if (reset)
         {
             ResetTimer();
         }
@@ -50,11 +51,14 @@ public class TimerController : MonoBehaviour
         
         // run timer
         timerGo = true;
+        // need to reset time after its done
+        reset = true;
     }
 
     private void ResetTimer()
     {
         timerGo = false;
+        reset = false;
         currentTime = maxTime;
         rectTransform.localScale = new Vector3(1, 1, 1);
         rectTransform.position = originalPos;
