@@ -1645,7 +1645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5878722198674451837}
   - component: {fileID: 5878722198674451836}
-  - component: {fileID: 686683027985147205}
+  - component: {fileID: 3411913685382047005}
   m_Layer: 0
   m_Name: R
   m_TagString: Untagged
@@ -1687,7 +1687,7 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &686683027985147205
+--- !u!114 &3411913685382047005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1696,17 +1696,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5878722198674451834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f691ae601336e141a8280b5c6303d29, type: 3}
+  m_Script: {fileID: 11500000, guid: f0e4c52f8bea2534a8e967d63d7be1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 2315619441715124835, guid: 669be7f057cbb8348a0fde41dca27167, type: 3}
-  - {fileID: 7878037983573983547, guid: 512abcd8b0fcee24a9723a5d9869061e, type: 3}
-  - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
-  - {fileID: 409236493397324246, guid: 46ca7d52394e6e04697aa7a6c8530912, type: 3}
-  spawnValues: {x: 4, y: 4}
-  spawnEnemiesAmtSet: 4
-  curEnemiesAmt: 0
 --- !u!1 &5878722199179886626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,6 +2590,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5878722198674451837}
     m_Modifications:
+    - target: {fileID: 6752188855095497524, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: m_Name
+      value: HazardSpawner
+      objectReference: {fileID: 0}
     - target: {fileID: 8533280009294346860, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2653,11 +2650,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6752188855095497524, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: m_Name
-      value: HazardSpawner
-      objectReference: {fileID: 0}
     - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
         type: 3}
       propertyPath: spawnValues.x
@@ -2683,6 +2675,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5878722198674451837}
     m_Modifications:
+    - target: {fileID: 4307567153205971111, guid: 361e751dbcc58fb4ba1670874017aeae,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemySpawner
+      objectReference: {fileID: 0}
     - target: {fileID: 4307567153205971110, guid: 361e751dbcc58fb4ba1670874017aeae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2742,11 +2739,6 @@ PrefabInstance:
         type: 3}
       propertyPath: spawnValues.x
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307567153205971111, guid: 361e751dbcc58fb4ba1670874017aeae,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 4307567153205971109, guid: 361e751dbcc58fb4ba1670874017aeae,
         type: 3}

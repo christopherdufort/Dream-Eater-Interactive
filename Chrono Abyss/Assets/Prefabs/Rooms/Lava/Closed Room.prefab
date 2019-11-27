@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8064915683120151285}
   - component: {fileID: 8064915683120151284}
-  - component: {fileID: 4113088604126356121}
   m_Layer: 0
   m_Name: Closed Room
   m_TagString: Untagged
@@ -47,26 +46,6 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!114 &4113088604126356121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8064915683120151282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f691ae601336e141a8280b5c6303d29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 2315619441715124835, guid: 669be7f057cbb8348a0fde41dca27167, type: 3}
-  - {fileID: 7878037983573983547, guid: 512abcd8b0fcee24a9723a5d9869061e, type: 3}
-  - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
-  - {fileID: 409236493397324246, guid: 46ca7d52394e6e04697aa7a6c8530912, type: 3}
-  spawnValues: {x: 4, y: 4}
-  spawnEnemiesAmtSet: 4
-  curEnemiesAmt: 0
 --- !u!1 &8064915683554219946
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +73,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8064915683554219946}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8064915683120151285}
@@ -733,7 +712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8064915684027219911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8064915683120151285}
@@ -2142,7 +2121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8064915684475069365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8064915683120151285}
