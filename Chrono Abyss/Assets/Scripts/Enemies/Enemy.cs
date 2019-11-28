@@ -99,4 +99,14 @@ public abstract class Enemy : MonoBehaviour
 			moveSpeed += Random.Range(moveSpeedUpMin, moveSpeedUpMax);
 		}
 	}
+
+	public float GetMaxHealth()
+	{
+		return maxHitPoints;
+	}
+
+	public float GetCurrentHealth()
+	{
+		return curHitPoints;
+	}
 }
