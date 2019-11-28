@@ -3001,11 +3001,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3112494663328417928}
     m_Modifications:
-    - target: {fileID: 4047390749392369747, guid: a474e532522d6ac47ba3eb68eaa1da95,
-        type: 3}
-      propertyPath: m_Name
-      value: LavaDoorRight
-      objectReference: {fileID: 0}
     - target: {fileID: 4047390749392369744, guid: a474e532522d6ac47ba3eb68eaa1da95,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3070,6 +3065,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047390749392369747, guid: a474e532522d6ac47ba3eb68eaa1da95,
+        type: 3}
+      propertyPath: m_Name
+      value: LavaDoorRight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a474e532522d6ac47ba3eb68eaa1da95, type: 3}
@@ -3166,11 +3166,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3112494663328417928}
     m_Modifications:
-    - target: {fileID: 4047390749392369747, guid: 8e4c3179bbc0a204c8f7dcf44b2da83d,
-        type: 3}
-      propertyPath: m_Name
-      value: LavaDoorLeft
-      objectReference: {fileID: 0}
     - target: {fileID: 4047390749392369744, guid: 8e4c3179bbc0a204c8f7dcf44b2da83d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3235,6 +3230,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047390749392369747, guid: 8e4c3179bbc0a204c8f7dcf44b2da83d,
+        type: 3}
+      propertyPath: m_Name
+      value: LavaDoorLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e4c3179bbc0a204c8f7dcf44b2da83d, type: 3}

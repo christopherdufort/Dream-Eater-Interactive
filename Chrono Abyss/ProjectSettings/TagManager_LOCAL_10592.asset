@@ -14,8 +14,7 @@ TagManager:
   - RoomTemplates
   - Wall
   - Enemy
-  - RoomFog
-  - EnemySpawner
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -25,7 +24,7 @@ TagManager:
   - UI
   - 
   - 
-  - FogLayer
+  - 
   - 
   - 
   - 
@@ -50,9 +49,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: FogLayer
-    uniqueID: 1962960973
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

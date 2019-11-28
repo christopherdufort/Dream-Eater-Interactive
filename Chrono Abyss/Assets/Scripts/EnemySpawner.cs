@@ -7,8 +7,9 @@ public class EnemySpawner : MonoBehaviour
 {
 	public GameObject[] enemies;
 	public Vector2 spawnValues;
+    public bool startSpawningEnemies;
 
-	private int randEnemy;
+    private int randEnemy;
 
 	[SerializeField] public int spawnEnemiesAmtSet = 4;
 	[SerializeField] public int curEnemiesAmt;
@@ -16,14 +17,23 @@ public class EnemySpawner : MonoBehaviour
 	void Start()
     {
 		curEnemiesAmt = 0;
+        startSpawningEnemies = false;
 
-		while (curEnemiesAmt < spawnEnemiesAmtSet)
-		{
-			SpawnEnemy();
-		}
-	}
-	
-	void SpawnEnemy()
+    }
+
+    /**
+     * Initiate enemy spawning externally when room trigger is activated.
+     *
+     **/ 
+    public void InitiateEnemySpawn()
+    {
+        while (curEnemiesAmt < spawnEnemiesAmtSet)
+        {
+        	SpawnEnemy();
+        }
+    }
+
+    void SpawnEnemy()
 	{
 		randEnemy = Random.Range(0, enemies.Length);
 
