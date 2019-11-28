@@ -5,22 +5,21 @@ using UnityEngine.UI;
 
 public class EnemyHealthBar : MonoBehaviour
 {
-    // reference to player
-    private Shooter enemyController;
+    [SerializeField] private Enemy enemy;
+
     private float maxHealth;
     
     // Start is called before the first frame update
     void Start()
     {
-        enemyController = GetComponentInParent<Shooter>();
-        maxHealth = enemyController.GetMaxHealth();
+        maxHealth = enemy.GetMaxHealth();
     }
 
     // Update is called once per frame
     void Update()
     {
         // get player health
-        float currentHealth = enemyController.GetCurrentHealth();
+        float currentHealth = enemy.GetCurrentHealth();
         
         // calculate health bar's new scale and pos
         float scale = currentHealth / maxHealth;
