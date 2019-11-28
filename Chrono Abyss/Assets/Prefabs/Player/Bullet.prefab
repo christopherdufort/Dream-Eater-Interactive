@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5986367911543917816}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,3 +163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackValue: 2
+  BULLET_DURATION: 3
+  BULLET_BASE_SPEED: 1
+  rigidBody: {fileID: 0}
+  trajectory: {x: 0, y: 0}
+  bulletTimer: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4307567153205971111
+--- !u!1 &3395890393951951395
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4307567153205971110}
-  - component: {fileID: 1829027832335481137}
+  - component: {fileID: 7339407035854513092}
+  - component: {fileID: 368866701205753663}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: ProjectileSpray
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4307567153205971110
+--- !u!4 &7339407035854513092
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4307567153205971111}
+  m_GameObject: {fileID: 3395890393951951395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,23 +31,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1829027832335481137
+--- !u!114 &368866701205753663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4307567153205971111}
+  m_GameObject: {fileID: 3395890393951951395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f691ae601336e141a8280b5c6303d29, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f9c5e3c985b1424da0204c183aaf6c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies:
-  - {fileID: 2315619441715124835, guid: 669be7f057cbb8348a0fde41dca27167, type: 3}
-  - {fileID: 7878037983573983547, guid: 512abcd8b0fcee24a9723a5d9869061e, type: 3}
-  - {fileID: 3388026084925431780, guid: 525ad3e643bc2c045a7dc52c264a1ce7, type: 3}
-  - {fileID: 8958730296040427863, guid: 9457d35729ab5c044bbe99d217a03c39, type: 3}
-  spawnValues: {x: -4, y: 4}
-  spawnEnemiesAmtSet: 4
-  curEnemiesAmt: 0
+  numOfBullets: 19
+  sprayAngle: 60
+  projectileObj: {fileID: 8260248437830479585, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
+    type: 3}
+  firstBulletObj: {fileID: 0}
+  angleStep: 0

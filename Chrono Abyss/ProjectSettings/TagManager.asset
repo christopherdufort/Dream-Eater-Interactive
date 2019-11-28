@@ -13,6 +13,8 @@ TagManager:
   - Destroyer
   - RoomTemplates
   - Wall
+  - Enemy
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
