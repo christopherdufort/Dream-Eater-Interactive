@@ -1,22 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &700900072372349873
+--- !u!114 &8696867314951180290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4181269647366352390}
+  m_GameObject: {fileID: 4507604493773655202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b524174f64f6f8b4596a16186b3014be, type: 3}
+  m_Script: {fileID: 11500000, guid: b0e519cbd3300434fb4d1c21ecc74091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
   maxHitPoints: 1
   curHitPoints: 1
   attackValue: 1
-  moveSpeed: 3
+  moveSpeed: 1.5
   direction: {x: 0, y: 0}
   rigidBody: {fileID: 0}
   animator: {fileID: 0}
@@ -28,10 +28,10 @@ MonoBehaviour:
   attackUpMax: 0
   moveSpeedUpMin: 0
   moveSpeedUpMax: 0
-  maxDistance: 6
+  maxDistance: 20
   distTravelled: 0
   isIndestructible: 0
---- !u!1001 &5234474314341318887
+--- !u!1001 &5488892162328830531
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -41,7 +41,7 @@ PrefabInstance:
     - target: {fileID: 8260248437830479585, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
         type: 3}
       propertyPath: m_Name
-      value: SeekerEnemyProjectile Variant
+      value: TimeCreeperSeekerProjectile
       objectReference: {fileID: 0}
     - target: {fileID: 8260248437830479585, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
         type: 3}
@@ -111,24 +111,24 @@ PrefabInstance:
     - target: {fileID: 8260248437830479598, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.9339623
+      value: 0.19122791
       objectReference: {fileID: 0}
     - target: {fileID: 8260248437830479598, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.057271298
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8260248437830479598, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.20325589
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8260248437830479596, guid: 0fbeba43e075dae49a3d0c4f8424f3eb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0fbeba43e075dae49a3d0c4f8424f3eb, type: 3}
---- !u!1 &4181269647366352390 stripped
+--- !u!1 &4507604493773655202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8260248437830479585, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
     type: 3}
-  m_PrefabInstance: {fileID: 5234474314341318887}
+  m_PrefabInstance: {fileID: 5488892162328830531}
   m_PrefabAsset: {fileID: 0}

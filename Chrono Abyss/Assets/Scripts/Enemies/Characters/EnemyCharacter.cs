@@ -59,7 +59,6 @@ public abstract class EnemyCharacer : Enemy
 	protected void EnemyInitialize()
 	{
 		attackCooldownCountdown = attackCooldown;
-		rigidBody.freezeRotation = true;
 		curHitPoints = maxHitPoints;
 		target = GameObject.FindWithTag("Player");
 	}
