@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 549d501b3aac94ab5a6047c18e27ac5a
   - enabled: 1
+    path: Assets/Scenes/DungeonFloor.unity
+    guid: fd84330d002745e4eb017d019b141565
+  - enabled: 1
+    path: Assets/Scenes/LavaFloor.unity
+    guid: 6863354d507c10e4cb739c640a8c9a96
+  - enabled: 0
     path: Assets/Scenes/Level.unity
     guid: dc47f9b8520f14b2bace9fe3a3e39562
   m_configObjects: {}
