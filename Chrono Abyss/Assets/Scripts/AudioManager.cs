@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
         foreach (Sound s in sounds)
         {
             if (s.source.loop != true)
-                s.source.pitch = Mathf.Clamp(Time.timeScale, 0.25f, 1.0f);
+                s.source.pitch = Mathf.Clamp(Time.timeScale, 0.4f, 1.0f);
         }
     }
 

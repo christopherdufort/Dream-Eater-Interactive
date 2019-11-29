@@ -230,40 +230,33 @@ GameObject:
 --- !u!114 &448949228
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3038743009978088679, guid: 0d82fa72c91a2aa4881018b9e124d514,
-    type: 3}
-  m_PrefabInstance: {fileID: 3038743010150160139}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448949227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2294b8eb0aacd4a4abc7a47f3678c68a, type: 3}
+  m_Script: {fileID: 11500000, guid: 46b2a3ca1eddf454494573f88ae10742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
   - name: Shoot
-    clip: {fileID: 8300000, guid: 9c7cece1a69cbbc41897aae54aac65f4, type: 3}
+    clip: {fileID: 8300000, guid: 45d631c3a8451ae47b43fa6ff23b507c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MookDeath
+    clip: {fileID: 8300000, guid: 4522c310e9a3475469c7af37300eef2f, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Dungeon
-    clip: {fileID: 8300000, guid: ad53910ace4cd844e9b593de14d9a3a0, type: 3}
-    volume: 0.764
+    clip: {fileID: 8300000, guid: 9aedf75b83edb41499a442d66e0c0c37, type: 3}
+    volume: 0.855
     pitch: 1
     loop: 1
-    source: {fileID: 0}
-  - name: MookDeath
-    clip: {fileID: 8300000, guid: 2423c44e1f3aae343b3ee51a0bcf3708, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Sword
-    clip: {fileID: 8300000, guid: e02fb4cbb5c6f184d9ff42a996df8ccc, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
     source: {fileID: 0}
 --- !u!4 &448949229
 Transform:
@@ -1070,5 +1063,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0d82fa72c91a2aa4881018b9e124d514, type: 3}

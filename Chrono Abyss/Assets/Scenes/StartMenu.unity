@@ -484,18 +484,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 610712150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2294b8eb0aacd4a4abc7a47f3678c68a, type: 3}
+  m_Script: {fileID: 11500000, guid: 46b2a3ca1eddf454494573f88ae10742, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
   - name: StartMenu
-    clip: {fileID: 8300000, guid: c8053db0f7d8a8b45bc5526bc1729a77, type: 3}
+    clip: {fileID: 8300000, guid: 2375fc2a6c59bea4c80407de5709be18, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Button
-    clip: {fileID: 8300000, guid: 4d78267888915a445bf367670817da31, type: 3}
+    clip: {fileID: 8300000, guid: beda8106039781049a649c398b27f69a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
