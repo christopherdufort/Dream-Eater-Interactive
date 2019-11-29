@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class RoomActivation : MonoBehaviour
 {
-    public GameObject roomFog;
-    private GameObject roomFogObject;
+    public GameObject roomFogPrefab;
+    private GameObject roomFogInstance;
     public EnemySpawner enemySpawnerInRoom;
 
     // Start is called before the first frame update
     void Start()
     {
-        roomFogObject = Instantiate(roomFog, transform.position, Quaternion.identity); 
+        roomFogInstance = Instantiate(roomFogPrefab, transform.position, Quaternion.identity); 
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            roomFogObject.SetActive(false);
+            roomFogInstance.SetActive(false);
             enemySpawnerInRoom.InitiateEnemySpawn();
         }
     }

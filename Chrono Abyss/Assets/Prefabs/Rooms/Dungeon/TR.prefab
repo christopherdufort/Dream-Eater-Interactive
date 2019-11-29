@@ -2941,6 +2941,12 @@ PrefabInstance:
       propertyPath: enemySpawnerInRoom
       value: 
       objectReference: {fileID: 7430342991357036580}
+    - target: {fileID: 9197600776519606603, guid: 98c1fc0479d1b634ebfaf4328511d16b,
+        type: 3}
+      propertyPath: roomFogPrefab
+      value: 
+      objectReference: {fileID: 1233810601037342027, guid: f6d552fbddf9ac4468c3745ebad7983c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c1fc0479d1b634ebfaf4328511d16b, type: 3}
 --- !u!4 &7586979921675538495 stripped
