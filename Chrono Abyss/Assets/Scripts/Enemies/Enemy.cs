@@ -11,6 +11,7 @@ public abstract class Enemy : MonoBehaviour
 	[SerializeField] protected float maxHitPoints;
 	[SerializeField] protected float curHitPoints;
 	[SerializeField] protected float attackValue;
+	[SerializeField] protected bool canGetSlashed = true;
 
 	[Space]
 	[Header("Movement")]
@@ -45,13 +46,9 @@ public abstract class Enemy : MonoBehaviour
 
 	protected void OnTriggerEnter2D(Collider2D collision)
 	{
-		PlayerSlash slash = collision.transform.GetComponent<PlayerSlash>();
 		PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
 
-		if (slash != null)
-		{
-			this.curHitPoints -= slash.attackValue;
-		} else if (bullet != null)
+		if (bullet != null)
 		{
 			this.curHitPoints -= bullet.attackValue;
 			Destroy(collision.gameObject);
@@ -108,5 +105,25 @@ public abstract class Enemy : MonoBehaviour
 	public float GetCurrentHealth()
 	{
 		return curHitPoints;
+	}
+
+	protected void OnTriggerStay2D(Collider2D collision)
+	{
+		PlayerSlash slash = collision.transform.GetComponent<PlayerSlash>();
+		if (slash != null)
+		{
+			if ((slash.isSlashing) && canGetSlashed)
+			{
+				curHitPoints -= slash.attackValue;
+				canGetSlashed = false;
+				StartCoroutine("NextSlashDamageDelay", slash);
+			}
+		}
+	}
+
+	protected IEnumerator NextSlashDamageDelay(PlayerSlash slash)
+	{
+		yield return new WaitForSeconds(slash.slashDurationRemaining);
+		canGetSlashed = true;
 	}
 }

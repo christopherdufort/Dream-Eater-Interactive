@@ -117,10 +117,6 @@ public class TimeCreeper : Shooter
 		{
 			// TODO: Hurt player
 		}
-		else if (collision.CompareTag("PlayerSword"))
-		{
-			// TODO: Hurt Time Creeper
-		}
 		else if (collision.CompareTag("PlayerBullet"))
 		{
 			// TODO: Hurt Time Creeper
