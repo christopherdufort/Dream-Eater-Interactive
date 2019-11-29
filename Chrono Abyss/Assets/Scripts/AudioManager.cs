@@ -1,6 +1,7 @@
 ﻿using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -21,11 +22,29 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Update()
     {
-        Play("Dungeon");
+        setPitchEffects();
     }
 
+    private void Start()
+    {
+
+        if(SceneManager.GetActiveScene().name == "StartMenu")
+            Play("StartMenu");
+
+        if (SceneManager.GetActiveScene().name == "DungeonFloor")
+            Play("Dungeon");
+    }
+
+    private void setPitchEffects()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.source.loop != true)
+                s.source.pitch = Time.timeScale;
+        }
+    }
 
     public void Play(string name)
     {

@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
     [Header("Base attributes:")]
     public float PLAYER_BASE_SPEED = 2.5f;
     public float PLAYER_BASE_ACCELERATION = 0.5f;
-    public float BULLET_BASE_SPEED = 5.0f;
-    public float BULLET_DURATION = 3.0f;
     public float SLASH_DURATION = 0.125f;
 
     [Space]
@@ -132,7 +130,7 @@ public class PlayerController : MonoBehaviour
             movementSpeed = !slash ? 0.0125f : 0.0f; 
         }
         Time.timeScale = !slash ? movementSpeed : 1.0f;
-        FindObjectOfType<AudioManager>().Pitch("Shoot", Time.timeScale);
+        //FindObjectOfType<AudioManager>().Pitch("Shoot", Time.timeScale);
 
         // check that game is not paused or over
         if (Time.timeScale >= 0.005f)
@@ -172,8 +170,8 @@ public class PlayerController : MonoBehaviour
 
     void Shoot()
     {
-        // If shooting
-        if (isShooting && currentAmmo > 0)
+        // If shooting *** (Unlimited ammo for testing)
+        if (isShooting /*&& currentAmmo > 0*/)
         {
             currentAmmo--;
             FindObjectOfType<AudioManager>().Play("Shoot");

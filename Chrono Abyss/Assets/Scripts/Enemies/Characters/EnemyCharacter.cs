@@ -95,7 +95,8 @@ public abstract class EnemyCharacer : Enemy
 	{
 		if (curHitPoints < float.Epsilon)
 		{
-			PlayDeathAnimation();
+            PlayDeathAnimation();
+            FindObjectOfType<AudioManager>().Play("MookDeath");
 			DropLoot();
 			Destroy(this.gameObject);
 			return true;

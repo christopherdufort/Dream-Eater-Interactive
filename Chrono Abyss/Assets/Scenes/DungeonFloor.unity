@@ -212,8 +212,9 @@ PrefabInstance:
 --- !u!1 &448949227
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3038743009978088672, guid: 0d82fa72c91a2aa4881018b9e124d514,
+    type: 3}
+  m_PrefabInstance: {fileID: 3038743010150160139}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -229,8 +230,9 @@ GameObject:
 --- !u!114 &448949228
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3038743009978088679, guid: 0d82fa72c91a2aa4881018b9e124d514,
+    type: 3}
+  m_PrefabInstance: {fileID: 3038743010150160139}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448949227}
   m_Enabled: 1
@@ -251,11 +253,24 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: MookDeath
+    clip: {fileID: 8300000, guid: 2423c44e1f3aae343b3ee51a0bcf3708, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sword
+    clip: {fileID: 8300000, guid: e02fb4cbb5c6f184d9ff42a996df8ccc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &448949229
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+    type: 3}
+  m_PrefabInstance: {fileID: 3038743010150160139}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448949227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -946,5 +961,109 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1.0471735
       objectReference: {fileID: 0}
+    - target: {fileID: 1452207111059300980, guid: e6c94e590d2022042bffb7f657288b75,
+        type: 3}
+      propertyPath: PLAYER_BASE_SPEED
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452207111059300980, guid: e6c94e590d2022042bffb7f657288b75,
+        type: 3}
+      propertyPath: PLAYER_BASE_ACCELERATION
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452207111059300980, guid: e6c94e590d2022042bffb7f657288b75,
+        type: 3}
+      propertyPath: BULLET_BASE_SPEED
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6c94e590d2022042bffb7f657288b75, type: 3}
+--- !u!1001 &3038743010150160139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3038743009978088672, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088679, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088679, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: MookDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088679, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: sounds.Array.data[2].loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088679, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d82fa72c91a2aa4881018b9e124d514, type: 3}
