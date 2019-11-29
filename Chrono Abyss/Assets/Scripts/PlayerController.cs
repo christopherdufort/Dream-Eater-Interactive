@@ -129,9 +129,9 @@ public class PlayerController : MonoBehaviour
         {
             // Reset accleration timer and set movement speed to zero
             acceleratedSpeed = 0f;
-            movementSpeed = 0.0125f;
+            movementSpeed = !slash ? 0.0125f : 0.0f; 
         }
-        Time.timeScale = movementSpeed;
+        Time.timeScale = !slash ? movementSpeed : 1.0f;
 
         // check that game is not paused or over
         if (Time.timeScale >= 0.005f)
