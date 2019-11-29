@@ -14,8 +14,12 @@ TagManager:
   - RoomTemplates
   - Wall
   - Enemy
+<<<<<<< HEAD
+  - PlayerBullet
+=======
   - RoomFog
   - EnemySpawner
+>>>>>>> added fog to hide room contents and room activats when entered
   layers:
   - Default
   - TransparentFX

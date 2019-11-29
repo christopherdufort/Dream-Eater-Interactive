@@ -21,7 +21,7 @@ public class RoomSpawner : MonoBehaviour
         roomTemplates = GameObject.FindGameObjectWithTag("RoomTemplates").GetComponent<RoomTemplates>();
 
         // Invoke method with delay to avoid spawn collisions
-        Invoke("SpawnRooms", Random.Range(0.5f, 1f));
+        Invoke("SpawnRooms", Random.Range(0.1f, 0.2f));
     }
 
     // Update is called once per frame
