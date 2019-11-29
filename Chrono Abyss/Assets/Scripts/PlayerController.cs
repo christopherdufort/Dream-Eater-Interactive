@@ -132,6 +132,7 @@ public class PlayerController : MonoBehaviour
             movementSpeed = !slash ? 0.0125f : 0.0f; 
         }
         Time.timeScale = !slash ? movementSpeed : 1.0f;
+        FindObjectOfType<AudioManager>().Pitch("Shoot", Time.timeScale);
 
         // check that game is not paused or over
         if (Time.timeScale >= 0.005f)
@@ -175,7 +176,7 @@ public class PlayerController : MonoBehaviour
         if (isShooting && currentAmmo > 0)
         {
             currentAmmo--;
-            
+            FindObjectOfType<AudioManager>().Play("Shoot");
             // Get normalized shooting direction from crosshair position (which is tied to mouse)
             Vector2 shootingDirection = crosshair.transform.localPosition;
             shootingDirection.Normalize();
