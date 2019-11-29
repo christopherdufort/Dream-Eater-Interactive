@@ -16,6 +16,8 @@ TagManager:
   - Enemy
   - RoomFog
   - EnemySpawner
+  - PlayerBullet
+  - BossSpawner
   layers:
   - Default
   - TransparentFX
