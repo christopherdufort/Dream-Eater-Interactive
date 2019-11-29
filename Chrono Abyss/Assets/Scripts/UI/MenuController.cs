@@ -19,7 +19,7 @@ public class MenuController : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("Button");
         // Close the Game editor (Used in developing the game)
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
 
         // Close the game application (used when demoing the game)
         Application.Quit();

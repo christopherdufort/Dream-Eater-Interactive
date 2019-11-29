@@ -249,7 +249,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Dungeon
     clip: {fileID: 8300000, guid: ad53910ace4cd844e9b593de14d9a3a0, type: 3}
-    volume: 1
+    volume: 0.764
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -964,12 +964,12 @@ PrefabInstance:
     - target: {fileID: 1452207111059300980, guid: e6c94e590d2022042bffb7f657288b75,
         type: 3}
       propertyPath: PLAYER_BASE_SPEED
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1452207111059300980, guid: e6c94e590d2022042bffb7f657288b75,
         type: 3}
       propertyPath: PLAYER_BASE_ACCELERATION
-      value: 2
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 1452207111059300980, guid: e6c94e590d2022042bffb7f657288b75,
         type: 3}
@@ -1009,6 +1009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: sounds.Array.data[3].name
       value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038743009978088679, guid: 0d82fa72c91a2aa4881018b9e124d514,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.764
       objectReference: {fileID: 0}
     - target: {fileID: 3038743009978088678, guid: 0d82fa72c91a2aa4881018b9e124d514,
         type: 3}
