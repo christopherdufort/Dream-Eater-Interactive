@@ -7,16 +7,25 @@ public class PlayerSlash : MonoBehaviour
 {
 	public float attackValue;
 	public Animator anim;
+	public bool isSlashing;
+	// what remains of the slash duration; enemies getting slashed will need this information to know when they can get slashed again
+	public float slashDurationRemaining;
 
 	private Vector2 dir;
 	
 	private void Start()
 	{
 		anim = GetComponent<Animator>();
+		isSlashing = false;
 	}
 
 	private void Update()
 	{
+		if (slashDurationRemaining > 0f)
+		{
+			slashDurationRemaining -= Time.deltaTime;
+		}
+		
 		// change pos to dir of player
 		transform.localPosition = new Vector3(dir.x * 0.8f, dir.y * 0.8f, 1);
 
