@@ -16,15 +16,16 @@ public class BossPortal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spriteRenderer.flipX = !spriteRenderer.flipX;
-        spriteRenderer.flipY = !spriteRenderer.flipY;
+        //spriteRenderer.flipX = !spriteRenderer.flipX;
+        //spriteRenderer.flipY = !spriteRenderer.flipY;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(LoadAsyncScene(other.gameObject));
+            //StartCoroutine(LoadAsyncScene(other.gameObject));
+            SceneManager.LoadScene("BossFightScene", LoadSceneMode.Single);
         }
         
     }
@@ -33,9 +34,11 @@ public class BossPortal : MonoBehaviour
     {
         // Set the current Scene to be able to unload it later
         Scene currentScene = SceneManager.GetActiveScene();
-
+        
         // The Application loads the Scene in the background at the same time as the current Scene.
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("BossFightScene", LoadSceneMode.Additive);
+        asyncLoad.allowSceneActivation = false;
+
 
         // Wait until the last operation fully loads to return anything
         while (!asyncLoad.isDone)
@@ -43,7 +46,7 @@ public class BossPortal : MonoBehaviour
             yield return null;
         }
 
-        // Move the GameObject (you attach this in the Inspector or pass in by reference) to the newly loaded Scene
+        // Move the GameObject to the newly loaded Scene
         SceneManager.MoveGameObjectToScene(playerObject, SceneManager.GetSceneByName("BossFightScene"));
         // Unload the previous Scene
         SceneManager.UnloadSceneAsync(currentScene);
