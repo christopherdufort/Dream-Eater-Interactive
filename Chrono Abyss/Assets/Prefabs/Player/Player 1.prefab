@@ -63,8 +63,6 @@ MonoBehaviour:
   crosshair: {fileID: 1452207111236222852}
   bulletPrefab: {fileID: 6969866368786814147, guid: 7eaa77c6d7f5e884a9bec8f07594b187,
     type: 3}
-  slashPrefab: {fileID: 4032438455555805083, guid: 8de493602eb12aa4b90b4d4e9f509625,
-    type: 3}
 --- !u!212 &1452207111059300982
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -273,6 +271,7 @@ GameObject:
   - component: {fileID: 6282009064523031030}
   - component: {fileID: 3223191909323308426}
   - component: {fileID: 3805315180165961068}
+  - component: {fileID: 1166320524320193942}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -377,6 +376,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackValue: 5
   anim: {fileID: 3223191909323308426}
+  isSlashing: 0
+  slashDurationRemaining: 0
+--- !u!61 &1166320524320193942
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8690850466014025546}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6666666, y: 1.3333334}
+    newSize: {x: 1.6666666, y: 1.3333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6666666, y: 1.3333334}
+  m_EdgeRadius: 0
 --- !u!1001 &467803152599147076
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
     // Private attributes
     private bool created;
     private PlayerSlash sword;
-    private bool slash;
     private float acceleratedSpeed;
     private int maxHealth = 10;
     private int currentHealth;
@@ -141,7 +140,7 @@ public class PlayerController : MonoBehaviour
         {
             // Reset accleration timer and set movement speed to zero
             acceleratedSpeed = 0f;
-            movementSpeed = !slash ? 0.0125f : 0.0f; 
+            movementSpeed = !sword.isSlashing ? 0.0125f : 0.0f; 
         }
 
         // check that game is not paused or over
@@ -205,10 +204,11 @@ public class PlayerController : MonoBehaviour
 
     void Slash()
     {
-        if (Input.GetButton("Jump") && !slash)
+        if (Input.GetButton("Jump") && !sword.isSlashing)
         {
             // Prevents user from attacking again until the slash is complete
-            slash = true;
+            sword.isSlashing = true;
+			sword.slashDurationRemaining = SLASH_DURATION;
             GetComponentInChildren<PlayerSlash>().anim.SetTrigger("Slash");
             StartCoroutine("SlashDelay");
         }
@@ -217,7 +217,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator SlashDelay()
     {
         yield return new WaitForSeconds(SLASH_DURATION);
-        slash = false;
+        sword.isSlashing = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
