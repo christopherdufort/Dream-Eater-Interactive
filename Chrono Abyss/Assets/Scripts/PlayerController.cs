@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour
             isShooting = Input.GetButtonUp("Fire1");
             
             // set time scale to player speed
-            Time.timeScale = !slash ? movementSpeed : 1.0f;
+            Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
         }
     }
 
