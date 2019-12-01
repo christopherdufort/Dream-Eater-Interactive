@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     [Header("Base attributes:")]
     public float PLAYER_BASE_SPEED = 2.5f;
     public float PLAYER_BASE_ACCELERATION = 0.5f;
-    public float BULLET_BASE_SPEED = 5.0f;
-    public float BULLET_DURATION = 3.0f;
     public float SLASH_DURATION = 0.125f;
 
     [Space]
@@ -142,6 +140,8 @@ public class PlayerController : MonoBehaviour
             acceleratedSpeed = 0f;
             movementSpeed = !sword.isSlashing ? 0.0125f : 0.0f; 
         }
+        
+        Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
 
         // check that game is not paused or over
         if (!FindObjectOfType<GameController>().paused)
@@ -184,11 +184,11 @@ public class PlayerController : MonoBehaviour
 
     void Shoot()
     {
-        // If shooting
-        if (isShooting && currentAmmo > 0)
+        // If shooting *** (Unlimited ammo for testing)
+        if (isShooting /*&& currentAmmo > 0*/)
         {
             currentAmmo--;
-            
+            FindObjectOfType<AudioManager>().Play("Shoot");
             // Get normalized shooting direction from crosshair position (which is tied to mouse)
             Vector2 shootingDirection = crosshair.transform.localPosition;
             shootingDirection.Normalize();
