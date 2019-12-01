@@ -7,9 +7,18 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 using Random = UnityEngine.Random;
 
+public enum FloorTheme
+{
+    Lava,
+    Ice,
+    Dungeon,
+    Desert
+}
+
+
 public class MenuController : MonoBehaviour
 {
-    private String theme;
+    private String randomFloorScene;
 
     private void Awake()
     {
@@ -19,16 +28,16 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        // choose a theme for the floor
-        theme = ((FloorTheme) Random.Range(0, 3)).ToString() + "floor";
-        
+        // Choose a random theme for the floor
+        randomFloorScene = ((FloorTheme) Random.Range(0, 4)).ToString() + "Floor";
     }
 
     public void startGame()
     {
-        //Have GameController choose a random floor type from the enum list, then load the scene associated with that theme.
         FindObjectOfType<AudioManager>().Play("Button");
-        SceneManager.LoadScene(theme);
+
+        // May move this logic to the gamecontroller.
+        SceneManager.LoadScene(randomFloorScene);
     }
 
     public void quitGame()
@@ -41,12 +50,4 @@ public class MenuController : MonoBehaviour
         Application.Quit();
     }
     
-}
-
-enum FloorTheme
-{
-    Lava,
-    Ice,
-    Dungeon,
-    Desert
 }
