@@ -6,7 +6,7 @@ public class GunRotate : MonoBehaviour
 {
     // private attributes
     private Transform transform;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,12 @@ public class GunRotate : MonoBehaviour
 
         Vector3 normalizedAimDir = PlayerController.aimDirection;
         normalizedAimDir.Normalize();
-        transform.position = normalizedAimDir + PlayerController.playerPosition;
+
+        // Place the gun some distance away from the player
+        transform.position = normalizedAimDir + PlayerController.playerPosition;    
+
+        // Flips the gun based on x-component of aim direction (no upside down gun during rotation)
+        transform.localScale = normalizedAimDir.x < 0 ? new Vector3(-0.7f, -0.7f, 1) : new Vector3(-0.7f, 0.7f, 1);
 
         float angle = Mathf.Atan2(normalizedAimDir.y, normalizedAimDir.x) * Mathf.Rad2Deg;
 
