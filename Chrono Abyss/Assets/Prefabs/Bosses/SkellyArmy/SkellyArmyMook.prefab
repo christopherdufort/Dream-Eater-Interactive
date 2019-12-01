@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7160636559636075150}
   - component: {fileID: 7160636559636075151}
   - component: {fileID: 5571213318433375819}
+  - component: {fileID: 2445157488152278644}
   m_Layer: 9
   m_Name: SkellyArmyMook
   m_TagString: Enemy
@@ -150,3 +151,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2445157488152278644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160636559636075146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c277c2968a82e6744a4882eed35e2471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  maxHitPoints: 15
+  curHitPoints: 15
+  attackValue: 1
+  canGetSlashed: 1
+  moveSpeed: 1.5
+  direction: {x: 0, y: 0}
+  rigidBody: {fileID: 7160636559636075150}
+  animator: {fileID: 5571213318433375819}
+  deathAnimation: {fileID: 2641435792014465527, guid: 115f80347ef548240a5e810a2ce48ead,
+    type: 3}
+  target: {fileID: 0}
+  hitPointUpMin: 0
+  hitPointUpMax: 0
+  attackUpMin: 0
+  attackUpMax: 0
+  moveSpeedUpMin: 0
+  moveSpeedUpMax: 0
+  attackRange: 7
+  attackCooldown: 1
+  attackCooldownCountdown: 0
+  droppableLoot: []
+  dropOdds: []
+  projectiles:
+  - {fileID: 8260248437830479585, guid: 0fbeba43e075dae49a3d0c4f8424f3eb, type: 3}
+  minComfortDistance: 3
+  controller: {fileID: 0}
