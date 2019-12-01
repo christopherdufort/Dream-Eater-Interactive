@@ -65,8 +65,8 @@ public class Shadow : Shooter
 	{
 		if (direction != Vector2.zero)
 		{
-			animator.SetFloat("Horizontal", direction.x);
-			animator.SetFloat("Vertical", direction.y);
+			animator.SetFloat("X", direction.x);
+			animator.SetFloat("Y", direction.y);
 		}
 		// Hand off moveSpeed value to animator (for blend tree)
 		animator.SetFloat("Speed", moveSpeed);

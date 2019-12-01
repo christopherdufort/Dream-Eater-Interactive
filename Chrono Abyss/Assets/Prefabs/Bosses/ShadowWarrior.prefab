@@ -234,9 +234,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7806903185615573512, guid: 60ea838b22d6045d0b29842f7bfa78ca,
+  m_Sprite: {fileID: 4501317128910171430, guid: fc7b641e720b642b4bca7b5ec7e30eca,
     type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -277,7 +277,7 @@ Animator:
   m_GameObject: {fileID: 5095977712597328304}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fd42dfe8d75055b498fca62846cb7c60, type: 2}
+  m_Controller: {fileID: 9100000, guid: 601eec65f5d554f9bbd4094bd1ad7c73, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -328,6 +328,7 @@ MonoBehaviour:
   maxHitPoints: 50
   curHitPoints: 50
   attackValue: 0
+  canGetSlashed: 1
   moveSpeed: 3
   direction: {x: 0, y: 0}
   rigidBody: {fileID: 5095977712597328316}
