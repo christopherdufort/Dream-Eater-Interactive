@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class GameController : MonoBehaviour
 {
@@ -10,16 +9,22 @@ public class GameController : MonoBehaviour
     public GameObject pauseScreen;
     public GameObject gameOverScreen;
 
+    [Header("Game State")]
+    public bool paused;
+    
     private int level = 1;
-    private FloorTheme theme;
+    private bool created;
 
     private void Awake()
     {
         // reset game time
         Time.timeScale = 1.0f;
-        
-        // choose a theme for the floor
-        theme = (FloorTheme) Random.Range(0, 3);
+
+        if (!created)
+        {
+            DontDestroyOnLoad(gameObject);
+            created = true;
+        }
     }
 
     // Start is called before the first frame update
@@ -58,16 +63,9 @@ public class GameController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
         {
             // Pause Game and set time scale to 0
+            paused = true;
             pauseScreen.SetActive(true);
             Time.timeScale = 0.0f;
         }
     }
-}
-
-enum FloorTheme
-{
-    Lava,
-    Ice,
-    Dungeon,
-    Desert
 }

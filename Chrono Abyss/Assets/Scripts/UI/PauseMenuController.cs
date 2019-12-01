@@ -15,6 +15,7 @@ public class PauseMenuController : MonoBehaviour
     {
         // turn off canvas and set time scale to 1.0
         Time.timeScale = 1.0f;
+        FindObjectOfType<GameController>().paused = false;
         gameObject.SetActive(false);
     }
 

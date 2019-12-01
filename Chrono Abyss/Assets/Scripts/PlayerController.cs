@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -29,13 +31,22 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
 
     // Private attributes
+    private bool created;
     private PlayerSlash sword;
-    private bool slash;
     private float acceleratedSpeed;
     private int maxHealth = 10;
     private int currentHealth;
     private int maxAmmo = 6;
     private int currentAmmo;
+
+    private void Awake()
+    {
+        if (!created)
+        {
+            DontDestroyOnLoad(gameObject);
+            created = true;
+        }
+    }
 
     void Start()
     {
@@ -127,13 +138,13 @@ public class PlayerController : MonoBehaviour
         {
             // Reset accleration timer and set movement speed to zero
             acceleratedSpeed = 0f;
-            movementSpeed = !slash ? 0.0125f : 0.0f; 
+            movementSpeed = !sword.isSlashing ? 0.0125f : 0.0f; 
         }
-        Time.timeScale = !slash ? movementSpeed : 1.0f;
-        //FindObjectOfType<AudioManager>().Pitch("Shoot", Time.timeScale);
+        
+        Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
 
         // check that game is not paused or over
-        if (Time.timeScale >= 0.005f)
+        if (!FindObjectOfType<GameController>().paused)
         {
             // Get the aim direction vector from target position to player position
             aimDirection = Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition);
@@ -141,6 +152,9 @@ public class PlayerController : MonoBehaviour
 
             // isShooting is true when Fire1 button is pressed
             isShooting = Input.GetButtonUp("Fire1");
+            
+            // set time scale to player speed
+            Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
         }
     }
 
@@ -190,10 +204,11 @@ public class PlayerController : MonoBehaviour
 
     void Slash()
     {
-        if (Input.GetButton("Jump") && !slash)
+        if (Input.GetButton("Jump") && !sword.isSlashing)
         {
             // Prevents user from attacking again until the slash is complete
-            slash = true;
+            sword.isSlashing = true;
+			sword.slashDurationRemaining = SLASH_DURATION;
             GetComponentInChildren<PlayerSlash>().anim.SetTrigger("Slash");
             StartCoroutine("SlashDelay");
         }
@@ -202,7 +217,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator SlashDelay()
     {
         yield return new WaitForSeconds(SLASH_DURATION);
-        slash = false;
+        sword.isSlashing = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -234,4 +249,6 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+
 }

@@ -27,38 +27,28 @@ public class EnemyProjectile : Enemy
 	
 	protected new void OnTriggerEnter2D(Collider2D collision)
 	{
-		PlayerSlash slash = collision.transform.GetComponent<PlayerSlash>();
-		if (slash != null)
+		PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
+		if (bullet != null)
 		{
 			if (!isIndestructible)
 			{
-				this.curHitPoints -= slash.attackValue;
+				this.curHitPoints -= bullet.attackValue;
 			}
 		} else
 		{
-			PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
-			if (bullet != null)
+			PlayerController player = collision.transform.GetComponent<PlayerController>();
+			if (player != null)
 			{
-				if (!isIndestructible)
-				{
-					this.curHitPoints -= bullet.attackValue;
-				}
+				// TODO: Damage player
+				Destroy(this.gameObject);
 			} else
 			{
-				PlayerController player = collision.transform.GetComponent<PlayerController>();
-				if (player != null)
+				if (collision.transform.CompareTag("Wall"))
 				{
-					// TODO: Damage player
 					Destroy(this.gameObject);
 				} else
 				{
-					if (collision.transform.CompareTag("Wall"))
-					{
-						Destroy(this.gameObject);
-					} else
-					{
-						// Debug.Log("Enemy projectile hasn't collided with any object of note.");
-					}
+					// Debug.Log("Enemy projectile hasn't collided with any object of note.");
 				}
 			}
 		}
