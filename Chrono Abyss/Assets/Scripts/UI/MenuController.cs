@@ -22,14 +22,20 @@ public class MenuController : MonoBehaviour
 
     private void Awake()
     {
-        Destroy(FindObjectOfType<PlayerController>().gameObject);
-        Destroy(FindObjectOfType<GameController>().gameObject);
+        if (FindObjectOfType<PlayerController>())
+        {
+            Destroy(FindObjectOfType<PlayerController>().gameObject);
+        }
+        if (FindObjectOfType<GameController>())
+        {
+            Destroy(FindObjectOfType<GameController>().gameObject);
+        }   
     }
 
     private void Start()
     {
         // Choose a random theme for the floor
-        randomFloorScene = ((FloorTheme) Random.Range(0, 4)).ToString() + "Floor";
+        randomFloorScene = ((FloorTheme)Random.Range(0, 4)).ToString() + "Floor";
     }
 
     public void startGame()
@@ -37,6 +43,7 @@ public class MenuController : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Button");
 
         // May move this logic to the gamecontroller.
+        Debug.Log("Loading Floor: " + randomFloorScene);
         SceneManager.LoadScene(randomFloorScene);
     }
 
