@@ -29,13 +29,17 @@ public class MenuController : MonoBehaviour
         if (FindObjectOfType<GameController>())
         {
             Destroy(FindObjectOfType<GameController>().gameObject);
-        }   
+        } 
+        if (FindObjectOfType<CameraController>())
+        {
+            Destroy(FindObjectOfType<CameraController>().gameObject);
+        }
     }
 
     private void Start()
     {
         // Choose a random theme for the floor
-        randomFloorScene = ((FloorTheme)Random.Range(0, 4)).ToString() + "Floor";
+        randomFloorScene = ((FloorTheme)Random.Range(1, 5)).ToString() + "Floor";
     }
 
     public void startGame()
