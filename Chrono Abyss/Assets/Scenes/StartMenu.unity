@@ -500,6 +500,54 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: DesertFloor
+    clip: {fileID: 8300000, guid: c9852cfa027836f4bb03a18de365973c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: LavaFloor
+    clip: {fileID: 8300000, guid: ae3405212e38d8c41816fe1b1240effa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: IceFloor
+    clip: {fileID: 8300000, guid: 4889323d24e6b424ea737f54ca782006, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Shoot
+    clip: {fileID: 8300000, guid: 0486146b92ff1b845813d12a48eda832, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: 08528b702793fa14b9ffac2899c50e62, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: MookDeath
+    clip: {fileID: 8300000, guid: 573e5e200b0446e45b983022dff15d48, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BossFightScene
+    clip: {fileID: 8300000, guid: aa62f85aebb671241a33a8097c67f51f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: DungeonFloor
+    clip: {fileID: 8300000, guid: 523a9793c6671c64fbea3bfaa9a67470, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &610712152
 Transform:
   m_ObjectHideFlags: 0

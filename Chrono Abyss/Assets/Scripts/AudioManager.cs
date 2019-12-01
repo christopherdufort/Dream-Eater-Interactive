@@ -5,13 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    public Sound[] sounds; 
-
+    public Sound[] sounds;
+    private String currentScene;
 
     // Start is called before the first frame update
     void Awake()
     {
-        foreach(Sound s in sounds)
+        currentScene = ""; 
+
+        DontDestroyOnLoad(this.gameObject);
+
+        foreach (Sound s in sounds)
         {
            s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -25,16 +29,7 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         setPitchEffects();
-    }
-
-    private void Start()
-    {
-
-        if(SceneManager.GetActiveScene().name == "StartMenu")
-            Play("StartMenu");
-
-        if (SceneManager.GetActiveScene().name == "DungeonFloor")
-            Play("Dungeon");
+        CheckScene();
     }
 
     private void setPitchEffects()
@@ -62,5 +57,36 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.pitch = pitch; 
+    }
+
+    public void CheckScene()
+    {
+        if (!currentScene.Equals(SceneManager.GetActiveScene().name))
+        {
+            if(currentScene.Length != 0)
+                Stop(currentScene); 
+
+            currentScene = SceneManager.GetActiveScene().name;
+
+
+            if (currentScene == "StartMenu")
+                Play("StartMenu");
+
+            if (currentScene == "DungeonFloor")
+                Play("DungeonFloor");
+
+            if (currentScene == "IceFloor")
+                Play("IceFloor");
+
+            if (currentScene == "LavaFloor")
+                Play("LavaFloor");
+
+            if (currentScene == "DesertFloor")
+                Play("DesertFloor");
+
+            if (currentScene == "BossFightScene")
+                Play("BossFightScene");
+
+        }
     }
 }
