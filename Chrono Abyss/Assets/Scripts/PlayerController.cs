@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -31,12 +33,22 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
 
     // Private attributes
+    private bool created;
     private PlayerSlash sword;
     private float acceleratedSpeed;
     private int maxHealth = 10;
     private int currentHealth;
     private int maxAmmo = 6;
     private int currentAmmo;
+
+    private void Awake()
+    {
+        if (!created)
+        {
+            DontDestroyOnLoad(gameObject);
+            created = true;
+        }
+    }
 
     void Start()
     {
@@ -130,10 +142,9 @@ public class PlayerController : MonoBehaviour
             acceleratedSpeed = 0f;
             movementSpeed = !sword.isSlashing ? 0.0125f : 0.0f; 
         }
-        Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
 
         // check that game is not paused or over
-        if (Time.timeScale >= 0.005f)
+        if (!FindObjectOfType<GameController>().paused)
         {
             // Get the aim direction vector from target position to player position
             aimDirection = Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition);
@@ -141,6 +152,9 @@ public class PlayerController : MonoBehaviour
 
             // isShooting is true when Fire1 button is pressed
             isShooting = Input.GetButtonUp("Fire1");
+            
+            // set time scale to player speed
+            Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
         }
     }
 
@@ -235,4 +249,6 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+
 }
