@@ -28,6 +28,5 @@ public class ShadowGunRotate : MonoBehaviour
 
 		// rotate sprite to face cursor
 		transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-
 	}
 }

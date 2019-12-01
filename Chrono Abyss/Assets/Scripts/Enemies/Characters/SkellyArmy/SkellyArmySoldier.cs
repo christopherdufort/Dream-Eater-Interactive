@@ -2,22 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkellyArmySoldier : Mook
+public class SkellyArmySoldier : Shooter
 {
 	[SerializeField] SkellyArmyController controller;
-    // Start is called before the first frame update
-    void Awake()
-    {
-		controller = GameObject.Find("SkellyArmyController").GetComponent<SkellyArmyController>();
+    new void Awake()
+	{
+		base.Awake();
+		controller = GameObject.FindGameObjectWithTag("SkellyArmyController").GetComponent<SkellyArmyController>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-	void OnDeath()
+	void OnDestroy()
 	{
 		controller.NotifySkellySoldierDead();
 	}

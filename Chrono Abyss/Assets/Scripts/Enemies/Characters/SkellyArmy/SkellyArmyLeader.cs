@@ -2,17 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// a stationary enemy that appears at the end of the skelly army boss
 public class SkellyArmyLeader : Shooter
 {
 	[SerializeField] ProjectileMode projectileMode;
 	private enum ProjectileMode { Seeker, Spray }
 	[SerializeField] SkellyArmyController controller;
+	[SerializeField] float roundOneEndHealthThreshold = 0.75f;
+	[SerializeField] float roundTwoEndHealthThreshold = 0.5f;
+	bool canAttack = true;
 
-    new void Update()
+	private void OnEnable()
+	{
+		EnemyInitialize();
+		FadeIn();
+		curHitPoints = controller.getSkellyLeaderRemainingHealth();
+		canAttack = true;
+	}
+
+	new void Update()
     {
-		if (CheckDead())
+		if (!CheckDead())
 		{
+			Retreat();
 			DetermineAttackMode();
 			AttackPlayer();
 		}
@@ -30,7 +41,7 @@ public class SkellyArmyLeader : Shooter
 				projectileMode = ProjectileMode.Seeker;
 				attackCooldownCountdown = attackCooldown * 0.5f;
 			}
-			else;
+			else
 			{
 				projectileMode = ProjectileMode.Spray;
 				attackCooldownCountdown = attackCooldown;
@@ -43,7 +54,7 @@ public class SkellyArmyLeader : Shooter
 				projectileMode = ProjectileMode.Seeker;
 				attackCooldownCountdown = attackCooldown * 0.5f;
 			}
-			else;
+			else
 			{
 				projectileMode = ProjectileMode.Spray;
 				attackCooldownCountdown = attackCooldown;
@@ -56,7 +67,7 @@ public class SkellyArmyLeader : Shooter
 				projectileMode = ProjectileMode.Seeker;
 				attackCooldownCountdown = attackCooldown * 0.5f;
 			}
-			else;
+			else
 			{
 				projectileMode = ProjectileMode.Spray;
 				attackCooldownCountdown = attackCooldown;
@@ -64,23 +75,50 @@ public class SkellyArmyLeader : Shooter
 		}
 	}
 
-	new void AttackPlayer()
+	protected override void AttackPlayer()
 	{
-		Instantiate(projectiles[(int)projectileMode], transform.position, Quaternion.identity);
+		if (canAttack)
+		{
+			Instantiate(projectiles[(int)projectileMode], transform.position, Quaternion.identity);
+			StartCoroutine("AttackCooldown");
+		}
 	}
 
+	IEnumerator AttackCooldown()
+	{
+		canAttack = false;
+		yield return new WaitForSeconds(attackCooldownCountdown);
+		canAttack = true;
+	}
+
+	// R1, appears when < 80 skellies remain: if heath @ 75%, bail out and notify controller
+	// R2, appears when < 50 skellies remain: if health @ 50%, bail out and notify controller
+	// R3: appears when < 20 skellies remain: until death
 	void Retreat()
 	{
-		controller.NotifySkellyArmyLeaderRetreated(curHitPoints);
-		gameObject.SetActive(false);
-		// notify SkellyArmyController
-		// need health registered
+		if (((curHitPoints < roundOneEndHealthThreshold * maxHitPoints) && (controller.getTimesLeaderAppeared() == 1))
+			|| ((curHitPoints < roundTwoEndHealthThreshold * maxHitPoints) && (controller.getTimesLeaderAppeared() == 2)))
+		{
+			controller.NotifySkellyArmyLeaderRetreated(curHitPoints);
+			FadeOut();
+			gameObject.SetActive(false);
+		}
 	}
 
-	// R1, appears when < 60 remain: if heath @ 75%, bail out and notify controller
-	// R2, appears when < 30 remain: if health @ 50%, bail out and notify controller
-	// R3: until death
+	private void OnDestroy()
+	{
+		controller.NotifySkellyArmyLeaderDead();
+	}
 
-	// fade in / fade out
-	// can't attack or be attacked during these phases
+	// can't attack or be attacked during this phase
+	void FadeIn()
+	{
+
+	}
+
+	// can't attack or be attacked during this phase
+	void FadeOut()
+	{
+
+	}
 }
