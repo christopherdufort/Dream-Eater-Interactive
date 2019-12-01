@@ -9,10 +9,10 @@ using Random = UnityEngine.Random;
 
 public enum FloorTheme
 {
-    Lava,
-    Ice,
-    Dungeon,
-    Desert
+    Lava,       //0
+    Ice,        //1
+    Dungeon,    //2
+    Desert      //3
 }
 
 
@@ -38,8 +38,8 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        // Choose a random theme for the floor
-        randomFloorScene = ((FloorTheme)Random.Range(1, 5)).ToString() + "Floor";
+        // Choose a random theme for the floor -> imagine an array FloorTheme[position]
+        randomFloorScene = ((FloorTheme)Random.Range(0, 4)).ToString() + "Floor";
     }
 
     public void startGame()
