@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     private int currentHealth;
     private int maxAmmo = 6;
     private int currentAmmo;
+    private bool reloading;
 
     private void Awake()
     {
@@ -184,8 +185,8 @@ public class PlayerController : MonoBehaviour
 
     void Shoot()
     {
-        // If shooting *** (Unlimited ammo for testing)
-        if (isShooting /*&& currentAmmo > 0*/)
+        // If shooting
+        if (isShooting && currentAmmo > 0)
         {
             currentAmmo--;
             FindObjectOfType<AudioManager>().Play("Shoot");
@@ -199,6 +200,12 @@ public class PlayerController : MonoBehaviour
             //bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
             //// Destroy bullet object after some duration
             //Destroy(bullet, BULLET_DURATION);
+        }
+
+        else if (currentAmmo <= 0 && !reloading)
+        {
+            FindObjectOfType<TimerController>().StartTime(3f);
+            StartCoroutine("Reload");
         }
     }
 
@@ -218,6 +225,14 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(SLASH_DURATION);
         sword.isSlashing = false;
+    }
+
+    IEnumerator Reload()
+    {
+        reloading = true;
+        yield return new WaitForSecondsRealtime(2.8f);
+        currentAmmo = maxAmmo;
+        reloading = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
