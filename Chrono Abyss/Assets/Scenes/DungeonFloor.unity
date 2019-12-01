@@ -236,30 +236,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 448949227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b2a3ca1eddf454494573f88ae10742, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ae5dac89b2f336468c55edc6453a3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Shoot
-    clip: {fileID: 8300000, guid: 45d631c3a8451ae47b43fa6ff23b507c, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: MookDeath
-    clip: {fileID: 8300000, guid: 4522c310e9a3475469c7af37300eef2f, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
   - name: Dungeon
-    clip: {fileID: 8300000, guid: 9aedf75b83edb41499a442d66e0c0c37, type: 3}
-    volume: 0.855
+    clip: {fileID: 8300000, guid: 2c4c3a95435affe4caa6511d5f8048b4, type: 3}
+    volume: 0.849
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: MookDeath
+    clip: {fileID: 8300000, guid: f6c17219929e64b4ebbc3eb938ee3eae, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shoot
+    clip: {fileID: 8300000, guid: a6596baafcb29f047af84983bf41d58a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   - name: PlayerDeath
-    clip: {fileID: 8300000, guid: ca382c8fb69edfc468776d03911dc206, type: 3}
+    clip: {fileID: 8300000, guid: 683b7dc5a1d216544bc0899b833353ac, type: 3}
     volume: 1
     pitch: 1
     loop: 1
