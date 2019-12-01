@@ -1,0 +1,1447 @@
+fileFormatVersion: 2
+guid: fc7b641e720b642b4bca7b5ec7e30eca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4501317128910171430
+    second: mirror_boss_0
+  - first:
+      213: -3394427811901381098
+    second: mirror_boss_1
+  - first:
+      213: 6100529492756508079
+    second: mirror_boss_2
+  - first:
+      213: 6733131481497866238
+    second: mirror_boss_3
+  - first:
+      213: -7689428274922919102
+    second: mirror_boss_4
+  - first:
+      213: -8651074651272479274
+    second: mirror_boss_5
+  - first:
+      213: -4524776182196298257
+    second: mirror_boss_6
+  - first:
+      213: -8761220409959782378
+    second: mirror_boss_7
+  - first:
+      213: -3399505220134366778
+    second: mirror_boss_8
+  - first:
+      213: 3644959992493654249
+    second: mirror_boss_9
+  - first:
+      213: -6551120255907577574
+    second: mirror_boss_10
+  - first:
+      213: -9005319728284329974
+    second: mirror_boss_11
+  - first:
+      213: -7115175050930964672
+    second: mirror_boss_12
+  - first:
+      213: -9201697369752434225
+    second: mirror_boss_13
+  - first:
+      213: 1763072319771640381
+    second: mirror_boss_14
+  - first:
+      213: 8234863300152564683
+    second: mirror_boss_15
+  - first:
+      213: -6065033538140512140
+    second: mirror_boss_16
+  - first:
+      213: -810504939953604312
+    second: mirror_boss_17
+  - first:
+      213: 6589726396844641742
+    second: mirror_boss_18
+  - first:
+      213: 2630595433404103189
+    second: mirror_boss_19
+  - first:
+      213: -3694584857236674273
+    second: mirror_boss_20
+  - first:
+      213: -6211909060655600429
+    second: mirror_boss_21
+  - first:
+      213: -6568895766192183243
+    second: mirror_boss_22
+  - first:
+      213: 5088010128949147049
+    second: mirror_boss_23
+  - first:
+      213: 746738920980774913
+    second: mirror_boss_24
+  - first:
+      213: 8152407791814569738
+    second: mirror_boss_25
+  - first:
+      213: 7457082674248484760
+    second: mirror_boss_26
+  - first:
+      213: -8732877147550606847
+    second: mirror_boss_27
+  - first:
+      213: -1976862110649718192
+    second: mirror_boss_28
+  - first:
+      213: 4606878812982260723
+    second: mirror_boss_29
+  - first:
+      213: -1005062794927910379
+    second: mirror_boss_30
+  - first:
+      213: 4101742768835062272
+    second: mirror_boss_31
+  - first:
+      213: 6286462919238750425
+    second: mirror_boss_32
+  - first:
+      213: 7450164892318083673
+    second: mirror_boss_33
+  - first:
+      213: 7641941475865477974
+    second: mirror_boss_34
+  - first:
+      213: -2299373984129649072
+    second: mirror_boss_35
+  - first:
+      213: 4345319404448786978
+    second: mirror_boss_36
+  - first:
+      213: -8516680449210313160
+    second: mirror_boss_37
+  - first:
+      213: -4335382325302442098
+    second: mirror_boss_38
+  - first:
+      213: -72020462020602462
+    second: mirror_boss_39
+  - first:
+      213: 8624624615837015487
+    second: mirror_boss_40
+  - first:
+      213: -2639608407185123061
+    second: mirror_boss_41
+  - first:
+      213: -1232348288093431020
+    second: mirror_boss_42
+  - first:
+      213: 4821085052717193073
+    second: mirror_boss_43
+  - first:
+      213: -7144087073567514365
+    second: mirror_boss_44
+  - first:
+      213: -8085994606835389015
+    second: mirror_boss_45
+  - first:
+      213: 132497549629137073
+    second: mirror_boss_46
+  - first:
+      213: 2825397255751292928
+    second: mirror_boss_47
+  - first:
+      213: 7055119391626403953
+    second: mirror_boss_48
+  - first:
+      213: -7133390535862973242
+    second: mirror_boss_49
+  - first:
+      213: -4802205548733166254
+    second: mirror_boss_50
+  - first:
+      213: 8073508717928900031
+    second: mirror_boss_51
+  - first:
+      213: -7420833868751512827
+    second: mirror_boss_52
+  - first:
+      213: -656442809016969965
+    second: mirror_boss_53
+  - first:
+      213: -406158885657739902
+    second: mirror_boss_54
+  - first:
+      213: -2056385115192004644
+    second: mirror_boss_55
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mirror_boss_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 204
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fd16af58be045639bc9ac59bebbc2a
+      internalID: 4501317128910171430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 204
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e85ed032212549e29c08d295798e6ca
+      internalID: -3394427811901381098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 204
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6280505c28814f4cafdf815d62adbce
+      internalID: 6100529492756508079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 204
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0348ea32886b84f768f8e925e04e96f3
+      internalID: 6733131481497866238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_4
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 204
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3dcbb724fcd46f29d32e3b9b8cb9ca
+      internalID: -7689428274922919102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 204
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dce875e1038947fa8ec9d7b4a74e5d2
+      internalID: -8651074651272479274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_6
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 204
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd60e1c931744e7b9b1d0c61f3624f9
+      internalID: -4524776182196298257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 175
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f89388056fa42499854a7a8bd005e8
+      internalID: -8761220409959782378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_8
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 175
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08bc6e7c9b284e2ea020d0e8f57cfd7
+      internalID: -3399505220134366778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 175
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0755313dc954c44a7793a91982f559
+      internalID: 3644959992493654249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 175
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d31e6c07d1174f3b8cdab9b24223cf6
+      internalID: -6551120255907577574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 175
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16041d5fb48374f62be0d5facfaf5139
+      internalID: -9005319728284329974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 175
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca1559831be54f739ee7a8d62b7db8a
+      internalID: -7115175050930964672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_13
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 175
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039407b9e9e0d41688ffe760ebd85e4a
+      internalID: -9201697369752434225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 146
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651a6eea5d02f4d0f8465f8f21537f25
+      internalID: 1763072319771640381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 146
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18af5090f7374f47bb9e89afd43c17a
+      internalID: 8234863300152564683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_16
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 146
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7b78a4c0d7246068c31cc3ff09d5d9
+      internalID: -6065033538140512140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_17
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 146
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f8d27d807c840719a27a921881f356
+      internalID: -810504939953604312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 146
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa2f08c425a54b0996a96216ce43b6f
+      internalID: 6589726396844641742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_19
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 146
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adec09d61ac394fe58af05679e90120f
+      internalID: 2630595433404103189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_20
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 146
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b24dc8a87f540619d2ab16f0f4c540
+      internalID: -3694584857236674273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c71d704ab99435599bdab44482ecc3
+      internalID: -6211909060655600429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_22
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd8274193f374acab07132693106d66
+      internalID: -6568895766192183243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_23
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ab9bf7feb3a423ea95cd591242acc3
+      internalID: 5088010128949147049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_24
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76b4cd1cc5ac426f98c30a429e87d38
+      internalID: 746738920980774913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_25
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc671ecf9482a4d92be7027c00613917
+      internalID: 8152407791814569738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_26
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ca12cdbcb9f43658036ea0a984b1d1
+      internalID: 7457082674248484760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_27
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5b539bc3c3f412691d879b2229eff7
+      internalID: -8732877147550606847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 88
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2390a096723425aa496e287e07fd6f
+      internalID: -1976862110649718192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_29
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 88
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81424e439800a45449ff10440e432490
+      internalID: 4606878812982260723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_30
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 88
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa75821f328d4a93a630ee14fc01952
+      internalID: -1005062794927910379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_31
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 88
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ecc75bd0e004e4b98c1a5c12b5f51d
+      internalID: 4101742768835062272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_32
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 88
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456f6cad8b27e4819b19ad19a8e8dbfc
+      internalID: 6286462919238750425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_33
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 88
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acac27d8fb2a4a7c883e0d4073f6dfd
+      internalID: 7450164892318083673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_34
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 88
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bd298f9edc342c381f1297664b85e3
+      internalID: 7641941475865477974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 59
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656f1d391d64347bfa7694e807b151a2
+      internalID: -2299373984129649072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_36
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 59
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932e41d33422d4d29ba7ed01766aafb4
+      internalID: 4345319404448786978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_37
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 59
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cfd694241064ee0a533ad8088b7f16
+      internalID: -8516680449210313160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_38
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 59
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfd8a44fb52c4129ad3a35902e752d3
+      internalID: -4335382325302442098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_39
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 59
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694763ee11924494285cf63c7360cf83
+      internalID: -72020462020602462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_40
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 59
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f11e9cd73d4245adb97ffbac8ea2c35
+      internalID: 8624624615837015487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_41
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 59
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc4ad7757edc442882762c341429c93
+      internalID: -2639608407185123061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 30
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c099985e5294242a87f2ea9790b3e4
+      internalID: -1232348288093431020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_43
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 30
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa72a45a623ff467dafb22400ba9b3e3
+      internalID: 4821085052717193073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_44
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 30
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca329448ca014fec8249e5f888b626a
+      internalID: -7144087073567514365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_45
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 30
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac02869759d1c4278b5529551284639f
+      internalID: -8085994606835389015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_46
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 30
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a77b0db978cd459da9f52eebc407cd0
+      internalID: 132497549629137073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_47
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 30
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c573d76432c6b412095514e9c25f46cf
+      internalID: 2825397255751292928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_48
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 30
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc558a2fa3c84d33a2ff6c24a873356
+      internalID: 7055119391626403953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_49
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f43404c6d29460da8f1c9b3fda879f
+      internalID: -7133390535862973242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_50
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cc07bde3a4d4d069abe701079a6603
+      internalID: -4802205548733166254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_51
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4e31ff0b17c4169864ab4fea715a69
+      internalID: 8073508717928900031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_52
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099b92cb624624100b7867c3c4bcc60d
+      internalID: -7420833868751512827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_53
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d790e3f09814629a57d4b2b07db15e
+      internalID: -656442809016969965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_54
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e246bfba6ea4a6ba40e737681943ea
+      internalID: -406158885657739902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror_boss_55
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7324b3b89e1f14cd596e75e3ad34f7d0
+      internalID: -2056385115192004644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
