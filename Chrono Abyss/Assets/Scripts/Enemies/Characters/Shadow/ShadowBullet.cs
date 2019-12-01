@@ -10,7 +10,7 @@ public class ShadowBullet : EnemyProjectile
 		Rotate();
 	}
 
-	new void SetDirection(Vector2 dir)
+	public new void SetDirection(Vector2 dir)
 	{
 		base.SetDirection(dir);
 		Rotate();

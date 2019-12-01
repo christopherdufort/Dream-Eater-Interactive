@@ -7,9 +7,13 @@ public class Shadow : Shooter
 	[SerializeField] CurrentAction curAction;
 	private enum CurrentAction { Strafing, BackingOff, Charging, CircleFire }
 	[SerializeField] AttackMode attackMode;
-    private enum AttackMode { Slash, CircleProjectile, SprayProjectile, SeekerProjectile, SinusoidalProjectile }
-	[SerializeField] StrafeDirection strafeDir;
-	private enum StrafeDirection { Left, Right }
+    private enum AttackMode { Slash, SprayProjectile, SeekerProjectile, RegularProjectile }
+
+	private enum StrafeSidewaysDirection { Left, Right }
+	private enum StrafeFrontwaysDirection { Front, Back, None }
+	private StrafeSidewaysDirection sidewaysStrafeDir;
+	private StrafeFrontwaysDirection frontwaysStrafeDir;
+
 	private enum HealthLevel { High, Medium, Low }
 
 	[SerializeField] float baseMoveSpeed, chargingMoveSpeed;
@@ -48,17 +52,22 @@ public class Shadow : Shooter
 
 	private new void Update()
 	{
-		SetDirection(GetDirectionToPlayer());
+		if (!CheckDead())
+		{
+			SetDirection(GetDirectionToPlayer());
+			UpdateFrontwaysStrafeDirection();
 
-		if (actionTimeRemaining > Mathf.Epsilon)
-		{
-			actionTimeRemaining -= Time.deltaTime;
-		} else
-		{
-			// determine what to do next
+			if (actionTimeRemaining > Mathf.Epsilon)
+			{
+				actionTimeRemaining -= Time.deltaTime;
+			}
+			else
+			{
+				// determine what to do next
+			}
+			Strafe();
+			Animate();
 		}
-		Strafe();
-		Animate();
 	}
 
 	void Animate()
@@ -87,15 +96,40 @@ public class Shadow : Shooter
 		}
 	}
 
+	// change from strafing left or right
 	private void SwitchStrafeDirection()
 	{
-		strafeDir = (strafeDir == StrafeDirection.Left) ? StrafeDirection.Right : StrafeDirection.Left;
+		sidewaysStrafeDir = (sidewaysStrafeDir == StrafeSidewaysDirection.Left) ? StrafeSidewaysDirection.Right : StrafeSidewaysDirection.Left;
 		strafeDurationSet = Random.Range(strafeDurationMin, strafeDurationMax);
 	}
 
 	private void SetDirectionToStrafe()
 	{
-		direction = (strafeDir == StrafeDirection.Left) ? Vector2.Perpendicular(direction) : -1 * Vector2.Perpendicular(direction);
+		Vector2 forwardMovement = ((Vector2)(target.transform.position - transform.position)).normalized;
+		Vector2 sideMovement = Vector2.Perpendicular(direction);
+
+		switch (frontwaysStrafeDir)
+		{
+			// only strafing sideways
+			case StrafeFrontwaysDirection.None:
+				direction = (sidewaysStrafeDir == StrafeSidewaysDirection.Left) ? Vector2.Perpendicular(direction) : -1 * Vector2.Perpendicular(direction);
+				break;
+			// strafing while approaching player (45 degrees, towards player)
+			case StrafeFrontwaysDirection.Front:
+				direction = (sidewaysStrafeDir == StrafeSidewaysDirection.Left) ?
+					((forwardMovement + Vector2.Perpendicular(direction)) * 0.5f).normalized
+					: ((forwardMovement + -1 * Vector2.Perpendicular(direction)) * 0.5f).normalized;
+				break;
+			// strafing while backing away (45 degrees, away from direction to player)
+			case StrafeFrontwaysDirection.Back:
+				direction = (sidewaysStrafeDir == StrafeSidewaysDirection.Left) ?
+					((-forwardMovement + Vector2.Perpendicular(direction)) * 0.5f).normalized
+					: ((-forwardMovement + -1 * Vector2.Perpendicular(direction)) * 0.5f).normalized;
+				break;
+			default:
+				Debug.Log("mirror dude strafing... no this shouldn't be happening");
+				break;
+		}
 	}
 
 	private void StartStrafing()
@@ -104,11 +138,29 @@ public class Shadow : Shooter
 		float rand = Random.Range(0f, 1f);
 		if (rand > 0.5f)
 		{
-			strafeDir = StrafeDirection.Left;
+			sidewaysStrafeDir = StrafeSidewaysDirection.Left;
 		}
 		else
 		{
-			strafeDir = StrafeDirection.Right;
+			sidewaysStrafeDir = StrafeSidewaysDirection.Right;
+		}
+	}
+
+	private void UpdateFrontwaysStrafeDirection()
+	{
+		float dist = Vector2.Distance(transform.position, target.transform.position);
+		// approach player while strafing if too far away
+		if (dist > attackRange)
+		{
+			frontwaysStrafeDir = StrafeFrontwaysDirection.Front;
+		}
+		// back away if too close
+		else if (dist < minComfortDistance)
+		{
+			frontwaysStrafeDir = StrafeFrontwaysDirection.Back;
+		} else
+		{
+			frontwaysStrafeDir = StrafeFrontwaysDirection.None;
 		}
 	}
 
@@ -126,6 +178,19 @@ public class Shadow : Shooter
 	private Vector2 GetDirectionToPlayer()
 	{
 		return ((Vector2)target.transform.position - (Vector2)transform.position).normalized;
+	}
+
+	// if health < 70%, start using seekers
+	// if health < 50%, start using sprays
+	private void DetermineNextProjectile()
+	{
+
+	}
+
+	private void ChargeTowardsPlayer()
+	{
+		moveSpeed = chargingMoveSpeed;
+		chargingDistance = Vector2.Distance(target.transform.position, transform.position) * 1.5f;
 	}
 
 	/*
@@ -170,17 +235,6 @@ public class Shadow : Shooter
 				}
 			}
 		}
-	}
-
-	private void DetermineNextProjectile()
-	{
-
-	}
-
-	private void ChargeTowardsPlayer()
-	{
-		moveSpeed = chargingMoveSpeed;
-		chargingDistance = Vector2.Distance(target.transform.position, transform.position) * 1.5f;
 	}
 
 	private void DetectPlayerProjectiles()
