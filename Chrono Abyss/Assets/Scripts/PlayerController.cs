@@ -70,6 +70,7 @@ public class PlayerController : MonoBehaviour
         Animate();
         Aim();
         Shoot();
+        Reload();
         Slash();
     }
 
@@ -137,9 +138,9 @@ public class PlayerController : MonoBehaviour
         // If player is standing still
         else
         {
-            // Reset accleration timer and set movement speed to zero
+            // Reset acceleration timer and set movement speed to zero
             acceleratedSpeed = 0f;
-            movementSpeed = !sword.isSlashing ? 0.0125f : 0.0f; 
+            movementSpeed = !sword.isSlashing && !reloading ? 0.0125f : 0.0f; 
         }
         
         Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
@@ -155,7 +156,7 @@ public class PlayerController : MonoBehaviour
             isShooting = Input.GetButtonUp("Fire1");
             
             // set time scale to player speed
-            Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
+            Time.timeScale = !sword.isSlashing && !reloading ? movementSpeed : 1.0f;
         }
     }
 
@@ -201,11 +202,13 @@ public class PlayerController : MonoBehaviour
             //// Destroy bullet object after some duration
             //Destroy(bullet, BULLET_DURATION);
         }
+    }
 
-        else if (currentAmmo <= 0 && !reloading)
+    void Reload()
+    {
+        if (Input.GetKey("r"))
         {
-            FindObjectOfType<TimerController>().StartTime(3f);
-            StartCoroutine("Reload");
+            StartCoroutine("ReloadDelay");
         }
     }
 
@@ -227,10 +230,10 @@ public class PlayerController : MonoBehaviour
         sword.isSlashing = false;
     }
 
-    IEnumerator Reload()
+    IEnumerator ReloadDelay()
     {
         reloading = true;
-        yield return new WaitForSecondsRealtime(2.8f);
+        yield return new WaitForSecondsRealtime(2f);
         currentAmmo = maxAmmo;
         reloading = false;
     }
