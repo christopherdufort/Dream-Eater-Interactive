@@ -342,16 +342,18 @@ MonoBehaviour:
   attackUpMax: 0
   moveSpeedUpMin: 0
   moveSpeedUpMax: 0
-  attackRange: 10
+  attackRange: 6
   attackCooldown: 1
   attackCooldownCountdown: 0
   droppableLoot: []
   dropOdds: []
-  projectiles: []
+  projectiles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   minComfortDistance: 3
   curAction: 0
   attackMode: 0
-  strafeDir: 0
   baseMoveSpeed: 3
   chargingMoveSpeed: 6
   strafeDurationMin: 2
@@ -363,7 +365,7 @@ MonoBehaviour:
   attackBulletsThreshold: 0
   swipeRange: 1
   sword: {fileID: 4576700397121724187}
-  bulletPrefab: {fileID: 7772415236285220388, guid: 49b6fddfcb2ca9a49a28171d99bfa4d4,
+  bulletPrefab: {fileID: 2437108337081978472, guid: b189b8cb839a18f46838189d7c446fe8,
     type: 3}
 --- !u!1001 &6116506681803104643
 PrefabInstance:
@@ -432,8 +434,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8840436536904489645, guid: 583bd385c41f0a941b42ba6b7f65a8fa, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 583bd385c41f0a941b42ba6b7f65a8fa, type: 3}
 --- !u!1 &3576000514249194855 stripped
 GameObject:

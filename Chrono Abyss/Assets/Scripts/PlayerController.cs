@@ -173,7 +173,7 @@ public class PlayerController : MonoBehaviour
         // If shooting
         if (isShooting && currentAmmo > 0)
         {
-            currentAmmo--;
+            //currentAmmo--;
             
             // Get normalized shooting direction from crosshair position (which is tied to mouse)
             Vector2 shootingDirection = crosshair.transform.localPosition;
@@ -211,7 +211,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             // decrease health
-            currentHealth--;
+            //currentHealth--;
             
             // check if dead and tell game controller to end game
             if (currentHealth <= 0)
@@ -226,7 +226,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             // decrease health
-            currentHealth--;
+            //currentHealth--;
             
             // check if dead and tell game controller to end game
             if (currentHealth <= 0)

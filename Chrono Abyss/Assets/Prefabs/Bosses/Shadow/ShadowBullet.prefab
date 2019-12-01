@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 258a60a6b2476411fa9abf36f32164b4, type: 3}
-  m_Color: {r: 0.9967241, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.052250277, g: 0.94509804, b: 0.011764705, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -166,6 +166,7 @@ MonoBehaviour:
   maxHitPoints: 1
   curHitPoints: 1
   attackValue: 1
+  canGetSlashed: 1
   moveSpeed: 2
   direction: {x: 0, y: 0}
   rigidBody: {fileID: 0}
