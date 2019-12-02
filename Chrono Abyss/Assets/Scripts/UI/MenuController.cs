@@ -40,6 +40,7 @@ public class MenuController : MonoBehaviour
     {
         // Choose a random theme for the floor -> imagine an array FloorTheme[position]
         randomFloorScene = ((FloorTheme)Random.Range(0, 4)).ToString() + "Floor";
+        Time.timeScale = 1.0f; 
     }
 
     public void startGame()
