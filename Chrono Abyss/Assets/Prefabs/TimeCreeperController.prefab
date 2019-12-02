@@ -43,8 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa83a88cf6b422f4897e8d68f8aa098a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeCreeperSummonTimer: 20
+  timeCreeperSummonTimer: 10
   timeSinceLastMeaningfulAction: 0
+  offsetFromPlayer: 5
   playerInBossRoom: 0
   timeCreeperObj: {fileID: 7297522497826220357, guid: 7404690bd7a6351498c292d743f2fe03,
     type: 3}

@@ -8,6 +8,7 @@ public class TimeCreeperController : MonoBehaviour
 {
 	[SerializeField] float timeCreeperSummonTimer = 30f;	// how many secs until creeper is summoned
 	[SerializeField] float timeSinceLastMeaningfulAction = 0f;
+	[SerializeField] float offsetFromPlayer;
 	[SerializeField] bool playerInBossRoom = false;
 
 	[SerializeField] GameObject timeCreeperObj;
@@ -82,7 +83,7 @@ public class TimeCreeperController : MonoBehaviour
 	// in case the Time Creeper is too far away, relocates it near the player
 	private void RelocateTimeCreeper()
 	{
-		if (Vector2.Distance(transform.position, timeCreeper.transform.position) > 15f)
+		if (Vector2.Distance(transform.position, timeCreeper.transform.position) > 20f)
 		{
 			timeCreeper.transform.position = transform.position + GenerateLocationOffset();
 		}
@@ -95,20 +96,20 @@ public class TimeCreeperController : MonoBehaviour
 		switch (rand)
 		{
 			case 1:
-				offset.x = -5f;
-				offset.y = Random.Range(-5f, 5f);
+				offset.x = -offsetFromPlayer;
+				offset.y = Random.Range(-offsetFromPlayer, offsetFromPlayer);
 				break;
 			case 2:
-				offset.x = 5f;
-				offset.y = Random.Range(-5f, 5f);
+				offset.x = offsetFromPlayer;
+				offset.y = Random.Range(-offsetFromPlayer, offsetFromPlayer);
 				break;
 			case 3:
-				offset.y = -5f;
-				offset.x = Random.Range(-5f, 5f);
+				offset.y = -offsetFromPlayer;
+				offset.x = Random.Range(-offsetFromPlayer, offsetFromPlayer);
 				break;
 			case 4:
-				offset.y = 5f;
-				offset.x = Random.Range(-5f, 5f);
+				offset.y = offsetFromPlayer;
+				offset.x = Random.Range(-offsetFromPlayer, offsetFromPlayer);
 				break;
 		}
 		return offset;
