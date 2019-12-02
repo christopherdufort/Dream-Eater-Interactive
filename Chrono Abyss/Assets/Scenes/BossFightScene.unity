@@ -3397,6 +3397,9 @@ MonoBehaviour:
   playerSpawnPosition: {x: 0, y: -5, z: 0}
   bossPrefabs:
   - {fileID: 6951553776884765944, guid: 43b591e92da01fe44b8012fa05c67db5, type: 3}
+  - {fileID: 5392652225979532113, guid: ca8b6ec4b852ba54bbe5c6f211c317a3, type: 3}
+  - {fileID: 2340884186880164238, guid: 5d8f218cef0abcf4c87a20a49eaddea0, type: 3}
+  - {fileID: 5095977712597328304, guid: 4408d07e45921ef43b21b6f924982d53, type: 3}
 --- !u!4 &1888217634
 Transform:
   m_ObjectHideFlags: 0
@@ -4262,7 +4265,7 @@ Tilemap:
       - {fileID: 3610339231219930621, guid: 7be71c2a9a839423385817db425682e1, type: 3}
       - {fileID: 290047839109599427, guid: 7be71c2a9a839423385817db425682e1, type: 3}
       - {fileID: -2900853429046034592, guid: 7be71c2a9a839423385817db425682e1, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -10, z: 0}
@@ -4557,6 +4560,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2388562089031475375, guid: ac338034282be446899180fd29c3ca16,
+        type: 3}
+      propertyPath: m_Name
+      value: PauseScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 2388562089031475371, guid: ac338034282be446899180fd29c3ca16,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4661,11 +4669,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388562089031475375, guid: ac338034282be446899180fd29c3ca16,
-        type: 3}
-      propertyPath: m_Name
-      value: PauseScreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac338034282be446899180fd29c3ca16, type: 3}
