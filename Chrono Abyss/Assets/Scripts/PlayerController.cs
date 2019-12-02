@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Time.timeScale = movementSpeed;
+        Time.fixedDeltaTime = movementSpeed * 0.2f;
+
         currentHealth = maxHealth;
         currentAmmo = maxAmmo;
 
@@ -144,6 +146,8 @@ public class PlayerController : MonoBehaviour
         }
         
         Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
+        Time.fixedDeltaTime = !sword.isSlashing ? movementSpeed * 0.02f : 0.02f;
+
 
         // check that game is not paused or over
         if (!FindObjectOfType<GameController>().paused)
@@ -157,6 +161,7 @@ public class PlayerController : MonoBehaviour
             
             // set time scale to player speed
             Time.timeScale = !sword.isSlashing && !reloading ? movementSpeed : 1.0f;
+            Time.fixedDeltaTime = !sword.isSlashing && !reloading ? movementSpeed * 0.02f : 0.02f;
         }
     }
 

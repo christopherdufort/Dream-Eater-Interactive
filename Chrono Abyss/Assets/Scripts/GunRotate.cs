@@ -6,6 +6,7 @@ public class GunRotate : MonoBehaviour
 {
     // private attributes
     private Transform transform;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +17,17 @@ public class GunRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            animator.StopPlayback();
+            animator.Play("Shoot");
+        }
         rotate();
     }
 
     private void rotate()
     {
+
 
         Vector3 normalizedAimDir = PlayerController.aimDirection;
         normalizedAimDir.Normalize();
