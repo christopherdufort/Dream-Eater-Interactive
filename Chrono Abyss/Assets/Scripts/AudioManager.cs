@@ -11,7 +11,9 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        foreach(Sound s in sounds)
+ 
+
+        foreach (Sound s in sounds)
         {
            s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
@@ -20,21 +22,26 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop; 
         }
+
+        Play(SceneManager.GetActiveScene().name);
+
+        int audioManagers = FindObjectsOfType<AudioManager>().Length;
+        if (audioManagers != 1)
+        {
+            Destroy(gameObject);
+        }
+        // if more then one music player is in the scene
+        //destroy ourselves
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     private void Update()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         setPitchEffects();
-    }
-
-    private void Start()
-    {
-
-        if(SceneManager.GetActiveScene().name == "StartMenu")
-            Play("StartMenu");
-
-        if (SceneManager.GetActiveScene().name == "DungeonFloor")
-            Play("Dungeon");
     }
 
     private void setPitchEffects()
@@ -44,6 +51,21 @@ public class AudioManager : MonoBehaviour
             if (s.source.loop != true)
                 s.source.pitch = Mathf.Clamp(Time.timeScale, 0.4f, 1.0f);
         }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+
+
+
+        Play(SceneManager.GetActiveScene().name);
+
+    }
+
+    public void StopCurrent()
+    {
+        Stop(SceneManager.GetActiveScene().name);
+
     }
 
     public void Play(string name)

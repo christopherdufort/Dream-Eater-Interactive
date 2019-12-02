@@ -24,7 +24,7 @@ public class BossPortal : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //StartCoroutine(LoadAsyncScene(other.gameObject));
+            FindObjectOfType<AudioManager>().StopCurrent();
             SceneManager.LoadScene("BossFightScene", LoadSceneMode.Single);
         }
         

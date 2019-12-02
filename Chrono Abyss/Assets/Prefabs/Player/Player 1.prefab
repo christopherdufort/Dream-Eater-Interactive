@@ -50,10 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ad0ceb02e39e0499efa7e2144ea497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PLAYER_BASE_SPEED: 2.5
+  PLAYER_BASE_SPEED: 4
   PLAYER_BASE_ACCELERATION: 1
-  BULLET_BASE_SPEED: 10
-  BULLET_DURATION: 3
   SLASH_DURATION: 0.5
   isShooting: 0
   movementSpeed: 0

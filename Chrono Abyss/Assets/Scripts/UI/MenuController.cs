@@ -45,7 +45,7 @@ public class MenuController : MonoBehaviour
     public void startGame()
     {
         FindObjectOfType<AudioManager>().Play("Button");
-
+        FindObjectOfType<AudioManager>().StopCurrent();
         // May move this logic to the gamecontroller.
         Debug.Log("Current Floor Theme: " + randomFloorScene);
         SceneManager.LoadScene(randomFloorScene);
