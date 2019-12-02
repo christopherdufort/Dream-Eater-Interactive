@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
 
     [Header("Game State")]
     public bool paused;
-    
+    public bool gameover; 
     private int level = 1;
     private bool created;
 
@@ -51,7 +51,8 @@ public class GameController : MonoBehaviour
 
     public void gameOver()
     {
-        FindObjectOfType<AudioManager>().Stop("Dungeon");
+        gameover = true; 
+        FindObjectOfType<AudioManager>().StopCurrent(); 
         FindObjectOfType<AudioManager>().Play("PlayerDeath");
         // show game over menu and set time scale to 0
         gameOverScreen.SetActive(true);

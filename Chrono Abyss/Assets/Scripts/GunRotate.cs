@@ -17,10 +17,13 @@ public class GunRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (!FindObjectOfType<GameController>().paused && !FindObjectOfType<GameController>().gameover && PlayerController.currentAmmo > 0)
         {
-            animator.StopPlayback();
-            animator.Play("Shoot");
+            if (Input.GetButtonDown("Fire1"))
+            {
+                animator.StopPlayback();
+                animator.Play("Shoot");
+            }
         }
         rotate();
     }

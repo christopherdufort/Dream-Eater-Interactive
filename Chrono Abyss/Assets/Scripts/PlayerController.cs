@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
     private int maxHealth = 10;
     private int currentHealth;
     private int maxAmmo = 6;
-    private int currentAmmo;
+    public static int currentAmmo;
     private bool reloading;
 
     private void Awake()
@@ -147,8 +147,10 @@ public class PlayerController : MonoBehaviour
 
     void CheckInputs()
     {
-        // How long the player has been accelerating
-        acceleratedSpeed += Mathf.Clamp(Time.deltaTime * PLAYER_BASE_ACCELERATION, 0.0125f, 1.0f);
+        if (!FindObjectOfType<GameController>().paused && !FindObjectOfType<GameController>().gameover)
+        {
+            // How long the player has been accelerating
+            acceleratedSpeed += Mathf.Clamp(Time.deltaTime * PLAYER_BASE_ACCELERATION, 0.0125f, 1.0f);
             
         // If player is moving
         if (Input.GetButton("Horizontal") || Input.GetButton("Vertical"))
@@ -174,8 +176,7 @@ public class PlayerController : MonoBehaviour
 
 
         // check that game is not paused or over
-        if (!FindObjectOfType<GameController>().paused)
-        {
+
             // Get the aim direction vector from target position to player position
             aimDirection = Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition);
             aimDirection = aimDirection - (Vector2)transform.position; 
@@ -230,13 +231,17 @@ public class PlayerController : MonoBehaviour
             //bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
             //// Destroy bullet object after some duration
             //Destroy(bullet, BULLET_DURATION);
+        }else if(isShooting && currentAmmo == 0)
+        {
+            FindObjectOfType<AudioManager>().Play("NoAmmo");
         }
     }
 
     void Reload()
     {
-        if (Input.GetKey("r"))
+        if (Input.GetKey("r") && currentAmmo != maxAmmo)
         {
+            FindObjectOfType<AudioManager>().Play("Reload");
             StartCoroutine("ReloadDelay");
         }
     }
@@ -287,6 +292,8 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            FindObjectOfType<AudioManager>().Play("PlayerHurt");
+
             // decrease health
             currentHealth--;
             

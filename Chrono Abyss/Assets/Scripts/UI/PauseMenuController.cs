@@ -21,6 +21,8 @@ public class PauseMenuController : MonoBehaviour
 
     public void quitToMenu()
     {
+        FindObjectOfType<AudioManager>().StopCurrent();
+        FindObjectOfType<AudioManager>().Stop("PlayerDeath");
         SceneManager.LoadScene("StartMenu");
     }
 }
