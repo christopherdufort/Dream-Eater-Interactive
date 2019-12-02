@@ -267,6 +267,8 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            FindObjectOfType<AudioManager>().Play("PlayerHurt");
+
             // decrease health
             currentHealth--;
             

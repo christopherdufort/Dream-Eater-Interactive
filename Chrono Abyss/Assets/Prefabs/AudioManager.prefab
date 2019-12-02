@@ -104,3 +104,21 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: NoAmmo
+    clip: {fileID: 8300000, guid: ef4f2d10d7971ba48b6ed2294f9af033, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Reload
+    clip: {fileID: 8300000, guid: 09f2f4006b13f984b893a6f68bcf5425, type: 3}
+    volume: 0.65
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerHurt
+    clip: {fileID: 8300000, guid: 32e96028e6a42f94085cd0d172d9ab75, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
