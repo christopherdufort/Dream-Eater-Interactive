@@ -32,6 +32,10 @@ public class PlayerController : MonoBehaviour
     [Header("Prefabs:")]
     public GameObject bulletPrefab;
 
+	[Space]
+	[Header("Time Creeper Handler:")]
+	public TimeCreeperController timeCreeperController;
+
     // Private attributes
     private bool created;
     private PlayerSlash sword;
@@ -194,6 +198,11 @@ public class PlayerController : MonoBehaviour
     {
         // Move the player's rigid body in the movement direction (based on user input)
         rigidBody.velocity = movementDirection * movementSpeed * PLAYER_BASE_SPEED;
+		
+		if (rigidBody.velocity.magnitude > 1f)
+		{
+			timeCreeperController.NotifyMeaningfulEvent();
+		}
     }
 
     void Animate()
@@ -227,10 +236,12 @@ public class PlayerController : MonoBehaviour
             // Instantiate bullet object
             GameObject bullet = Instantiate(bulletPrefab, transform.position + (Vector3)aimDirection.normalized * 1.4f, Quaternion.identity);
 
-            //// Give bullet a velocity in the shooting direction
-            //bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
-            //// Destroy bullet object after some duration
-            //Destroy(bullet, BULLET_DURATION);
+			//// Give bullet a velocity in the shooting direction
+			//bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
+			//// Destroy bullet object after some duration
+			//Destroy(bullet, BULLET_DURATION);
+
+			timeCreeperController.NotifyMeaningfulEvent();
         }else if(isShooting && currentAmmo == 0)
         {
             FindObjectOfType<AudioManager>().Play("NoAmmo");
@@ -243,7 +254,7 @@ public class PlayerController : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Reload");
             StartCoroutine("ReloadDelay");
-        }
+		}
     }
 
     void Slash()
@@ -256,7 +267,9 @@ public class PlayerController : MonoBehaviour
 			sword.slashDurationRemaining = SLASH_DURATION;
             GetComponentInChildren<PlayerSlash>().anim.SetTrigger("Slash");
             StartCoroutine("SlashDelay");
-        }
+
+			timeCreeperController.NotifyMeaningfulEvent();
+		}
     }
 
     IEnumerator SlashDelay()

@@ -23,7 +23,8 @@ public class BossPortal : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            FindObjectOfType<AudioManager>().StopCurrent();
+			other.transform.GetComponentInChildren<TimeCreeperController>().NotifyPlayerInBossRoom(true);
+			FindObjectOfType<AudioManager>().StopCurrent();
             SceneManager.LoadScene("BossFightScene", LoadSceneMode.Single);
         }
         

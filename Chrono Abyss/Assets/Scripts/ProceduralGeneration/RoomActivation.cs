@@ -20,7 +20,9 @@ public class RoomActivation : MonoBehaviour
         {
             roomFogInstance.SetActive(false);
             enemySpawnerInRoom.InitiateEnemySpawn();
-        }
+
+			other.transform.GetComponentInChildren<TimeCreeperController>().NotifyPlayerInBossRoom(false);
+		}
     }
 
     // Update is called once per frame

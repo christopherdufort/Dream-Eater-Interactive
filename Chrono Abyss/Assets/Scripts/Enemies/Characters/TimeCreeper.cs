@@ -8,6 +8,8 @@ public class TimeCreeper : Shooter
 	[SerializeField] OperationMode operationMode;
 	private enum OperationMode { Chase, FullCombat }
 	private enum ProjectileType { Basic, Seeker, Spray }
+	private bool canMove;
+	[SerializeField] GameController gameController;
 
 	new void Awake()
 	{
@@ -16,25 +18,34 @@ public class TimeCreeper : Shooter
 		target = GameObject.FindWithTag("Player");
 	}
 
+	new void Start()
+	{
+		gameController = FindObjectOfType<GameController>();
+	}
+
     // Update is called once per frame
     new void Update()
-    {
-		if (!CheckDead())
+	{
+		if (!gameController.paused)
 		{
-			EnemyUpdateLoopStart();
-			
-			// TODO: check if player hasn't moved for X time
-			// return to work on this once GameController has been worked on more
+			if (!CheckDead())
+			{
+				EnemyUpdateLoopStart();
+				DetermineOperationMode();
 
-			if (operationMode == OperationMode.Chase)
-			{
-				MoveTowardsPlayer();
-			} else if (operationMode == OperationMode.FullCombat)
-			{
-				AttackPlayer();
+				if (operationMode == OperationMode.Chase)
+				{
+					if (canMove)
+					{
+						MoveTowardsPlayer();
+					}
+				} else if (operationMode == OperationMode.FullCombat)
+				{
+					AttackPlayer();
+				}
 			}
+			animator.SetBool("isMoving", isMoving);
 		}
-		animator.SetBool("isMoving", isMoving);
 	}
 
 	protected new void MoveTowardsPlayer()
@@ -115,14 +126,28 @@ public class TimeCreeper : Shooter
 	{
 		if (collision.CompareTag("Player"))
 		{
-			// TODO: Hurt player
-		}
-		else if (collision.CompareTag("PlayerBullet"))
+			// TODO: Hurt player?
+		} else
 		{
-			// TODO: Hurt Time Creeper
-			curHitPoints--;
-			Destroy(collision.gameObject);
+			PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
+			if (bullet != null)
+			{
+				curHitPoints -= bullet.attackValue;
+				Destroy(collision.gameObject);
+			} else
+			{
+				PlayerSlash sword = collision.transform.GetComponent<PlayerSlash>();
+				if (sword != null)
+				{
+					curHitPoints -= sword.attackValue;
+				}
+			}
 		}
+	}
+
+	public void SetCanMove(bool val)
+	{
+		canMove = val;
 	}
 
 	// TODO: On defeat: Add function to instantiate a portal to endgame
