@@ -29,7 +29,7 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         setPitchEffects();
-        CheckScene();
+        CheckScene();            
     }
 
     private void setPitchEffects()
@@ -39,6 +39,11 @@ public class AudioManager : MonoBehaviour
             if (s.source.loop != true)
                 s.source.pitch = Mathf.Clamp(Time.timeScale, 0.4f, 1.0f);
         }
+    }
+
+    public void StopCurrent()
+    {
+        Stop(currentScene);
     }
 
     public void Play(string name)

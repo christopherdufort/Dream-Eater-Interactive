@@ -51,7 +51,7 @@ public class GameController : MonoBehaviour
 
     public void gameOver()
     {
-        FindObjectOfType<AudioManager>().Stop("Dungeon");
+        FindObjectOfType<AudioManager>().StopCurrent();
         FindObjectOfType<AudioManager>().Play("PlayerDeath");
         // show game over menu and set time scale to 0
         gameOverScreen.SetActive(true);
