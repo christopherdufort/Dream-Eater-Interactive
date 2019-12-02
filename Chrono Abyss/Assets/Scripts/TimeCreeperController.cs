@@ -46,6 +46,7 @@ public class TimeCreeperController : MonoBehaviour
 				}
 				else
 				{
+					RelocateTimeCreeper();
 					LetTimeCreeperMove(true);
 				}
 			}
@@ -73,6 +74,22 @@ public class TimeCreeperController : MonoBehaviour
 	// spawns the Time Creeper at a fair distance away from the player
 	private void SpawnTimeCreeper()
 	{
+		timeCreeper = Instantiate(timeCreeperObj, transform.position + GenerateLocationOffset(), Quaternion.identity).GetComponent<TimeCreeper>();
+		//Debug.Log("Creeper instantiated at " + timeCreeper.transform.position.ToString() + " after player didn't do squat for " + timeSinceLastMeaningfulAction + " seconds!");
+		timeCreeper.SetCanMove(true);
+	}
+
+	// in case the Time Creeper is too far away, relocates it near the player
+	private void RelocateTimeCreeper()
+	{
+		if (Vector2.Distance(transform.position, timeCreeper.transform.position) > 7f)
+		{
+			timeCreeper.transform.position = transform.position + GenerateLocationOffset();
+		}
+	}
+
+	private Vector3 GenerateLocationOffset()
+	{
 		Vector3 offset = Vector3.zero;
 		int rand = Random.Range(1, 5);
 		switch (rand)
@@ -94,10 +111,7 @@ public class TimeCreeperController : MonoBehaviour
 				offset.x = Random.Range(-5f, 5f);
 				break;
 		}
-		
-		timeCreeper = Instantiate(timeCreeperObj, transform.position + offset, Quaternion.identity).GetComponent<TimeCreeper>();
-		//Debug.Log("Creeper instantiated at " + timeCreeper.transform.position.ToString() + " after player didn't do squat for " + timeSinceLastMeaningfulAction + " seconds!");
-		timeCreeper.SetCanMove(true);
+		return offset;
 	}
 
 	public void NotifyPlayerInBossRoom(bool val)
