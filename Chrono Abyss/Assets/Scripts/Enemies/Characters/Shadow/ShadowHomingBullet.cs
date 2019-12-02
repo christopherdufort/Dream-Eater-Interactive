@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// seeker bullet for the mirror boss
 public class ShadowHomingBullet : ShadowBullet
 {
     // Update is called once per frame
