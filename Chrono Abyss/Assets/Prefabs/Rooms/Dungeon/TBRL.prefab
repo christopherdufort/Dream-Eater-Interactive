@@ -1784,7 +1784,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 0
-      m_ColliderType: 0
+      m_ColliderType: 2
   - first: {x: 3, y: -8, z: 0}
     second:
       m_TileIndex: 9
@@ -1793,7 +1793,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 0
-      m_ColliderType: 0
+      m_ColliderType: 2
   - first: {x: 4, y: -8, z: 0}
     second:
       m_TileIndex: 0
@@ -2018,7 +2018,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 0
-      m_ColliderType: 0
+      m_ColliderType: 2
   - first: {x: 3, y: 3, z: 0}
     second:
       m_TileIndex: 9
@@ -2027,7 +2027,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 0
-      m_ColliderType: 0
+      m_ColliderType: 2
   - first: {x: 4, y: 3, z: 0}
     second:
       m_TileIndex: 0
@@ -2658,6 +2658,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1927511710788708347}
     m_Modifications:
+    - target: {fileID: 5359794361438081221, guid: cd2d3f9fade23bb43ac8f8478b9226b4,
+        type: 3}
+      propertyPath: m_Name
+      value: DungeonDoorLeft
+      objectReference: {fileID: 0}
     - target: {fileID: 5359794361438081222, guid: cd2d3f9fade23bb43ac8f8478b9226b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2722,11 +2727,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359794361438081221, guid: cd2d3f9fade23bb43ac8f8478b9226b4,
-        type: 3}
-      propertyPath: m_Name
-      value: DungeonDoorLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2d3f9fade23bb43ac8f8478b9226b4, type: 3}
@@ -3145,16 +3145,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: spawnValues.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: spawnValues.y
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d01f10cfaf38aa4ab5300f408b2e99e, type: 3}
