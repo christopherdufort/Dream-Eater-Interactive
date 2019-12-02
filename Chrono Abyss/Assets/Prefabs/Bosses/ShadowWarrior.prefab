@@ -107,7 +107,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3027492508253443213}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -348,25 +348,20 @@ MonoBehaviour:
   droppableLoot: []
   dropOdds: []
   projectiles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7772415236285220388, guid: 49b6fddfcb2ca9a49a28171d99bfa4d4, type: 3}
+  - {fileID: 2437108337081978472, guid: b189b8cb839a18f46838189d7c446fe8, type: 3}
+  - {fileID: 5190560647592513123, guid: 4b46748ccdbb5ce43912c022a2b7259f, type: 3}
   minComfortDistance: 3
-  curAction: 0
-  attackMode: 0
-  baseMoveSpeed: 3
-  chargingMoveSpeed: 6
+  projectileMode: 0
+  sidewaysStrafeDir: 0
+  frontwaysStrafeDir: 0
   strafeDurationMin: 2
   strafeDurationMax: 3
   strafeDurationSet: 0
-  chargingDistance: 0
-  chargingDistanceTravelled: 0
-  playerBulletDetectionRadius: 3
-  attackBulletsThreshold: 0
-  swipeRange: 1
+  regularProjectileCooldown: 0.75
+  sprayProjectileCooldown: 2
+  seekerProjectileCooldown: 1.5
   sword: {fileID: 4576700397121724187}
-  bulletPrefab: {fileID: 2437108337081978472, guid: b189b8cb839a18f46838189d7c446fe8,
-    type: 3}
 --- !u!1001 &6116506681803104643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -434,7 +429,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8840436536904489645, guid: 583bd385c41f0a941b42ba6b7f65a8fa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 583bd385c41f0a941b42ba6b7f65a8fa, type: 3}
 --- !u!1 &3576000514249194855 stripped
 GameObject:

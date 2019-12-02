@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// regular bullet for mirror boss
 public class ShadowBullet : EnemyProjectile
 {
 	new void Awake()

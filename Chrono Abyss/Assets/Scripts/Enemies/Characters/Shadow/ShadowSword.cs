@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// TODO: adapt to Shadow Warrior
+// sword for Mirror Boss... it'll probably just be there for looks
 public class ShadowSword : MonoBehaviour
 {
 	[SerializeField] public float attackValue { get; }
@@ -21,6 +21,7 @@ public class ShadowSword : MonoBehaviour
 		transform.localScale = new Vector3(scaleX * 0.7f, 0.7f, 1);
 	}
 
+	// unused function, probably will stay that way
 	public void Swipe()
 	{
 		StartCoroutine("SlashCoroutine");

@@ -4,50 +4,36 @@ using UnityEngine;
 
 public class Shadow : Shooter
 {
-	[SerializeField] CurrentAction curAction;
-	private enum CurrentAction { Strafing, BackingOff, Charging, CircleFire }
-	[SerializeField] AttackMode attackMode;
-    private enum AttackMode { Slash, SprayProjectile, SeekerProjectile, RegularProjectile }
-
+	private enum ProjectileMode { RegularProjectile, SprayProjectile, SeekerProjectile }
 	private enum StrafeSidewaysDirection { Left, Right }
 	private enum StrafeFrontwaysDirection { Front, Back, None }
-	private StrafeSidewaysDirection sidewaysStrafeDir;
-	private StrafeFrontwaysDirection frontwaysStrafeDir;
 
-	private enum HealthLevel { High, Medium, Low }
+	[Header("States")]
+	[SerializeField] private ProjectileMode projectileMode;
+	[SerializeField] private StrafeSidewaysDirection sidewaysStrafeDir;
+	[SerializeField] private StrafeFrontwaysDirection frontwaysStrafeDir;
 
-	[SerializeField] float baseMoveSpeed, chargingMoveSpeed;
-	[SerializeField] float strafeDurationMin, strafeDurationMax, strafeDurationSet;
-	[SerializeField] float chargingDistance, chargingDistanceTravelled;
+	[Header("Mirror Boss-Unique Movement")]
+	[SerializeField] float strafeDurationMin;
+	[SerializeField] float strafeDurationMax;
+	[SerializeField] float strafeDurationSet;
 
-	Collider2D[] surroundingObjects = new Collider2D[30];
-	[SerializeField] float playerBulletDetectionRadius;
-	[SerializeField] int attackBulletsThreshold;
+	[SerializeField] float regularProjectileCooldown = 0.75f, sprayProjectileCooldown = 2f, seekerProjectileCooldown = 1.5f;
 
-	[SerializeField] float swipeRange;
 	[SerializeField] ShadowSword sword;
-	private float actionTimeRemaining;
-
-	[SerializeField] GameObject bulletPrefab;
-
-	private bool startedCharging;
-
-	// timer for projectile
-	// timer for slashing
-	// timer for next action
+	private float strafeTimer;
+	private bool startedCharging = false;
+	private bool canShoot = true;
 
 	private new void Awake()
 	{
 		EnemyInitialize();
-		baseMoveSpeed = moveSpeed;
-		startedCharging = false;
 	}
 
 	private new void Start()
 	{
 		SetDirection(GetDirectionToPlayer());
 		StartStrafing();
-		InvokeRepeating("Shoot", 0f, 1f);
 	}
 
 	private new void Update()
@@ -55,17 +41,12 @@ public class Shadow : Shooter
 		if (!CheckDead())
 		{
 			SetDirection(GetDirectionToPlayer());
+			// decisions
+			DetermineNextProjectile();
 			UpdateFrontwaysStrafeDirection();
-
-			if (actionTimeRemaining > Mathf.Epsilon)
-			{
-				actionTimeRemaining -= Time.deltaTime;
-			}
-			else
-			{
-				// determine what to do next
-			}
+			// take aciton
 			Strafe();
+			Attack();
 			Animate();
 		}
 	}
@@ -83,16 +64,28 @@ public class Shadow : Shooter
 
 	private new void Strafe()
 	{
-		if (curAction == CurrentAction.Strafing)
+		if (strafeDurationSet < Mathf.Epsilon)
 		{
-			if (strafeDurationSet < Mathf.Epsilon)
-			{
-				SwitchStrafeDirection();
-			}
+			SwitchStrafeDirection();
+		}
 
-			SetDirectionToStrafe();
-			MoveTowardsCurrentDirection();
-			strafeDurationSet -= Time.deltaTime;
+		SetDirectionToStrafe();
+		MoveTowardsCurrentDirection();
+		strafeDurationSet -= Time.deltaTime;
+	}
+
+	// initializes strafing movement
+	private void StartStrafing()
+	{
+		strafeDurationSet = Random.Range(strafeDurationMin, strafeDurationMax);
+		float rand = Random.Range(0f, 1f);
+		if (rand > 0.5f)
+		{
+			sidewaysStrafeDir = StrafeSidewaysDirection.Left;
+		}
+		else
+		{
+			sidewaysStrafeDir = StrafeSidewaysDirection.Right;
 		}
 	}
 
@@ -132,20 +125,7 @@ public class Shadow : Shooter
 		}
 	}
 
-	private void StartStrafing()
-	{
-		strafeDurationSet = Random.Range(strafeDurationMin, strafeDurationMax);
-		float rand = Random.Range(0f, 1f);
-		if (rand > 0.5f)
-		{
-			sidewaysStrafeDir = StrafeSidewaysDirection.Left;
-		}
-		else
-		{
-			sidewaysStrafeDir = StrafeSidewaysDirection.Right;
-		}
-	}
-
+	// set forward-axis (from enemy to player) direction
 	private void UpdateFrontwaysStrafeDirection()
 	{
 		float dist = Vector2.Distance(transform.position, target.transform.position);
@@ -158,18 +138,48 @@ public class Shadow : Shooter
 		else if (dist < minComfortDistance)
 		{
 			frontwaysStrafeDir = StrafeFrontwaysDirection.Back;
-		} else
+		}
+		// stay in same lane
+		else
 		{
 			frontwaysStrafeDir = StrafeFrontwaysDirection.None;
 		}
 	}
 
-
-	void Shoot()
+	private void Attack()
 	{
-		GameObject bullet = Instantiate(bulletPrefab, (Vector2)transform.position + GetDirectionToPlayer() * 1.4f, Quaternion.identity);
+		StartCoroutine("ShootPlayer");
 	}
 
+	IEnumerator ShootPlayer()
+	{
+		if (canShoot)
+		{
+			GameObject bullet = Instantiate(projectiles[(int)projectileMode], (Vector2)transform.position + GetDirectionToPlayer() * 1.4f, Quaternion.identity);
+
+			canShoot = false;
+
+			switch (projectileMode)
+			{
+				case ProjectileMode.RegularProjectile:
+					yield return new WaitForSeconds(regularProjectileCooldown);
+					break;
+				case ProjectileMode.SeekerProjectile:
+					yield return new WaitForSeconds(seekerProjectileCooldown);
+					break;
+				case ProjectileMode.SprayProjectile:
+					yield return new WaitForSeconds(sprayProjectileCooldown);
+					break;
+				default:
+					Debug.Log("No projectile mode? What sorcery is this?");
+					break;
+			}
+
+			canShoot = true;
+		}
+	}
+
+	// for gun & sword-related classes' use
 	public GameObject GetTarget()
 	{
 		return target;
@@ -180,104 +190,39 @@ public class Shadow : Shooter
 		return ((Vector2)target.transform.position - (Vector2)transform.position).normalized;
 	}
 
-	// if health < 70%, start using seekers
-	// if health < 50%, start using sprays
+	// decides which projectile to use next based on randomness & distance from player
 	private void DetermineNextProjectile()
 	{
-
-	}
-
-	private void ChargeTowardsPlayer()
-	{
-		moveSpeed = chargingMoveSpeed;
-		chargingDistance = Vector2.Distance(target.transform.position, transform.position) * 1.5f;
-	}
-
-	/*
-	private new void Update()
-	{
-		if (!CheckDead())
+		float dist = Vector2.Distance(transform.position, target.transform.position);
+		float rand = Random.Range(0f, 1f);
+		if (dist > attackRange)
 		{
-			actionTimeRemaining -= Time.deltaTime;
-			DetermineNextAction();
-			DetermineNextProjectile();
-			Strafe();
-			AttackPlayer();
-			MaintainDistanceFromPlayer((Vector2)target.transform.position - (Vector2)transform.position);
-		}
-	}
-
-	private void DetermineNextAction()
-	{
-		if (actionTimeRemaining < Mathf.Epsilon)
-		{
-			float distToPlayer = Vector2.Distance(target.transform.position, transform.position);
-			float rand = Random.Range(0f, 1f);
-			if (distToPlayer > attackRange)
+			if (rand > 0.8f)
 			{
-				curAction = CurrentAction.Strafing;
-				attackMode = AttackMode.SprayProjectile;
-			}
-			else if (distToPlayer > minComfortDistance)
+				projectileMode = ProjectileMode.SeekerProjectile;
+			} else if (rand > 0.5f)
 			{
-				curAction = CurrentAction.Strafing;
+				projectileMode = ProjectileMode.SprayProjectile;
 			}
 			else
 			{
-				// 50-50 chance: back away or charge
-				if (rand > 0.5f)
-				{
-					curAction = CurrentAction.BackingOff;
-				}
-				else
-				{
-					curAction = CurrentAction.Charging;
-				}
+				projectileMode = ProjectileMode.RegularProjectile;
 			}
 		}
-	}
-
-	private void DetectPlayerProjectiles()
-	{
-		int playerBulletCount = 0;
-		Physics2D.OverlapCircleNonAlloc(transform.position, playerBulletDetectionRadius, surroundingObjects);
-		foreach (Collider2D col in surroundingObjects)
+		else if (dist > minComfortDistance)
 		{
-			if (col.CompareTag("PlayerBullet"))
+			if (rand > 0.4f)
 			{
-				++playerBulletCount;
+				projectileMode = ProjectileMode.SprayProjectile;
+			}
+			else
+			{
+				projectileMode = ProjectileMode.RegularProjectile;
 			}
 		}
-		if (playerBulletCount > attackBulletsThreshold)
+		else
 		{
-			curAction = CurrentAction.CircleFire;
+			projectileMode = ProjectileMode.RegularProjectile;
 		}
 	}
-
-	private void AttackPlayerProjectiles()
-	{
-	}
-
-	new void AttackPlayer()
-	{
-		if (actionTimeRemaining < Mathf.Epsilon)
-		{
-			float distance = Vector2.Distance(target.transform.position, transform.position);
-			if (distance < swipeRange)
-			{
-				sword.Swipe();
-			}
-			else if (distance < minComfortDistance)
-			{
-
-			}
-		}
-	}
-
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		// if hit a wall and was strafing, strafe in other direction
-		// if hit player, attack!
-	}
-	*/
 }
