@@ -82,7 +82,7 @@ public class TimeCreeperController : MonoBehaviour
 	// in case the Time Creeper is too far away, relocates it near the player
 	private void RelocateTimeCreeper()
 	{
-		if (Vector2.Distance(transform.position, timeCreeper.transform.position) > 7f)
+		if (Vector2.Distance(transform.position, timeCreeper.transform.position) > 15f)
 		{
 			timeCreeper.transform.position = transform.position + GenerateLocationOffset();
 		}
