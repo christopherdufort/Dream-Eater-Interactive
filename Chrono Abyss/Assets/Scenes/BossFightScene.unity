@@ -3400,6 +3400,8 @@ MonoBehaviour:
   - {fileID: 5392652225979532113, guid: ca8b6ec4b852ba54bbe5c6f211c317a3, type: 3}
   - {fileID: 2340884186880164238, guid: 5d8f218cef0abcf4c87a20a49eaddea0, type: 3}
   - {fileID: 5095977712597328304, guid: 4408d07e45921ef43b21b6f924982d53, type: 3}
+  levelUpPortalPrefab: {fileID: 2146674496206219784, guid: 26a5db0cfd916bb458a224891d7ecbfe,
+    type: 3}
 --- !u!4 &1888217634
 Transform:
   m_ObjectHideFlags: 0
@@ -3412,7 +3414,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906384019
 GameObject:
@@ -4603,7 +4605,7 @@ PrefabInstance:
     - target: {fileID: 2388562089031475371, guid: ac338034282be446899180fd29c3ca16,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2388562089031475371, guid: ac338034282be446899180fd29c3ca16,
         type: 3}
@@ -4722,7 +4724,7 @@ PrefabInstance:
     - target: {fileID: 4059907243214834304, guid: bc97c808960a94619a8ad3aa70b8e944,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4059907243214834304, guid: bc97c808960a94619a8ad3aa70b8e944,
         type: 3}

@@ -18,6 +18,8 @@ TagManager:
   - EnemySpawner
   - PlayerBullet
   - BossSpawner
+  - Heart
+  - Gold
   layers:
   - Default
   - TransparentFX
