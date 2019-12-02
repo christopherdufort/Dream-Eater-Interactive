@@ -39,7 +39,7 @@ public class EnemyProjectile : Enemy
 			PlayerSlash sword = collision.transform.GetComponent<PlayerSlash>();
 			if (sword != null)
 			{
-				if ((!isIndestructible) && (sword.isSlashing))
+				if (!isIndestructible)// && (sword.isSlashing))
 				{
 					//Debug.Log("PROJECTILE DESTROYED BY SWORD!");
 					Destroy(this.gameObject);
