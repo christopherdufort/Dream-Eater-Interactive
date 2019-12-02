@@ -7,11 +7,20 @@ public class PlayerController : MonoBehaviour
 {
     public PlayerData playerData { get; private set; }
 
+    public enum PowerUp
+    {
+        Invincibility,      //0 position    --  1 on keyboard
+        RicochetBullet,     //1 position    --  2 on keyboard
+        InfiniteAmmo,       //2 position    --  3 on keyboard
+        SpreadShot          //3 position    --  4 on keyboard
+    }
+
     [Space]
     [Header("Base attributes:")]
     public float PLAYER_BASE_SPEED = 2.5f;
     public float PLAYER_BASE_ACCELERATION = 0.5f;
     public float SLASH_DURATION = 0.125f;
+    public float POWER_UP_DURATION = 15.0f;
 
     [Space]
     [Header("Character Statistics:")]
@@ -21,6 +30,10 @@ public class PlayerController : MonoBehaviour
     public static Vector2 aimDirection;
     public static Vector3 playerPosition;
     public int goldCollected = 0;
+    public int invincibilityCount = 0;
+    public int ricochetBulletCount = 0;
+    public int infiniteAmmoCount = 0;
+    public int spreadShotCount = 0;
 
     [Space]
     [Header("Component References:")]
@@ -192,6 +205,24 @@ public class PlayerController : MonoBehaviour
             Time.timeScale = !sword.isSlashing && !reloading ? movementSpeed : 1.0f;
             Time.fixedDeltaTime = !sword.isSlashing && !reloading ? movementSpeed * 0.02f : 0.02f;
         }
+
+        // Check if player is using a powerup
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            ActivatePowerup(PowerUp.Invincibility);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ActivatePowerup(PowerUp.RicochetBullet);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            ActivatePowerup(PowerUp.InfiniteAmmo);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            ActivatePowerup(PowerUp.SpreadShot);
+        }
     }
 
     void Move()
@@ -318,4 +349,81 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void ActivatePowerup(PowerUp powerUp)
+    {
+        Debug.Log("Trying to use powerup "+ powerUp.ToString());
+        Debug.Log("powerUp count:" + invincibilityCount + " " + infiniteAmmoCount + " " + ricochetBulletCount + " " + spreadShotCount);
+        switch (powerUp)
+        {
+            case PowerUp.Invincibility:
+                if (invincibilityCount > 0)
+                {
+                    Debug.Log("Player has activated powerup " + powerUp.ToString());
+                    invincibilityCount--;
+                    //Affect stats
+                    //Start timer
+                }
+                break;
+            case PowerUp.InfiniteAmmo:
+                if (infiniteAmmoCount > 0)
+                {
+                    Debug.Log("Player has activated powerup " + powerUp.ToString());
+                    infiniteAmmoCount--;
+                    //Affect stats
+                    //Start timer
+                }
+                break;
+            case PowerUp.RicochetBullet:
+                if (ricochetBulletCount > 0)
+                {
+                    Debug.Log("Player has activated powerup " + powerUp.ToString());
+                    ricochetBulletCount--;
+                    //Affect stats
+                    //Start timer
+                }
+                break;
+            case PowerUp.SpreadShot:
+                if (spreadShotCount > 0)
+                {
+                    Debug.Log("Player has activated powerup " + powerUp.ToString());
+                    spreadShotCount--;
+                    //Affect stats
+                    //Start timer
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void CollectPowerup(String powerUpName)
+    {
+        Debug.Log("Player has collected powerup " + powerUpName);
+        //TODO FIXME BUGGED ALL ARE FALSE
+        Debug.Log("powerUpName == InvincibilityPowerUp" + powerUpName == "InvincibilityPowerUp");
+        Debug.Log("powerUpName == RicochetBulletPowerUp" + powerUpName == "RicochetBulletPowerUp");
+        Debug.Log("powerUpName == InfiniteAmmotPowerUp" + powerUpName == "InfiniteAmmotPowerUp");
+        Debug.Log("powerUpName == SpreadShotPowerUp" + powerUpName == "SpreadShotPowerUp");
+        //TODO use PowerUp enums included above instead?
+        if (powerUpName == "InvincibilityPowerUp")
+        {
+            invincibilityCount++;
+            Debug.Log("inv ++ " + invincibilityCount);
+        }
+        else if (powerUpName == "RicochetBulletPowerUp")
+        {
+            ricochetBulletCount++;
+            Debug.Log("ric ++ " + ricochetBulletCount);
+        }
+        else if (powerUpName == "InfiniteAmmotPowerUp")
+        {
+            infiniteAmmoCount++;
+            Debug.Log("inf ++ " + infiniteAmmoCount);
+        }
+        else if (powerUpName == "SpreadShotPowerUp")
+        {
+            spreadShotCount++;
+            Debug.Log("spr ++ " + spreadShotCount);
+        }
+    }
 }

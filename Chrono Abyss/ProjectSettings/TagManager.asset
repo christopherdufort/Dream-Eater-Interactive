@@ -20,6 +20,12 @@ TagManager:
   - BossSpawner
   - Heart
   - Gold
+  - SkellyArmyController
+  - SplittingSlimeController
+  - InvincibilityPowerup
+  - RicochetBulletPowerup
+  - InfiniteAmmoPowerup
+  - SpreadShotPowerup
   layers:
   - Default
   - TransparentFX
