@@ -35,4 +35,27 @@ public class PlayerData
     public int Resistance { get; set; }
     // Affects the amount of powerups that can be held at the same time.
     public int Endurance { get; set; }
+
+    // Constructor for new games
+    public PlayerData()
+    {
+
+    }
+    public PlayerData(bool newGame)
+    {
+        this.PlayerLevel = 1;
+        this.Agility = 1;
+        this.Vitality = 1;
+        this.Vigor = 1;
+        this.Strength = 1;
+        this.Skill = 1;
+        this.Resistance = 1;
+        this.Luck = 1;
+        this.Intelligence = 1;
+        this.Faith = 1;
+        this.Attunement = 1;
+        this.Dexterity = 1;
+        this.Endurance = 1;
+    }
 }
+
