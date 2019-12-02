@@ -1730,7 +1730,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 0
-      m_ColliderType: 0
+      m_ColliderType: 2
   - first: {x: 3, y: -8, z: 0}
     second:
       m_TileIndex: 9
@@ -1739,7 +1739,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 0
-      m_ColliderType: 0
+      m_ColliderType: 2
   - first: {x: 4, y: -8, z: 0}
     second:
       m_TileIndex: 0
@@ -2523,6 +2523,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7001962669100975840}
     m_Modifications:
+    - target: {fileID: 5359794361438081221, guid: cd2d3f9fade23bb43ac8f8478b9226b4,
+        type: 3}
+      propertyPath: m_Name
+      value: DungeonDoorLeft
+      objectReference: {fileID: 0}
     - target: {fileID: 5359794361438081222, guid: cd2d3f9fade23bb43ac8f8478b9226b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2588,11 +2593,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5359794361438081221, guid: cd2d3f9fade23bb43ac8f8478b9226b4,
-        type: 3}
-      propertyPath: m_Name
-      value: DungeonDoorLeft
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2d3f9fade23bb43ac8f8478b9226b4, type: 3}
 --- !u!4 &8713796201249031805 stripped
@@ -2608,6 +2608,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8887086739352247776}
     m_Modifications:
+    - target: {fileID: 6752188855095497524, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
+        type: 3}
+      propertyPath: m_Name
+      value: HazardSpawner
+      objectReference: {fileID: 0}
     - target: {fileID: 8533280009294346860, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2662,21 +2667,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6752188855095497524, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: m_Name
-      value: HazardSpawner
-      objectReference: {fileID: 0}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: spawnValues.x
-      value: -4
-      objectReference: {fileID: 0}
-    - target: {fileID: -6785610323226701078, guid: 2d01f10cfaf38aa4ab5300f408b2e99e,
-        type: 3}
-      propertyPath: spawnValues.y
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d01f10cfaf38aa4ab5300f408b2e99e, type: 3}
@@ -2785,6 +2775,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8887086739352247776}
     m_Modifications:
+    - target: {fileID: 1425470037928096526, guid: 98c1fc0479d1b634ebfaf4328511d16b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197600776519606603, guid: 98c1fc0479d1b634ebfaf4328511d16b,
+        type: 3}
+      propertyPath: enemySpawnerInRoom
+      value: 
+      objectReference: {fileID: 4703250262967582825}
+    - target: {fileID: 9197600776519606603, guid: 98c1fc0479d1b634ebfaf4328511d16b,
+        type: 3}
+      propertyPath: roomFogPrefab
+      value: 
+      objectReference: {fileID: 1233810601037342027, guid: f6d552fbddf9ac4468c3745ebad7983c,
+        type: 3}
     - target: {fileID: 7878671169702843899, guid: 98c1fc0479d1b634ebfaf4328511d16b,
         type: 3}
       propertyPath: m_Name
@@ -2845,22 +2851,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1425470037928096526, guid: 98c1fc0479d1b634ebfaf4328511d16b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 9197600776519606603, guid: 98c1fc0479d1b634ebfaf4328511d16b,
-        type: 3}
-      propertyPath: enemySpawnerInRoom
-      value: 
-      objectReference: {fileID: 4703250262967582825}
-    - target: {fileID: 9197600776519606603, guid: 98c1fc0479d1b634ebfaf4328511d16b,
-        type: 3}
-      propertyPath: roomFogPrefab
-      value: 
-      objectReference: {fileID: 1233810601037342027, guid: f6d552fbddf9ac4468c3745ebad7983c,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c1fc0479d1b634ebfaf4328511d16b, type: 3}
 --- !u!4 &6357745894753467970 stripped
@@ -2876,6 +2866,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7001962669100975840}
     m_Modifications:
+    - target: {fileID: 5359794361438081221, guid: f3fd2a4da0c464cd4b382ebc8773d70a,
+        type: 3}
+      propertyPath: m_Name
+      value: DungeonDoorS
+      objectReference: {fileID: 0}
     - target: {fileID: 5359794361438081222, guid: f3fd2a4da0c464cd4b382ebc8773d70a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2930,11 +2925,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5359794361438081221, guid: f3fd2a4da0c464cd4b382ebc8773d70a,
-        type: 3}
-      propertyPath: m_Name
-      value: DungeonDoorS
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3fd2a4da0c464cd4b382ebc8773d70a, type: 3}
