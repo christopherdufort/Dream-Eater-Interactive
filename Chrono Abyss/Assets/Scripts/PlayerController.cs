@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public PlayerData playerData { get; private set; }
 
     [Space]
     [Header("Base attributes:")]
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 movementDirection;
     public static Vector2 aimDirection;
     public static Vector3 playerPosition;
+    public int goldCollected = 0;
 
     [Space]
     [Header("Component References:")]
@@ -47,6 +49,19 @@ public class PlayerController : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             created = true;
         }
+    }
+
+    //Load from save state
+    public void OnEnable()
+    {
+        playerData = PlayerPersistence.LoadData();
+
+    }
+   
+    //Save to save state
+    public void OnDisable()
+    {
+        PlayerPersistence.SaveData(this.playerData);
     }
 
     void Start()
@@ -272,6 +287,5 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
 
 }
