@@ -36,19 +36,32 @@ public class EnemyProjectile : Enemy
 			}
 		} else
 		{
-			PlayerController player = collision.transform.GetComponent<PlayerController>();
-			if (player != null)
+			PlayerSlash sword = collision.transform.GetComponent<PlayerSlash>();
+			if (sword != null)
 			{
-				// TODO: Damage player
-				Destroy(this.gameObject);
+				if (!isIndestructible)// && (sword.isSlashing))
+				{
+					//Debug.Log("PROJECTILE DESTROYED BY SWORD!");
+					Destroy(this.gameObject);
+				}
 			} else
 			{
-				if (collision.transform.CompareTag("Wall"))
+				PlayerController player = collision.transform.GetComponent<PlayerController>();
+				if (player != null)
 				{
+					// TODO: Damage player?
 					Destroy(this.gameObject);
-				} else
+				}
+				else
 				{
-					// Debug.Log("Enemy projectile hasn't collided with any object of note.");
+					if (collision.transform.CompareTag("Wall"))
+					{
+						Destroy(this.gameObject);
+					}
+					else
+					{
+						// Debug.Log("Enemy projectile hasn't collided with any object of note.");
+					}
 				}
 			}
 		}
