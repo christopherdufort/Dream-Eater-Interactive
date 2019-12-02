@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public PlayerData playerData { get; private set; }
 
     [Space]
     [Header("Base attributes:")]
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 movementDirection;
     public static Vector2 aimDirection;
     public static Vector3 playerPosition;
+    public int goldCollected = 0;
 
     [Space]
     [Header("Component References:")]
@@ -42,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("The Player is awake");
         if (!created)
         {
             DontDestroyOnLoad(gameObject);
@@ -49,8 +52,29 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Load from save state
+    public void OnEnable()
+    {
+        Debug.Log("The Player is enabled");
+        //TODO: need a check for if this is a new game
+        // Create new Data
+        playerData = new PlayerData(true);
+        // Save new Game
+        PlayerPersistence.SaveData(playerData);
+        // Load existing Game
+        playerData = PlayerPersistence.LoadData();
+
+    }
+   
+    //Save to save state
+    public void OnDisable()
+    {
+        PlayerPersistence.SaveData(this.playerData);
+    }
+
     void Start()
     {
+        Debug.Log("The Player is starting");
         Time.timeScale = movementSpeed;
         Time.fixedDeltaTime = movementSpeed * 0.2f;
 
@@ -219,6 +243,7 @@ public class PlayerController : MonoBehaviour
 
     void Slash()
     {
+        // A on Controller , Space on Keyboard
         if (Input.GetButton("Jump") && !sword.isSlashing)
         {
             // Prevents user from attacking again until the slash is complete
@@ -272,6 +297,5 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
 
 }

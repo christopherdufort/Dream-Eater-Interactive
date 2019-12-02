@@ -3397,6 +3397,8 @@ MonoBehaviour:
   playerSpawnPosition: {x: 0, y: -5, z: 0}
   bossPrefabs:
   - {fileID: 6951553776884765944, guid: 43b591e92da01fe44b8012fa05c67db5, type: 3}
+  levelUpPortalPrefab: {fileID: 2146674496206219784, guid: 26a5db0cfd916bb458a224891d7ecbfe,
+    type: 3}
 --- !u!4 &1888217634
 Transform:
   m_ObjectHideFlags: 0
@@ -3409,7 +3411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906384019
 GameObject:
@@ -4262,7 +4264,7 @@ Tilemap:
       - {fileID: 3610339231219930621, guid: 7be71c2a9a839423385817db425682e1, type: 3}
       - {fileID: 290047839109599427, guid: 7be71c2a9a839423385817db425682e1, type: 3}
       - {fileID: -2900853429046034592, guid: 7be71c2a9a839423385817db425682e1, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 4, y: -10, z: 0}
@@ -4557,6 +4559,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2388562089031475375, guid: ac338034282be446899180fd29c3ca16,
+        type: 3}
+      propertyPath: m_Name
+      value: PauseScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 2388562089031475371, guid: ac338034282be446899180fd29c3ca16,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4595,7 +4602,7 @@ PrefabInstance:
     - target: {fileID: 2388562089031475371, guid: ac338034282be446899180fd29c3ca16,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2388562089031475371, guid: ac338034282be446899180fd29c3ca16,
         type: 3}
@@ -4662,11 +4669,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2388562089031475375, guid: ac338034282be446899180fd29c3ca16,
-        type: 3}
-      propertyPath: m_Name
-      value: PauseScreen
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac338034282be446899180fd29c3ca16, type: 3}
 --- !u!1001 &2104022822
@@ -4719,7 +4721,7 @@ PrefabInstance:
     - target: {fileID: 4059907243214834304, guid: bc97c808960a94619a8ad3aa70b8e944,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4059907243214834304, guid: bc97c808960a94619a8ad3aa70b8e944,
         type: 3}
