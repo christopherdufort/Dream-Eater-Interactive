@@ -175,11 +175,7 @@ GameObject:
   - component: {fileID: -6569495487494626483}
   m_Layer: 0
   m_Name: ShadowWarrior
-<<<<<<< HEAD
   m_TagString: Untagged
-=======
-  m_TagString: Enemy
->>>>>>> 09b11b4e16aecd1832f8204d90bc831f06f8c89e
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

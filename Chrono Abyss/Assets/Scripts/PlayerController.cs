@@ -194,13 +194,8 @@ public class PlayerController : MonoBehaviour
         // If shooting
         if (isShooting && currentAmmo > 0)
         {
-<<<<<<< HEAD
             currentAmmo--;
             FindObjectOfType<AudioManager>().Play("Shoot");
-=======
-            //currentAmmo--;
-            
->>>>>>> 09b11b4e16aecd1832f8204d90bc831f06f8c89e
             // Get normalized shooting direction from crosshair position (which is tied to mouse)
             Vector2 shootingDirection = crosshair.transform.localPosition;
             shootingDirection.Normalize();
@@ -253,7 +248,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             // decrease health
-            //currentHealth--;
+            currentHealth--;
             
             // check if dead and tell game controller to end game
             if (currentHealth <= 0)
@@ -268,7 +263,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             // decrease health
-            //currentHealth--;
+            currentHealth--;
             
             // check if dead and tell game controller to end game
             if (currentHealth <= 0)
