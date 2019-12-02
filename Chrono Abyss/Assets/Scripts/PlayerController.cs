@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     private int currentHealth;
     private int maxAmmo = 6;
     private int currentAmmo;
+    private bool reloading;
 
     private void Awake()
     {
@@ -71,6 +72,7 @@ public class PlayerController : MonoBehaviour
         Animate();
         Aim();
         Shoot();
+        Reload();
         Slash();
     }
 
@@ -138,9 +140,9 @@ public class PlayerController : MonoBehaviour
         // If player is standing still
         else
         {
-            // Reset accleration timer and set movement speed to zero
+            // Reset acceleration timer and set movement speed to zero
             acceleratedSpeed = 0f;
-            movementSpeed = !sword.isSlashing ? 0.0125f : 0.0f; 
+            movementSpeed = !sword.isSlashing && !reloading ? 0.0125f : 0.0f; 
         }
         
         Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
@@ -158,9 +160,8 @@ public class PlayerController : MonoBehaviour
             isShooting = Input.GetButtonUp("Fire1");
             
             // set time scale to player speed
-            Time.timeScale = !sword.isSlashing ? movementSpeed : 1.0f;
-            Time.fixedDeltaTime = !sword.isSlashing ? movementSpeed * 0.02f : 0.02f;
-
+            Time.timeScale = !sword.isSlashing && !reloading ? movementSpeed : 1.0f;
+            Time.fixedDeltaTime = !sword.isSlashing && !reloading ? movementSpeed * 0.02f : 0.02f;
         }
     }
 
@@ -190,8 +191,8 @@ public class PlayerController : MonoBehaviour
 
     void Shoot()
     {
-        // If shooting *** (Unlimited ammo for testing)
-        if (isShooting /*&& currentAmmo > 0*/)
+        // If shooting
+        if (isShooting && currentAmmo > 0)
         {
             currentAmmo--;
             FindObjectOfType<AudioManager>().Play("Shoot");
@@ -205,6 +206,14 @@ public class PlayerController : MonoBehaviour
             //bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
             //// Destroy bullet object after some duration
             //Destroy(bullet, BULLET_DURATION);
+        }
+    }
+
+    void Reload()
+    {
+        if (Input.GetKey("r"))
+        {
+            StartCoroutine("ReloadDelay");
         }
     }
 
@@ -224,6 +233,14 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(SLASH_DURATION);
         sword.isSlashing = false;
+    }
+
+    IEnumerator ReloadDelay()
+    {
+        reloading = true;
+        yield return new WaitForSecondsRealtime(2f);
+        currentAmmo = maxAmmo;
+        reloading = false;
     }
 
     private void OnCollisionEnter2D(Collision2D other)

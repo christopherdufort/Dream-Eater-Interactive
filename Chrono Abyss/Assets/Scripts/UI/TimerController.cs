@@ -27,7 +27,7 @@ public class TimerController : MonoBehaviour
         if (timerGo && currentTime > 0.005)
         {
             // decrease timer
-            currentTime -= Time.deltaTime;
+            currentTime -= Time.fixedDeltaTime;
         
             // calculate health bar's new scale and pos
             float scale = currentTime / maxTime;
