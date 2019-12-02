@@ -3397,6 +3397,9 @@ MonoBehaviour:
   playerSpawnPosition: {x: 0, y: -5, z: 0}
   bossPrefabs:
   - {fileID: 6951553776884765944, guid: 43b591e92da01fe44b8012fa05c67db5, type: 3}
+  - {fileID: 5392652225979532113, guid: ca8b6ec4b852ba54bbe5c6f211c317a3, type: 3}
+  - {fileID: 2340884186880164238, guid: 5d8f218cef0abcf4c87a20a49eaddea0, type: 3}
+  - {fileID: 5095977712597328304, guid: 4408d07e45921ef43b21b6f924982d53, type: 3}
   levelUpPortalPrefab: {fileID: 2146674496206219784, guid: 26a5db0cfd916bb458a224891d7ecbfe,
     type: 3}
 --- !u!4 &1888217634

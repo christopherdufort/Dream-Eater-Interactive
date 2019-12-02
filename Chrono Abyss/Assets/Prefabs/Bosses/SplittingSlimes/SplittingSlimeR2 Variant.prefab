@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3277266358713031290
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2153488234372801455, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_Name
+      value: SplittingSlimeR2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: roundNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: curHitPoints
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: rigidBody
+      value: 
+      objectReference: {fileID: 3501982192952392169}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3501982192952392171}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8545682
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912005708959445683, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: splittingSlimePrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912005708959445683, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: splittingSlimeOffspring
+      value: 
+      objectReference: {fileID: 7965812111250256438, guid: a982032a8b9d62049bf7a1d2ae496c79,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7, type: 3}
+--- !u!50 &3501982192952392169 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2153488234372801427, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3277266358713031290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3501982192952392171 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2153488234372801425, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3277266358713031290}
+  m_PrefabAsset: {fileID: 0}
