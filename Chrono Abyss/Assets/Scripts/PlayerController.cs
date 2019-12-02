@@ -207,13 +207,17 @@ public class PlayerController : MonoBehaviour
             //bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
             //// Destroy bullet object after some duration
             //Destroy(bullet, BULLET_DURATION);
+        }else if(isShooting && currentAmmo == 0)
+        {
+            FindObjectOfType<AudioManager>().Play("NoAmmo");
         }
     }
 
     void Reload()
     {
-        if (Input.GetKey("r"))
+        if (Input.GetKey("r") && currentAmmo != maxAmmo)
         {
+            FindObjectOfType<AudioManager>().Play("Reload");
             StartCoroutine("ReloadDelay");
         }
     }
