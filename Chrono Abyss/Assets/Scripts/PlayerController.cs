@@ -2,7 +2,6 @@
 using System.Collections;
 using UnityEngine;
 
-
 public class PlayerController : MonoBehaviour
 {
     public PlayerData playerData { get; private set; }
@@ -54,6 +53,8 @@ public class PlayerController : MonoBehaviour
 	[Header("Time Creeper Handler:")]
 	public TimeCreeperController timeCreeperController;
 
+    public GameController gameController;
+
     // Private attributes
     private bool created;
     private PlayerSlash sword;
@@ -66,7 +67,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("The Player is awake");
+       
         if (!created)
         {
             DontDestroyOnLoad(gameObject);
@@ -74,34 +75,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //Load from save state
-    public void OnEnable()
-    {
-        Debug.Log("The Player is enabled");
-        //TODO: need a check for if this is a new game
-        // Create new Data
-        playerData = new PlayerData(true);
-        // Save new Game
-        PlayerPersistence.SaveData(playerData);
-        // Load existing Game
-        playerData = PlayerPersistence.LoadData();
-
-    }
-   
-    //Save to save state
-    public void OnDisable()
-    {
-        PlayerPersistence.SaveData(this.playerData);
-    }
-
     void Start()
     {
+        gameController = FindObjectOfType<GameController>();
+
         Debug.Log("The Player is starting");
         Time.timeScale = movementSpeed;
         Time.fixedDeltaTime = movementSpeed * 0.2f;
 
-        currentHealth = maxHealth;
-        currentAmmo = maxAmmo;
+        currentHealth = maxHealth + gameController.playerData.Vitality;
+        currentAmmo = maxAmmo + gameController.playerData.Attunement;
 
 	    rigidBody.freezeRotation = true;
         updatePosition();
