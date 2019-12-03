@@ -416,6 +416,7 @@ public class PlayerController : MonoBehaviour
                     invincible = true;
                     //Affect stats
                     //Start timer
+                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
                 }
                 break;
             case PowerUp.InfiniteAmmoPowerup:
@@ -427,6 +428,7 @@ public class PlayerController : MonoBehaviour
                     infiniteAmmo = true;
                     //Affect stats
                     //Start timer
+                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
                 }
                 break;
             case PowerUp.RicochetBulletPowerup:
@@ -436,6 +438,7 @@ public class PlayerController : MonoBehaviour
                     ricochetBulletCount--;
                     //Affect stats
                     //Start timer
+                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
                 }
                 break;
             case PowerUp.SpreadShotPowerup:
@@ -447,6 +450,7 @@ public class PlayerController : MonoBehaviour
                     canPowerup = false;
                     //Affect stats
                     //Start timer
+                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
                 }
                 break;
             default:
