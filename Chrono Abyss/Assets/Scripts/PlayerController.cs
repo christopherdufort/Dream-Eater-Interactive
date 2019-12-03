@@ -88,9 +88,7 @@ public class PlayerController : MonoBehaviour
         Time.fixedDeltaTime = movementSpeed * 0.2f;
 
         // Apply loaded save game stats
-        maxHealth = maxHealth + gameController.playerData.Vitality;
-        maxAmmo = maxAmmo + gameController.playerData.Attunement;
-        POWER_UP_DURATION = POWER_UP_DURATION + gameController.playerData.Intelligence;
+        LevelUpPlayer();
 
 
         currentHealth = maxHealth;
@@ -115,6 +113,14 @@ public class PlayerController : MonoBehaviour
         Slash();
     }
 
+    public void LevelUpPlayer()
+    {
+        this.maxHealth = maxHealth + gameController.playerData.Vitality;
+        this.maxAmmo = maxAmmo + gameController.playerData.Attunement;
+        this.POWER_UP_DURATION = POWER_UP_DURATION + gameController.playerData.Intelligence;
+        this.PLAYER_BASE_SPEED = PLAYER_BASE_SPEED + gameController.playerData.Agility;
+
+    }
     public void setTotalHealth(int newHealth)
     {
         maxHealth = newHealth > 0 ? newHealth : maxHealth;

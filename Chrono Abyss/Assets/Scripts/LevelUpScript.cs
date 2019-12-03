@@ -151,6 +151,8 @@ public class LevelUpScript : MonoBehaviour
         Debug.Log("Continue Clicked");
         SaveGame();
 
+        player.GetComponent<PlayerController>().LevelUpPlayer();
+
         string randomFloorScene = ((FloorTheme)Random.Range(0, 4)).ToString() + "Floor";
         SceneManager.LoadScene(randomFloorScene);
         //May Need to bring player into the scene
