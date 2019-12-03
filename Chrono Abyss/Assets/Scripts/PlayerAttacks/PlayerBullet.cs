@@ -38,9 +38,5 @@ public class PlayerBullet : MonoBehaviour
 
         if (bulletTimer > BULLET_DURATION)
             Destroy(gameObject);
-
-
-
-
     }
 }

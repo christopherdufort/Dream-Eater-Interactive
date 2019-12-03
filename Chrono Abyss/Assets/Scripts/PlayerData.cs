@@ -44,6 +44,7 @@ public class PlayerData
     public PlayerData(bool newGame)
     {
         this.PlayerLevel = 1;
+        // 12 is the default starting total stats
         this.Agility = 1;
         this.Vitality = 1;
         this.Vigor = 1;

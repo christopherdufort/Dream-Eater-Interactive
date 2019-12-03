@@ -8,6 +8,7 @@ public class LevelUpScript : MonoBehaviour
 {
     [SerializeField] Vector3 playerSpawnPosition = new Vector3(500.0f, 500.0f, 500.0f);
     private GameObject player;
+    private GameObject gameController;
 
     //----- UI ELEMENTS -----
 
@@ -129,20 +130,19 @@ public class LevelUpScript : MonoBehaviour
     {
         totalGold = player.GetComponent<PlayerController>().goldCollected;
 
-        totalLevel = player.GetComponent<PlayerController>().playerData.PlayerLevel;
-
-        vitality = player.GetComponent<PlayerController>().playerData.Vitality;
-        attunement = player.GetComponent<PlayerController>().playerData.Attunement;
-        agility = player.GetComponent<PlayerController>().playerData.Agility;
-        strength = player.GetComponent<PlayerController>().playerData.Strength;
-        dexterity = player.GetComponent<PlayerController>().playerData.Dexterity;
-        skill = player.GetComponent<PlayerController>().playerData.Skill;
-        intelligence = player.GetComponent<PlayerController>().playerData.Intelligence;
-        luck = player.GetComponent<PlayerController>().playerData.Luck;
-        faith = player.GetComponent<PlayerController>().playerData.Faith;
-        vigor = player.GetComponent<PlayerController>().playerData.Vigor;
-        resistance = player.GetComponent<PlayerController>().playerData.Resistance;
-        endurance = player.GetComponent<PlayerController>().playerData.Endurance;
+        totalLevel = gameController.GetComponent<GameController>().playerData.PlayerLevel;
+        vitality = gameController.GetComponent<GameController>().playerData.Vitality;
+        attunement = gameController.GetComponent<GameController>().playerData.Attunement;
+        agility = gameController.GetComponent<GameController>().playerData.Agility;
+        strength = gameController.GetComponent<GameController>().playerData.Strength;
+        dexterity = gameController.GetComponent<GameController>().playerData.Dexterity;
+        skill = gameController.GetComponent<GameController>().playerData.Skill;
+        intelligence = gameController.GetComponent<GameController>().playerData.Intelligence;
+        luck = gameController.GetComponent<GameController>().playerData.Luck;
+        faith = gameController.GetComponent<GameController>().playerData.Faith;
+        vigor = gameController.GetComponent<GameController>().playerData.Vigor;
+        resistance = gameController.GetComponent<GameController>().playerData.Resistance;
+        endurance = gameController.GetComponent<GameController>().playerData.Endurance;
     }
 
     public void ContinueGame()
@@ -166,23 +166,23 @@ public class LevelUpScript : MonoBehaviour
     {
         // Persist changed stats to playerData;
         player.GetComponent<PlayerController>().goldCollected = totalGold;
-        player.GetComponent<PlayerController>().playerData.PlayerLevel = totalLevel;
 
-        player.GetComponent<PlayerController>().playerData.Vitality = vitality;
-        player.GetComponent<PlayerController>().playerData.Attunement = attunement;
-        player.GetComponent<PlayerController>().playerData.Agility = agility;
-        player.GetComponent<PlayerController>().playerData.Strength = strength;
-        player.GetComponent<PlayerController>().playerData.Dexterity = dexterity;
-        player.GetComponent<PlayerController>().playerData.Skill = skill;
-        player.GetComponent<PlayerController>().playerData.Intelligence = intelligence;
-        player.GetComponent<PlayerController>().playerData.Luck = luck;
-        player.GetComponent<PlayerController>().playerData.Faith = faith;
-        player.GetComponent<PlayerController>().playerData.Vigor = vigor;
-        player.GetComponent<PlayerController>().playerData.Resistance = resistance;
-        player.GetComponent<PlayerController>().playerData.Endurance = endurance;
+        gameController.GetComponent<GameController>().playerData.PlayerLevel = totalLevel;
+        gameController.GetComponent<GameController>().playerData.Vitality = vitality;
+        gameController.GetComponent<GameController>().playerData.Attunement = attunement;
+        gameController.GetComponent<GameController>().playerData.Agility = agility;
+        gameController.GetComponent<GameController>().playerData.Strength = strength;
+        gameController.GetComponent<GameController>().playerData.Dexterity = dexterity;
+        gameController.GetComponent<GameController>().playerData.Skill = skill;
+        gameController.GetComponent<GameController>().playerData.Intelligence = intelligence;
+        gameController.GetComponent<GameController>().playerData.Luck = luck;
+        gameController.GetComponent<GameController>().playerData.Faith = faith;
+        gameController.GetComponent<GameController>().playerData.Vigor = vigor;
+        gameController.GetComponent<GameController>().playerData.Resistance = resistance;
+        gameController.GetComponent<GameController>().playerData.Endurance = endurance;
 
         // Persist changed player data to storage;
-        PlayerPersistence.SaveData(player.GetComponent<PlayerController>().playerData);
+        PlayerPersistence.SaveData(gameController.GetComponent<GameController>().playerData);
     }
 
     public void LevelUpVitality()

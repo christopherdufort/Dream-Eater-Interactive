@@ -89,7 +89,7 @@ public abstract class Enemy : MonoBehaviour
 	// scales enemy stats, dependent on floor level
 	protected void ScaleLevel()
 	{
-		for (int i = 1; i < level; i++)
+        for (int i = 1; i < level; i++)
 		{
 			maxHitPoints += Random.Range(hitPointUpMin, hitPointUpMax);
 			attackValue += Random.Range(attackUpMin, attackUpMax);
