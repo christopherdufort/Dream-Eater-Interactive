@@ -268,7 +268,7 @@ BlendTree:
   m_Name: Brute Move
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 435fb71dedccb43e4acfd3792419e133, type: 2}
+    m_Motion: {fileID: 7400000, guid: 604479f96043a4d19a0e2337a5eb6e5b, type: 2}
     m_Threshold: 0
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
