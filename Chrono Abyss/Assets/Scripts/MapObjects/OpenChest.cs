@@ -2,10 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class OpenChest : MonoBehaviour
 {
     private Animator anim;
+    public GameObject[] powerups;
     
     // Start is called before the first frame update
     void Start()
@@ -19,5 +21,12 @@ public class OpenChest : MonoBehaviour
         {
             anim.SetTrigger("Open");
         }
+        SpawnPowerUp();
+    }
+
+    public void SpawnPowerUp()
+    {
+        int powerUpIndex = Random.Range(0, powerups.Length);
+        GameObject powerup = Instantiate(powerups[powerUpIndex], transform.position, Quaternion.identity);
     }
 }

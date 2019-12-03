@@ -7,11 +7,20 @@ public class PlayerController : MonoBehaviour
 {
     public PlayerData playerData { get; private set; }
 
+    public enum PowerUp
+    {
+        InvincibilityPowerup,      //0 position    --  1 on keyboard
+        RicochetBulletPowerup,     //1 position    --  2 on keyboard
+        InfiniteAmmoPowerup,       //2 position    --  3 on keyboard
+        SpreadShotPowerup          //3 position    --  4 on keyboard
+    }
+
     [Space]
     [Header("Base attributes:")]
     public float PLAYER_BASE_SPEED = 2.5f;
     public float PLAYER_BASE_ACCELERATION = 0.5f;
     public float SLASH_DURATION = 0.125f;
+    public float POWER_UP_DURATION = 15.0f;
 
     [Space]
     [Header("Character Statistics:")]
@@ -21,7 +30,16 @@ public class PlayerController : MonoBehaviour
     public static Vector2 aimDirection;
     public static Vector3 playerPosition;
     public int goldCollected = 0;
-
+    public int invincibilityCount = 0;
+    public int ricochetBulletCount = 0;
+    public int infiniteAmmoCount = 0;
+    public int spreadShotCount = 0;
+    public bool canPowerup = true; 
+    public bool invincible = false;
+    public bool richochet = false;
+    public bool infiniteAmmo = false;
+    public bool spreadShot = false; 
+    
     [Space]
     [Header("Component References:")]
     public Rigidbody2D rigidBody;
@@ -85,7 +103,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         currentAmmo = maxAmmo;
 
-	rigidBody.freezeRotation = true;
+	    rigidBody.freezeRotation = true;
         updatePosition();
 
         sword = GetComponentInChildren<PlayerSlash>();
@@ -192,6 +210,33 @@ public class PlayerController : MonoBehaviour
             Time.timeScale = !sword.isSlashing && !reloading ? movementSpeed : 1.0f;
             Time.fixedDeltaTime = !sword.isSlashing && !reloading ? movementSpeed * 0.02f : 0.02f;
         }
+
+        // Check if player is using a powerup
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            ActivatePowerup(PowerUp.InvincibilityPowerup);
+            StartCoroutine("InvincibilityDelay");
+            StartCoroutine("PowerupDelay");
+
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ActivatePowerup(PowerUp.RicochetBulletPowerup);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            ActivatePowerup(PowerUp.InfiniteAmmoPowerup);
+            StartCoroutine("InfiniteAmmoDelay");
+            StartCoroutine("PowerupDelay");
+
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            ActivatePowerup(PowerUp.SpreadShotPowerup);
+            StartCoroutine("SpreadShotDelay");
+            StartCoroutine("PowerupDelay");
+
+        }
     }
 
     void Move()
@@ -228,13 +273,14 @@ public class PlayerController : MonoBehaviour
         // If shooting
         if (isShooting && currentAmmo > 0)
         {
+            if(!infiniteAmmo)
             currentAmmo--;
+
             FindObjectOfType<AudioManager>().Play("Shoot");
             // Get normalized shooting direction from crosshair position (which is tied to mouse)
             Vector2 shootingDirection = crosshair.transform.localPosition;
             shootingDirection.Normalize();
-            // Instantiate bullet object
-            GameObject bullet = Instantiate(bulletPrefab, transform.position + (Vector3)aimDirection.normalized * 1.4f, Quaternion.identity);
+
 
 			//// Give bullet a velocity in the shooting direction
 			//bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
@@ -245,6 +291,42 @@ public class PlayerController : MonoBehaviour
         }else if(isShooting && currentAmmo == 0)
         {
             FindObjectOfType<AudioManager>().Play("NoAmmo");
+             
+
+
+            if (!spreadShot)
+                // Instantiate bullet object
+                Instantiate(bulletPrefab, transform.position + (Vector3)aimDirection.normalized * 1.4f, Quaternion.identity);
+            else
+            {
+                Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized)*1.4f, Quaternion.identity);
+
+                if (crosshair.transform.localPosition.x < 0f && crosshair.transform.localPosition.y > 0f)
+                {
+                    Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized + new Vector3(0.2f, 0.2f)) * 1.4f, Quaternion.identity);
+                    Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized + new Vector3(-0.2f, -0.2f)) * 1.4f, Quaternion.identity);
+                }
+
+                if (crosshair.transform.localPosition.x > 0f && crosshair.transform.localPosition.y > 0f)
+                {
+                    Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized + new Vector3(0.2f, -0.2f)) * 1.4f, Quaternion.identity);
+                    Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized + new Vector3(-0.2f, 0.2f)) * 1.4f, Quaternion.identity);
+                }
+
+                if (crosshair.transform.localPosition.x > 0f && crosshair.transform.localPosition.y < 0f)
+                {
+                    Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized + new Vector3(-0.2f, -0.2f)) * 1.4f, Quaternion.identity);
+                    Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized + new Vector3(0.2f, 0.2f)) * 1.4f, Quaternion.identity);
+                }
+
+                if (crosshair.transform.localPosition.x < 0f && crosshair.transform.localPosition.y < 0f)
+                {
+                    Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized + new Vector3(0.2f, -0.2f)) * 1.4f, Quaternion.identity);
+                    Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized + new Vector3(-0.2f, 0.2f)) * 1.4f, Quaternion.identity);
+                }
+            }
+
+
         }
     }
 
@@ -290,6 +372,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            if(!invincible)
             // decrease health
             currentHealth--;
             
@@ -303,7 +386,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy") && !invincible)
         {
             FindObjectOfType<AudioManager>().Play("PlayerHurt");
 
@@ -318,4 +401,114 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void ActivatePowerup(PowerUp powerUp)
+    {
+        Debug.Log("Trying to use powerup "+ powerUp.ToString());
+        Debug.Log("powerUp count:" + invincibilityCount + " " + infiniteAmmoCount + " " + ricochetBulletCount + " " + spreadShotCount);
+        switch (powerUp)
+        {
+            case PowerUp.InvincibilityPowerup:
+                if (invincibilityCount > 0 && canPowerup)
+                {
+                    Debug.Log("Player has activated powerup " + powerUp.ToString());
+                    invincibilityCount--;
+                    canPowerup = false;
+                    invincible = true;
+                    //Affect stats
+                    //Start timer
+                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
+                }
+                break;
+            case PowerUp.InfiniteAmmoPowerup:
+                if (infiniteAmmoCount > 0 && canPowerup)
+                {
+                    Debug.Log("Player has activated powerup " + powerUp.ToString());
+                    infiniteAmmoCount--;
+                    canPowerup = false;
+                    infiniteAmmo = true;
+                    //Affect stats
+                    //Start timer
+                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
+                }
+                break;
+            case PowerUp.RicochetBulletPowerup:
+                if (ricochetBulletCount > 0 && canPowerup)
+                {
+                    Debug.Log("Player has activated powerup " + powerUp.ToString());
+                    ricochetBulletCount--;
+                    //Affect stats
+                    //Start timer
+                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
+                }
+                break;
+            case PowerUp.SpreadShotPowerup:
+                if (spreadShotCount > 0 && canPowerup)
+                {
+                    Debug.Log("Player has activated powerup " + powerUp.ToString());
+                    spreadShotCount--;
+                    spreadShot = true;
+                    canPowerup = false;
+                    //Affect stats
+                    //Start timer
+                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    IEnumerator PowerupDelay()
+    {
+        yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
+        canPowerup = true;
+    }
+
+    IEnumerator InvincibilityDelay()
+    {     
+        yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
+        invincible = false;
+    }
+    IEnumerator InfiniteAmmoDelay()
+    {
+        yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
+        infiniteAmmo = false;
+    }
+
+    IEnumerator SpreadShotDelay()
+    {
+        yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
+        spreadShot = false;
+    }
+
+    public void CollectPowerup(String powerUpName)
+    {
+        Debug.Log("Player has collected powerup " + powerUpName);
+        //TODO FIXME BUGGED ALL ARE FALSE
+        Debug.Log("powerUpName == InvincibilityPowerUp" + powerUpName == "InvincibilityPowerup");
+        Debug.Log("powerUpName == RicochetBulletPowerUp" + powerUpName == "RicochetBulletPowerup");
+        Debug.Log("powerUpName == InfiniteAmmotPowerUp" + powerUpName == "InfiniteAmmotPowerup");
+        Debug.Log("powerUpName == SpreadShotPowerUp" + powerUpName == "SpreadShotPowerup");
+        //TODO use PowerUp enums included above instead?
+        if (powerUpName == "InvincibilityPowerup")
+        {
+            invincibilityCount++;
+            Debug.Log("inv ++ " + invincibilityCount);
+        }
+        else if (powerUpName == "RicochetBulletPowerup")
+        {
+            ricochetBulletCount++;
+            Debug.Log("ric ++ " + ricochetBulletCount);
+        }
+        else if (powerUpName == "InfiniteAmmoPowerup")
+        {
+            infiniteAmmoCount++;
+            Debug.Log("inf ++ " + infiniteAmmoCount);
+        }
+        else if (powerUpName == "SpreadShotPowerup")
+        {
+            spreadShotCount++;
+            Debug.Log("spr ++ " + spreadShotCount);
+        }
+    }
 }
