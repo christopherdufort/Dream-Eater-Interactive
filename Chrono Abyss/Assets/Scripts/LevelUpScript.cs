@@ -151,6 +151,8 @@ public class LevelUpScript : MonoBehaviour
         Debug.Log("Continue Clicked");
         SaveGame();
 
+        player.GetComponent<PlayerController>().LevelUpPlayer();
+
         string randomFloorScene = ((FloorTheme)Random.Range(0, 4)).ToString() + "Floor";
         SceneManager.LoadScene(randomFloorScene);
         //May Need to bring player into the scene
@@ -195,7 +197,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((vitality + 1) * 10);
             vitalityLevel.text = vitality.ToString();
-            nextVitalityLevel.text = (((vitality + 1) * 10).ToString());
+            nextVitalityLevel.text = (((vitality + 1) * 10).ToString()+"g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -209,7 +211,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((attunement + 1) * 10);
             ammoLevel.text = attunement.ToString();
-            nextAmmoLevel.text = (((attunement + 1) * 10).ToString());
+            nextAmmoLevel.text = (((attunement + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -223,7 +225,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((agility + 1) * 10);
             agilityLevel.text = agility.ToString();
-            nextAgilityLevel.text = (((agility + 1) * 10).ToString());
+            nextAgilityLevel.text = (((agility + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -237,7 +239,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((strength + 1) * 10);
             strengthLevel.text = strength.ToString();
-            nextStrengthLevel.text = (((strength + 1) * 10).ToString());
+            nextStrengthLevel.text = (((strength + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -251,7 +253,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((dexterity + 1) * 10);
             dexterityLevel.text = dexterity.ToString();
-            nextDexterityLevel.text = (((dexterity + 1) * 10).ToString());
+            nextDexterityLevel.text = (((dexterity + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -265,7 +267,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((skill + 1) * 10);
             skillLevel.text = skill.ToString();
-            nextSkillLevel.text = (((skill + 1) * 10).ToString());
+            nextSkillLevel.text = (((skill + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -279,7 +281,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((intelligence + 1) * 10);
             intelligenceLevel.text = intelligence.ToString();
-            nextIntelligenceLevel.text = (((intelligence + 1) * 10).ToString());
+            nextIntelligenceLevel.text = (((intelligence + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -293,7 +295,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((luck + 1) * 10);
             luckLevel.text = luck.ToString();
-            nextLuckLevel.text = (((luck + 1) * 10).ToString());
+            nextLuckLevel.text = (((luck + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -307,7 +309,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((faith + 1) * 10);
             faithLevel.text = faith.ToString();
-            nextFaithLevel.text = (((faith + 1) * 10).ToString());
+            nextFaithLevel.text = (((faith + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -321,7 +323,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((vigor + 1) * 10);
             vigorLevel.text = vigor.ToString();
-            nextVigorLevel.text = (((vigor + 1) * 10).ToString());
+            nextVigorLevel.text = (((vigor + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -335,7 +337,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((resistance + 1) * 10);
             resistanceLevel.text = resistance.ToString();
-            nextResistanceLevel.text = (((resistance + 1) * 10).ToString());
+            nextResistanceLevel.text = (((resistance + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
@@ -349,7 +351,7 @@ public class LevelUpScript : MonoBehaviour
             totalLevel++;
             totalGold -= ((endurance + 1) * 10);
             enduranceLevel.text = endurance.ToString();
-            nextEnduranceLevel.text = (((endurance + 1) * 10).ToString());
+            nextEnduranceLevel.text = (((endurance + 1) * 10).ToString() + "g");
             totalCoinCount.text = totalGold.ToString();
             totalLevelCount.text = totalLevel.ToString();
         }
