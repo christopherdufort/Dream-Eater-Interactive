@@ -22,12 +22,13 @@ public class OpenChest : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             anim.SetTrigger("Open");
+            if (lootInside)
+            {
+                SpawnPowerUp();
+                lootInside = false;
+            }
         }
-        if (lootInside)
-        {
-            SpawnPowerUp();
-            lootInside = false;
-        }
+
         
     }
 
