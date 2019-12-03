@@ -25,7 +25,7 @@ public class HealthBarController : MonoBehaviour
         int currentHealth = playerController.getCurrentHealth();
         
         // calculate health bar's new scale and pos
-        float scale = (float)currentHealth / maxHealth;
+        float scale = Mathf.Clamp((float) currentHealth / maxHealth, 0.0f, 1.0f);
         float pos = calculateBarPos(scale);
         
         // apply transformations
