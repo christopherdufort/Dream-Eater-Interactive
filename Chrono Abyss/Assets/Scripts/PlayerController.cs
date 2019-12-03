@@ -116,8 +116,7 @@ public class PlayerController : MonoBehaviour
 
     public void setCurrentHealth(int newHealth)
     {
-        currentHealth = newHealth;
-		Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentHealth = Mathf.Min(newHealth, maxHealth);
     }
 
     public int getCurrentHealth()
