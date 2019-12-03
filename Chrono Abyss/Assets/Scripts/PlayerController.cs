@@ -264,25 +264,12 @@ public class PlayerController : MonoBehaviour
             Vector2 shootingDirection = crosshair.transform.localPosition;
             shootingDirection.Normalize();
 
-
-			//// Give bullet a velocity in the shooting direction
-			//bullet.GetComponent<Rigidbody2D>().velocity = shootingDirection * BULLET_BASE_SPEED;
-			//// Destroy bullet object after some duration
-			//Destroy(bullet, BULLET_DURATION);
-
-			timeCreeperController.NotifyMeaningfulEvent();
-        }else if(isShooting && currentAmmo == 0)
-        {
-            FindObjectOfType<AudioManager>().Play("NoAmmo");
-             
-
-
             if (!spreadShot)
                 // Instantiate bullet object
                 Instantiate(bulletPrefab, transform.position + (Vector3)aimDirection.normalized * 1.4f, Quaternion.identity);
             else
             {
-                Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized)*1.4f, Quaternion.identity);
+                Instantiate(bulletPrefab, transform.position + ((Vector3)aimDirection.normalized) * 1.4f, Quaternion.identity);
 
                 if (crosshair.transform.localPosition.x < 0f && crosshair.transform.localPosition.y > 0f)
                 {
@@ -309,8 +296,9 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-
-        }
+            timeCreeperController.NotifyMeaningfulEvent();
+        }else if(isShooting && currentAmmo == 0)
+            FindObjectOfType<AudioManager>().Play("NoAmmo");     
     }
 
     void Reload()
