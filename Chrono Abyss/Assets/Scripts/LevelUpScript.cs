@@ -101,6 +101,7 @@ public class LevelUpScript : MonoBehaviour
         enduranceLevel = GameObject.Find("EnduranceLevelText").GetComponent<Text>();
         nextEnduranceLevel = GameObject.Find("NextEnduranceLevelCostText").GetComponent<Text>();
 
+        gameController = GameObject.Find("GameController");
         LoadPlayerData();
 
         totalLevelCount.text = totalLevel.ToString();
@@ -112,7 +113,7 @@ public class LevelUpScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     IEnumerator CollectPlayerForLevelUp()
@@ -128,8 +129,8 @@ public class LevelUpScript : MonoBehaviour
 
     public void LoadPlayerData()
     {
-        totalGold = player.GetComponent<PlayerController>().goldCollected;
 
+        totalGold = player.GetComponent<PlayerController>().goldCollected;
         totalLevel = gameController.GetComponent<GameController>().playerData.PlayerLevel;
         vitality = gameController.GetComponent<GameController>().playerData.Vitality;
         attunement = gameController.GetComponent<GameController>().playerData.Attunement;
