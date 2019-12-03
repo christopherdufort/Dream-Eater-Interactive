@@ -26,6 +26,8 @@ TagManager:
   - RicochetBulletPowerup
   - InfiniteAmmoPowerup
   - SpreadShotPowerup
+  - Portal
+  - Chest
   layers:
   - Default
   - TransparentFX

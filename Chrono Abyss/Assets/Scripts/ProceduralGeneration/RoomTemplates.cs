@@ -27,7 +27,7 @@ public class RoomTemplates : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        waitTime = Time.time + waitTime;
     }
 
     // Update is called once per frame
