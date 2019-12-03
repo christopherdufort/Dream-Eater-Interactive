@@ -105,9 +105,7 @@ public class LevelUpScript : MonoBehaviour
         LoadPlayerData();
 
         totalLevelCount.text = totalLevel.ToString();
-        Debug.Log("totalCoinCount.text " + totalCoinCount.text);
         totalCoinCount.text = totalGold.ToString();
-        Debug.Log("totalCoinCount.text after " + totalCoinCount.text);
 
 
     }
