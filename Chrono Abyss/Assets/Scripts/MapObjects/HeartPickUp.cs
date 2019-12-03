@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class HeartPickUp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		PlayerController player = collision.transform.GetComponent<PlayerController>();
+		if (player != null)
+		{
+			player.setCurrentHealth(player.getCurrentHealth() + 1);
+			Destroy(this.gameObject);
+		}
+	}
 }

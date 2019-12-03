@@ -147,6 +147,7 @@ MonoBehaviour:
   maxHitPoints: 10
   curHitPoints: 10
   attackValue: 0
+  canGetSlashed: 1
   moveSpeed: 3
   direction: {x: 0, y: 0}
   rigidBody: {fileID: 6822933091116200717}
@@ -163,8 +164,12 @@ MonoBehaviour:
   attackRange: 6
   attackCooldown: 0.5
   attackCooldownCountdown: 0
-  droppableLoot: []
-  dropOdds: []
+  droppableLoot:
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 2862652258032647293, guid: 5a7ebdeba05d75a4fa05d0303c680052, type: 3}
+  dropOdds:
+  - 0.4
+  - 0.4
   projectiles:
   - {fileID: 2981085867694149838, guid: 31ea7b9571aa1854d80b35838936dd6d, type: 3}
   minComfortDistance: 3
