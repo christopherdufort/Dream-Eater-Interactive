@@ -455,11 +455,6 @@ public class PlayerController : MonoBehaviour
     public void CollectPowerup(String powerUpName)
     {
         Debug.Log("Player has collected powerup " + powerUpName);
-        //TODO FIXME BUGGED ALL ARE FALSE
-        Debug.Log("powerUpName == InvincibilityPowerUp" + powerUpName == "InvincibilityPowerup");
-        Debug.Log("powerUpName == RicochetBulletPowerUp" + powerUpName == "RicochetBulletPowerup");
-        Debug.Log("powerUpName == InfiniteAmmotPowerUp" + powerUpName == "InfiniteAmmotPowerup");
-        Debug.Log("powerUpName == SpreadShotPowerUp" + powerUpName == "SpreadShotPowerup");
         //TODO use PowerUp enums included above instead?
         if (powerUpName == "InvincibilityPowerup")
         {
