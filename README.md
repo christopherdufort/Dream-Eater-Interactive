@@ -15,4 +15,4 @@ Changes from presentation:
     -Music and sound effects
     
 Credit:
-    -Music and sound effects taken from Super Castelvania 4, DOOM, and SoundBible.com
+    -Music and sound effects taken from Super Castelvania IV, DOOM, and SoundBible.com
