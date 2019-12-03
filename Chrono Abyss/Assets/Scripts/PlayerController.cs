@@ -71,11 +71,14 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-       
-        if (!created)
+        int playerControllers = FindObjectsOfType<PlayerController>().Length;
+        if (playerControllers != 1)
+        {
+            Destroy(gameObject);
+        }
+        else
         {
             DontDestroyOnLoad(gameObject);
-            created = true;
         }
     }
 
