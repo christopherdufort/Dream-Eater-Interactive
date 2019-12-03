@@ -1962,5 +1962,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5621061285959213139, guid: dea9f25c618a0b44ca3ed38f324afe51,
+        type: 3}
+      propertyPath: sounds.Array.data[15].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621061285959213139, guid: dea9f25c618a0b44ca3ed38f324afe51,
+        type: 3}
+      propertyPath: sounds.Array.data[16].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621061285959213139, guid: dea9f25c618a0b44ca3ed38f324afe51,
+        type: 3}
+      propertyPath: sounds.Array.data[15].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 544207434cc6208488e7d7988a27b46c, type: 3}
+    - target: {fileID: 5621061285959213139, guid: dea9f25c618a0b44ca3ed38f324afe51,
+        type: 3}
+      propertyPath: sounds.Array.data[16].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ed034ec16c1ec847ba8d53f9db0ad87, type: 3}
+    - target: {fileID: 5621061285959213139, guid: dea9f25c618a0b44ca3ed38f324afe51,
+        type: 3}
+      propertyPath: sounds.Array.data[12].bypassEffects
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dea9f25c618a0b44ca3ed38f324afe51, type: 3}

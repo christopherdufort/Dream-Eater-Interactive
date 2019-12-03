@@ -154,6 +154,7 @@ public class LevelUpScript : MonoBehaviour
         player.GetComponent<PlayerController>().LevelUpPlayer();
 
         string randomFloorScene = ((FloorTheme)Random.Range(0, 4)).ToString() + "Floor";
+        FindObjectOfType<AudioManager>().StopCurrent();
 		// place player back into scene
 		SceneManager.LoadScene(randomFloorScene);
 		//May Need to bring player into the scene
