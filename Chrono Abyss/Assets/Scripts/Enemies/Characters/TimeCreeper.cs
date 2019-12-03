@@ -10,6 +10,7 @@ public class TimeCreeper : Shooter
 	private enum ProjectileType { Basic, Seeker, Spray }
 	private bool canMove;
 	[SerializeField] GameController gameController;
+	[SerializeField] GameObject endgamePortal;
 
 	new void Awake()
 	{
@@ -148,6 +149,11 @@ public class TimeCreeper : Shooter
 	public void SetCanMove(bool val)
 	{
 		canMove = val;
+	}
+
+	private void OnDestroy()
+	{
+		Instantiate(endgamePortal, transform.position, Quaternion.identity);
 	}
 
 	// TODO: On defeat: Add function to instantiate a portal to endgame
