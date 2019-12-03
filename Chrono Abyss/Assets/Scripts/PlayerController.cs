@@ -59,14 +59,16 @@ public class PlayerController : MonoBehaviour
 
     public GameController gameController;
 
+	[Space]
+	[Header("Combat Attributes")]
     // Private attributes
     private bool created;
     private PlayerSlash sword;
     private float acceleratedSpeed;
-    private int maxHealth = 10;
-    private int currentHealth;
-    private int maxAmmo = 6;
-    public static int currentAmmo;
+    [SerializeField] private int maxHealth = 10;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private int maxAmmo = 6;
+    [SerializeField] public static int currentAmmo;
     private bool reloading;
 
     private void Awake()

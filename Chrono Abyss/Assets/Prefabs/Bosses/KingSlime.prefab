@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
-  maxHitPoints: 20
-  curHitPoints: 20
+  maxHitPoints: 50
+  curHitPoints: 50
   attackValue: 0
   canGetSlashed: 1
   moveSpeed: 1
@@ -228,7 +228,7 @@ PrefabInstance:
     - target: {fileID: 838575570991477400, guid: a28f8a53966434f2aac0a1db6c6f64d8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3
+      value: -1.22
       objectReference: {fileID: 0}
     - target: {fileID: 838575570991477400, guid: a28f8a53966434f2aac0a1db6c6f64d8,
         type: 3}

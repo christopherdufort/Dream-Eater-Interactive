@@ -12,31 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SplittingSlimeR2 Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
-        type: 3}
-      propertyPath: roundNumber
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
-        type: 3}
-      propertyPath: curHitPoints
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
-        type: 3}
-      propertyPath: rigidBody
-      value: 
-      objectReference: {fileID: 3501982192952392169}
-    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 3501982192952392171}
     - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -102,6 +77,31 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: roundNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: curHitPoints
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: rigidBody
+      value: 
+      objectReference: {fileID: 3501982192952392169}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3501982192952392171}
     - target: {fileID: 7912005708959445683, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
         type: 3}
       propertyPath: splittingSlimePrefabs.Array.data[0]

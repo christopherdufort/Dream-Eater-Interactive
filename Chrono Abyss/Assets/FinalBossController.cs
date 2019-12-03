@@ -23,6 +23,7 @@ public class FinalBossController : MonoBehaviour
         }
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         player.transform.position = playerSpawnPosition;
+		player.GetComponentInChildren<TimeCreeperController>().enabled = false;
 
         // bring over borgrimon
         randomBossPosition = Random.Range(0, bossPrefabs.Length);

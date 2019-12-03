@@ -11,6 +11,8 @@ public class TimeCreeper : Shooter
 	private bool canMove;
 	[SerializeField] GameController gameController;
 	[SerializeField] GameObject endgamePortal;
+	[SerializeField] public TimeCreeperController creeperController;
+	bool canHurtPlayer = true;
 
 	new void Awake()
 	{
@@ -29,7 +31,7 @@ public class TimeCreeper : Shooter
 	{
 		if (!gameController.paused)
 		{
-			if (!CheckDead())
+			if (curHitPoints > Mathf.Epsilon)
 			{
 				EnemyUpdateLoopStart();
 				DetermineOperationMode();
@@ -44,6 +46,12 @@ public class TimeCreeper : Shooter
 				{
 					AttackPlayer();
 				}
+			} else
+			{
+				GameObject endRoute = Instantiate(endgamePortal, transform.position, Quaternion.identity);
+				Debug.Log("Time Creeper has run out of health! Endgame portal spawned at " + endRoute.transform.position.ToString());
+				creeperController.enabled = false;
+				Destroy(gameObject);
 			}
 			animator.SetBool("isMoving", isMoving);
 		}
@@ -122,39 +130,52 @@ public class TimeCreeper : Shooter
 		}
 		else operationMode = OperationMode.Chase;
 	}
-
-	protected new void OnTriggerEnter2D(Collider2D collision)
+	
+	protected new void OnTriggerStay2D(Collider2D collision)
 	{
 		if (collision.CompareTag("Player"))
 		{
-			// TODO: Hurt player?
-		} else
-		{
-			PlayerBullet bullet = collision.transform.GetComponent<PlayerBullet>();
-			if (bullet != null)
+			if (canHurtPlayer)
 			{
-				curHitPoints -= bullet.attackValue;
-				Destroy(collision.gameObject);
-			} else
+				PlayerController player = collision.transform.GetComponent<PlayerController>();
+				player.setCurrentHealth(player.getCurrentHealth() - (int)attackValue);
+				canHurtPlayer = false;
+				StartCoroutine("CanHurtAgain");
+			}
+			else
 			{
 				PlayerSlash sword = collision.transform.GetComponent<PlayerSlash>();
 				if (sword != null)
 				{
-					curHitPoints -= sword.attackValue;
+					if ((sword.isSlashing) && (canGetSlashed))
+					{
+						curHitPoints -= sword.attackValue;
+						canGetSlashed = false;
+						StartCoroutine("NextSlashDamageDelay", sword);
+					}
 				}
 			}
 		}
+	}
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		PlayerBullet bullet = other.transform.GetComponent<PlayerBullet>();
+		if (bullet != null)
+		{
+			curHitPoints -= bullet.attackValue;
+			Destroy(other.gameObject);
+		}
+	}
+
+	IEnumerator CanHurtAgain()
+	{
+		yield return new WaitForSeconds(attackCooldown);
+		canHurtPlayer = true;
 	}
 
 	public void SetCanMove(bool val)
 	{
 		canMove = val;
 	}
-
-	private void OnDestroy()
-	{
-		Instantiate(endgamePortal, transform.position, Quaternion.identity);
-	}
-
-	// TODO: On defeat: Add function to instantiate a portal to endgame
 }

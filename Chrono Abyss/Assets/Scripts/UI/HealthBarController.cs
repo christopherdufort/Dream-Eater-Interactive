@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class HealthBarController : MonoBehaviour
 {
     // reference to player
-    private PlayerController playerController;
-    private int maxHealth;
+    [SerializeField] private PlayerController playerController;
+	[SerializeField] private int maxHealth;
     private RectTransform rectTransform;
     
     // Start is called before the first frame update

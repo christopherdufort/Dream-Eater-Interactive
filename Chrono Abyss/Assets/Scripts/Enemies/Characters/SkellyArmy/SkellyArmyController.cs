@@ -55,10 +55,14 @@ public class SkellyArmyController : MonoBehaviour
 			SpawnSkellyLeader();
 		}
 		// Phase Three (Final)
-		if ((skelliesOnBench < 20) && (skellyLeaderAmt == 1) && (timesLeaderAppeared == 2))
+		if (skelliesOnBench < 20)
 		{
 			SpawnSkellies(skelliesOnBench);
-			SpawnSkellyLeader();
+			// nested if-statement since leader might have died prematurely
+			if ((skellyLeaderAmt == 1) && (timesLeaderAppeared == 2))
+			{
+				SpawnSkellyLeader();
+			}
 		}
 	}
 

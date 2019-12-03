@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8565394399946361706}
   m_Layer: 0
   m_Name: FireworksLaunchProjectile
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,9 +70,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7d78ea7f8f21042e7960a7f1100e41ef, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.71985435, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   moveSpeedUpMax: 0
   maxDistance: 4
   distTravelled: 0
-  isIndestructible: 0
+  isIndestructible: 1
   explosionObj: {fileID: 2807524286293774765, guid: c473c16926a3e6c4e80557f165c22698,
     type: 3}
 --- !u!61 &8565394399946361706

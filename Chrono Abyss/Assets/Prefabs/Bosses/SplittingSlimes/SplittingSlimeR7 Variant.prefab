@@ -82,6 +82,16 @@ PrefabInstance:
       propertyPath: roundNumber
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6053534019693255791, guid: 334f33b71a1e5c44a98fc8ada078c8ab,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 3.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053534019693255791, guid: 334f33b71a1e5c44a98fc8ada078c8ab,
+        type: 3}
+      propertyPath: curHitPoints
+      value: 3.125
+      objectReference: {fileID: 0}
     - target: {fileID: 4492464117158036227, guid: 334f33b71a1e5c44a98fc8ada078c8ab,
         type: 3}
       propertyPath: splittingSlimePrefabs.Array.data[5]
