@@ -38,6 +38,7 @@ public class Shadow : Shooter
 
 	private new void Update()
 	{
+		NotifyIfBossDead();
 		if (!CheckDead())
 		{
 			SetDirection(GetDirectionToPlayer());
@@ -48,6 +49,14 @@ public class Shadow : Shooter
 			Strafe();
 			Attack();
 			Animate();
+		}
+	}
+
+	void NotifyIfBossDead()
+	{
+		if (curHitPoints <= Mathf.Epsilon)
+		{
+			FindObjectOfType<BossController>().BossDied();
 		}
 	}
 
