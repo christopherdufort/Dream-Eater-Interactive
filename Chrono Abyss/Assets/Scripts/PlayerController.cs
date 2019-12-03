@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,10 +10,13 @@ public class PlayerController : MonoBehaviour
     public enum PowerUp
     {
         InvincibilityPowerup,      //0 position    --  1 on keyboard
-        RicochetBulletPowerup,     //1 position    --  2 on keyboard
-        InfiniteAmmoPowerup,       //2 position    --  3 on keyboard
-        SpreadShotPowerup          //3 position    --  4 on keyboard
+        RicochetBulletPowerup,     //1 position    --  2 on keyboard (OMITTED)
+        InfiniteAmmoPowerup,       //2 position    --  2 on keyboard
+        SpreadShotPowerup          //3 position    --  3 on keyboard
     }
+
+    public Text Invincibility, InfiniteAmmo, SpreadShot;
+
 
     [Space]
     [Header("Base attributes:")]
@@ -202,18 +206,18 @@ public class PlayerController : MonoBehaviour
             StartCoroutine("PowerupDelay");
 
         }
+        //else if (Input.GetKeyDown(KeyCode.Alpha2))
+        //{
+        //    ActivatePowerup(PowerUp.RicochetBulletPowerup);
+        //}
         else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            ActivatePowerup(PowerUp.RicochetBulletPowerup);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             ActivatePowerup(PowerUp.InfiniteAmmoPowerup);
             StartCoroutine("InfiniteAmmoDelay");
             StartCoroutine("PowerupDelay");
 
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             ActivatePowerup(PowerUp.SpreadShotPowerup);
             StartCoroutine("SpreadShotDelay");
@@ -383,6 +387,7 @@ public class PlayerController : MonoBehaviour
                 {
                     Debug.Log("Player has activated powerup " + powerUp.ToString());
                     invincibilityCount--;
+                    FindObjectOfType<AudioManager>().Play("PowerUp");
                     canPowerup = false;
                     invincible = true;
                     //Affect stats
@@ -395,6 +400,7 @@ public class PlayerController : MonoBehaviour
                 {
                     Debug.Log("Player has activated powerup " + powerUp.ToString());
                     infiniteAmmoCount--;
+                    FindObjectOfType<AudioManager>().Play("PowerUp");
                     canPowerup = false;
                     infiniteAmmo = true;
                     //Affect stats
@@ -439,17 +445,22 @@ public class PlayerController : MonoBehaviour
     {     
         yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
         invincible = false;
+        FindObjectOfType<AudioManager>().Play("PowerDown");
     }
     IEnumerator InfiniteAmmoDelay()
     {
         yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
         infiniteAmmo = false;
+        FindObjectOfType<AudioManager>().Play("PowerDown");
+
     }
 
     IEnumerator SpreadShotDelay()
     {
         yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
         spreadShot = false;
+        FindObjectOfType<AudioManager>().Play("PowerDown");
+
     }
 
     public void CollectPowerup(String powerUpName)

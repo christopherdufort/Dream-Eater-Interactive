@@ -20,7 +20,8 @@ public class AudioManager : MonoBehaviour
 
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
-            s.source.loop = s.loop; 
+            s.source.loop = s.loop;
+            s.source.bypassEffects = s.bypassEffects; 
         }
 
         Play(SceneManager.GetActiveScene().name);
@@ -48,7 +49,7 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound s in sounds)
         {
-            if (s.source.loop != true)
+            if (s.source.loop != true && !s.source.name.ToString().Equals("PowerUp") && !s.source.name.ToString().Equals("PowerDown") && !s.source.name.ToString().Equals("PlayerHurt"))
                 s.source.pitch = Mathf.Clamp(Time.timeScale, 0.4f, 1.0f);
         }
     }

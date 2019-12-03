@@ -628,6 +628,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[13].name
+      value: PowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[13].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 48812238cbb19304f8bfdabde1961b39, type: 3}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[13].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[13].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[14].name
+      value: PowerDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[14].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: f63aedecf468e054fa85558cd27c667a, type: 3}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[14].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[14].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[13].bypassEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467691169540909942, guid: f32488139a9f8684c9a82e8b225c9e26,
+        type: 3}
+      propertyPath: sounds.Array.data[14].bypassEffects
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f32488139a9f8684c9a82e8b225c9e26, type: 3}
 --- !u!1 &961129073
