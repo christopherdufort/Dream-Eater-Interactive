@@ -24,9 +24,7 @@ public class SplittingSlimeController : MonoBehaviour
 		if (curHitPoints < Mathf.Epsilon)
 		{
 			KillAll();
-			// TODO: drop permanent upgrade
-			// TODO: instantiate a portal to next world
-			// TODO: Notify Game Controller when dead
+			FindObjectOfType<BossController>().BossDied();
 		}
 	}
 

@@ -17,11 +17,20 @@ public class SlimeKing : Shooter
 
 	protected new void Update()
 	{
+		NotifyIfBossDead();
 		EnemyUpdateLoopStart();
 		DetermineAttackMode();
 		ShooterAction();
 		animator.SetBool("isMoving", isMoving);
 		animator.SetBool("isAttacking", isAttacking);
+	}
+
+	void NotifyIfBossDead()
+	{
+		if (curHitPoints <= Mathf.Epsilon)
+		{
+			FindObjectOfType<BossController>().BossDied();
+		}
 	}
 
 	protected override void AttackPlayer()

@@ -36,8 +36,8 @@ public class SkellyArmyController : MonoBehaviour
 			RespawnSkellies();
 		} else
 		{
-			Debug.Log("Skelly boss killed");
-			// TODO: all the stuff that pertains to boss fight victory
+			//Debug.Log("Skelly boss killed");
+			FindObjectOfType<BossController>().BossDied();
 		}
 	}
 
