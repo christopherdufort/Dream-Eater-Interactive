@@ -167,6 +167,7 @@ MonoBehaviour:
   maxHitPoints: 100
   curHitPoints: 100
   attackValue: 0
+  canGetSlashed: 1
   moveSpeed: 1
   direction: {x: 0, y: 0}
   rigidBody: {fileID: 2153488234372801427}
@@ -183,8 +184,12 @@ MonoBehaviour:
   attackRange: 10
   attackCooldown: 1
   attackCooldownCountdown: 0
-  droppableLoot: []
-  dropOdds: []
+  droppableLoot:
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 2862652258032647293, guid: 5a7ebdeba05d75a4fa05d0303c680052, type: 3}
+  dropOdds:
+  - 0.3
+  - 0.3
   projectiles:
   - {fileID: 7293402490192146759, guid: 33cec713ecf60c34cb15129a4199d2e4, type: 3}
   - {fileID: 7308186351951376697, guid: 18bb88b77586d4e4489bf94ecdd5dbe5, type: 3}
@@ -200,6 +205,7 @@ MonoBehaviour:
   spawner: {fileID: 7912005708959445683}
   roundNumber: 0
   splitThreshold: 0.75
+  invincibilityPeriod: 0.75
 --- !u!1 &3657350813129299259
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,4 +258,3 @@ MonoBehaviour:
   - {fileID: 6967342277721559553, guid: 130069c7c57de264fb0eabcd8aae59c3, type: 3}
   - {fileID: 47479652307363706, guid: 577dbe7a8fb6985479380eea2d129c50, type: 3}
   - {fileID: 5580443835112202791, guid: 6c81bc0654e4cf445a6c12a1cbb810c0, type: 3}
-  offsetRange: {x: 2, y: 2}

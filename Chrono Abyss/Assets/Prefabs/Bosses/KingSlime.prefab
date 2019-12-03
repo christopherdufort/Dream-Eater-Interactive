@@ -137,6 +137,7 @@ MonoBehaviour:
   maxHitPoints: 20
   curHitPoints: 20
   attackValue: 0
+  canGetSlashed: 1
   moveSpeed: 1
   direction: {x: 0, y: 0}
   rigidBody: {fileID: 6951553776884765939}
@@ -153,8 +154,28 @@ MonoBehaviour:
   attackRange: 12
   attackCooldown: 1
   attackCooldownCountdown: 0
-  droppableLoot: []
-  dropOdds: []
+  droppableLoot:
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
+  dropOdds:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   projectiles:
   - {fileID: 2981085867694149838, guid: 31ea7b9571aa1854d80b35838936dd6d, type: 3}
   - {fileID: 8375511832399807017, guid: 45713cb7299194746a9df678095f8b93, type: 3}

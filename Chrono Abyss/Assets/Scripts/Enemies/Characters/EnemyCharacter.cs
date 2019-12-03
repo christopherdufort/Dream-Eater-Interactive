@@ -111,10 +111,8 @@ public abstract class EnemyCharacer : Enemy
 			float roll = Random.Range(0f, 1f);
 			if (roll < dropOdds[i])
 			{
-				// TODO:
-				// instantiate drop loot here
-				// probably will have to ensure either the loot doesn't overlap or something, something to discuss with the group
-				Debug.Log("Enemy dropped loot #" + i);
+				//Debug.Log("Enemy dropped loot #" + i);
+				Instantiate(droppableLoot[i], transform.position, Quaternion.identity);
 			}
 		}
 	}
