@@ -83,8 +83,14 @@ public class PlayerController : MonoBehaviour
         Time.timeScale = movementSpeed;
         Time.fixedDeltaTime = movementSpeed * 0.2f;
 
-        currentHealth = maxHealth + gameController.playerData.Vitality;
-        currentAmmo = maxAmmo + gameController.playerData.Attunement;
+        // Apply loaded save game stats
+        maxHealth = maxHealth + gameController.playerData.Vitality;
+        maxAmmo = maxAmmo + gameController.playerData.Attunement;
+        POWER_UP_DURATION = POWER_UP_DURATION + gameController.playerData.Intelligence;
+
+
+        currentHealth = maxHealth;
+        currentAmmo = maxAmmo;
 
 	    rigidBody.freezeRotation = true;
         updatePosition();
