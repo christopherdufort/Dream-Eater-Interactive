@@ -28,5 +28,13 @@ public class Destroyer : MonoBehaviour
             other.GetComponent<RoomSpawner>().preventSpawn();
             Destroy(other.gameObject);
         }
+        if (other.CompareTag("Portal"))
+        {
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("Chest"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
