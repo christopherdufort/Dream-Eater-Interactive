@@ -502,14 +502,26 @@ PrefabInstance:
         type: 3}
       propertyPath: pauseScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 630800200}
     - target: {fileID: 5012684597441910953, guid: 2d951397c2b984dba834b016d9847a53,
         type: 3}
       propertyPath: gameOverScreen
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 630800199}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d951397c2b984dba834b016d9847a53, type: 3}
+--- !u!1 &630800199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8909409134900267351, guid: 2d951397c2b984dba834b016d9847a53,
+    type: 3}
+  m_PrefabInstance: {fileID: 630800198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &630800200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118837352654404759, guid: 2d951397c2b984dba834b016d9847a53,
+    type: 3}
+  m_PrefabInstance: {fileID: 630800198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &996025861
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +586,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1038791035 stripped
 Transform:
