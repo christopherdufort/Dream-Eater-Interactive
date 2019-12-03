@@ -87,8 +87,6 @@ public abstract class EnemyCharacer : Enemy
 		animator.SetFloat("dirX", attackDirNorm.x);
 		animator.SetFloat("dirY", attackDirNorm.y);
 		isAttacking = true;
-
-		transform.localScale = new Vector3(((attackDirNorm.x < float.Epsilon)?1:-1) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 	}
 
 	protected override bool CheckDead()

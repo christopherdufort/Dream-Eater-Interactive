@@ -158,7 +158,7 @@ public class TimeCreeper : Shooter
 		}
 	}
 
-	private void OnTriggerEnter2D(Collider2D other)
+	private new void OnTriggerEnter2D(Collider2D other)
 	{
 		PlayerBullet bullet = other.transform.GetComponent<PlayerBullet>();
 		if (bullet != null)
