@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6934266121038525815}
   m_Layer: 0
   m_Name: Chest
-  m_TagString: Chest
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,7 +141,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c06368799b12472d97d5448b24e62ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerups:
-  - {fileID: 785622499195934024, guid: 3ed8d04395cb27e4b9648d6fc70c4f6b, type: 3}
-  - {fileID: 5643683167568549720, guid: 52347cfcf83c4f649b732d95cb32a930, type: 3}
-  - {fileID: 5977289960363507795, guid: f93378eda3239d0498920ca6e990e6e4, type: 3}

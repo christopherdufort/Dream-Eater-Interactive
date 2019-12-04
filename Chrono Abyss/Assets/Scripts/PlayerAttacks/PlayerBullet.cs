@@ -39,4 +39,15 @@ public class PlayerBullet : MonoBehaviour
         if (bulletTimer > BULLET_DURATION)
             Destroy(gameObject);
     }
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Wall"))
+		{
+			Destroy(gameObject);
+		} else if (collision.CompareTag("Door"))
+		{
+			Destroy(gameObject);
+		}
+	}
 }

@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6752188855095497524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,10 +46,10 @@ MonoBehaviour:
   hazards:
   - {fileID: 1130941655423243755, guid: 978d37ff3a2c44a71942357fc3a6275a, type: 3}
   - {fileID: 3497237626641871603, guid: 77767c38656f74273b9890d01ef62c6c, type: 3}
-  spawnValues: {x: -3, y: 3}
+  spawnValues: {x: -4.5, y: 4.5}
   spawnWaitMax: 0.1
   spawnWaitMin: 0
   startWait: 0
-  spawnMax: 2
+  spawnMax: 4
   canSpawnHazards: 1
   hazardCount: 0
