@@ -102,6 +102,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 3501982192952392171}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: hitPointUpMax
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7912005708959445683, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
         type: 3}
       propertyPath: splittingSlimePrefabs.Array.data[0]
@@ -113,6 +118,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7965812111250256438, guid: a982032a8b9d62049bf7a1d2ae496c79,
         type: 3}
+    - target: {fileID: 2986891061793477574, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7, type: 3}
 --- !u!50 &3501982192952392169 stripped

@@ -158,7 +158,7 @@ MonoBehaviour:
     type: 3}
   target: {fileID: 0}
   hitPointUpMin: 0
-  hitPointUpMax: 1
+  hitPointUpMax: 2
   attackUpMin: 0
   attackUpMax: 1
   moveSpeedUpMin: 0

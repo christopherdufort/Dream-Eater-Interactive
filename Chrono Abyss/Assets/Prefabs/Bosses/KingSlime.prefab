@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
-  maxHitPoints: 50
-  curHitPoints: 50
+  maxHitPoints: 100
+  curHitPoints: 100
   attackValue: 0
   canGetSlashed: 1
   moveSpeed: 1
@@ -146,7 +146,7 @@ MonoBehaviour:
     type: 3}
   target: {fileID: 0}
   hitPointUpMin: 0
-  hitPointUpMax: 0
+  hitPointUpMax: 10
   attackUpMin: 0
   attackUpMax: 0
   moveSpeedUpMin: 0

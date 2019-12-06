@@ -92,6 +92,16 @@ PrefabInstance:
       propertyPath: curHitPoints
       value: 12.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5862285073882698582, guid: ffa69162e1f0fb844ab0faf08878388c,
+        type: 3}
+      propertyPath: hitPointUpMax
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9205228700838079823, guid: ffa69162e1f0fb844ab0faf08878388c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4251693159101336634, guid: ffa69162e1f0fb844ab0faf08878388c,
         type: 3}
       propertyPath: splittingSlimePrefabs.Array.data[3]
