@@ -6,11 +6,6 @@ public class FireworksProjectile : SeekerProjectile
 {
 	[SerializeField] GameObject explosionObj;
 
-	private void OnDestroy()
-	{
-		Instantiate(explosionObj, transform.position, Quaternion.identity);
-	}
-
 	new void Update()
 	{
 		if (!CheckDead())
