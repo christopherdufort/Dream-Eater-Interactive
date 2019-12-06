@@ -30,8 +30,9 @@ public class SlimeKing : Shooter
 		if (curHitPoints <= Mathf.Epsilon)
 		{
 			FindObjectOfType<BossController>().BossDied();
-		}
-	}
+            Destroy(gameObject);
+        }
+    }
 
 	protected override void AttackPlayer()
 	{

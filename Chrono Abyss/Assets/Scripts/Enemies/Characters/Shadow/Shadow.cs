@@ -57,8 +57,9 @@ public class Shadow : Shooter
 		if (curHitPoints <= Mathf.Epsilon)
 		{
 			FindObjectOfType<BossController>().BossDied();
-		}
-	}
+            Destroy(gameObject);
+        }
+    }
 
 	void Animate()
 	{
