@@ -25,6 +25,7 @@ public class SplittingSlimeController : MonoBehaviour
 		{
 			KillAll();
 			FindObjectOfType<BossController>().BossDied();
+            Destroy(gameObject);
 		}
 	}
 

@@ -38,8 +38,9 @@ public class SkellyArmyController : MonoBehaviour
 		{
 			//Debug.Log("Skelly boss killed");
 			FindObjectOfType<BossController>().BossDied();
-		}
-	}
+            Destroy(gameObject);
+        }
+    }
 
 	// determines when the skelly leader phases occur
 	private void SkellyLeaderPhases()

@@ -22,6 +22,7 @@ public class LevelUpTeleport : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().StopCurrent();
             //StartCoroutine(LoadAsyncScene(other.gameObject));
             SceneManager.LoadScene("LevelUpScene", LoadSceneMode.Single);
         }
