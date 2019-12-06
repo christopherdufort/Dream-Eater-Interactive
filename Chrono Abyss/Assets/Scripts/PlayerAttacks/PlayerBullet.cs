@@ -6,11 +6,14 @@ public class PlayerBullet : MonoBehaviour
 {
     public float attackValue;
 
-    public float BULLET_DURATION = 3.0f;
+    public const float base_BULLET_DURATION = 3.0f; // constant base to always refer back against
+    public float BULLET_DURATION = base_BULLET_DURATION;
     public float BULLET_BASE_SPEED = 1f;
     public Rigidbody2D rigidBody;
     public Vector2 trajectory;
     public float bulletTimer;
+
+    public GameObject gameController;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,9 @@ public class PlayerBullet : MonoBehaviour
         // TO-DO: Reimplement time factor (movement-time)
         rigidBody.velocity = trajectory * BULLET_BASE_SPEED /** Mathf.Clamp(PlayerController.movementSpeed, 0.0125f, 1.0f)*/;
 
+        gameController = GameObject.Find("GameController");
+        attackValue += gameController.GetComponent<GameController>().playerData.Dexterity;
+        BULLET_DURATION = base_BULLET_DURATION + gameController.GetComponent<GameController>().playerData.Skill;
     }
 
     // Update is called once per frame

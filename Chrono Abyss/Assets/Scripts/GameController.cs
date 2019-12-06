@@ -7,6 +7,10 @@ public class GameController : MonoBehaviour
 {
     public PlayerData playerData { get; private set; }
 
+    // Sole self reference
+    private static GameController gameController;
+    public float initializationTime;
+
     [Header("References to UI Menus")]
     public GameObject pauseScreen;
     public GameObject gameOverScreen;
@@ -15,21 +19,22 @@ public class GameController : MonoBehaviour
     public bool paused;
     public bool gameover;
     public bool inMenu;
-    private int level = 1;
-    private bool created;
+    public int goldCollected = 0;
+    public int level = 1;
     private bool newGame;
+    public int invincibilityCount = 0;
+    public int ricochetBulletCount = 0;
+    public int infiniteAmmoCount = 0;
+    public int spreadShotCount = 0;
 
     private void Awake()
     {
+        DontDestroyOnLoad(this);
+        initializationTime = Time.realtimeSinceStartup;
+
         Debug.Log("The GameController is awake");
         // reset game time
         Time.timeScale = 1.0f;
-
-        if (!created)
-        { 
-            DontDestroyOnLoad(gameObject);
-            created = true;
-        }
     }
 
     //Load from save state
@@ -48,19 +53,19 @@ public class GameController : MonoBehaviour
             PlayerPersistence.SaveData(playerData);
             playerData = PlayerPersistence.LoadData();
         }
-
+        Debug.Log("GameController finished enabling");
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log("GameController Started");
     }
 
     //Save to save state
     public void OnDisable()
     {
-        PlayerPersistence.SaveData(this.playerData);
+        //PlayerPersistence.SaveData(this.playerData);
     }
 
     // Update is called once per frame
@@ -73,6 +78,7 @@ public class GameController : MonoBehaviour
     public void setLevel(int newLevel)
     {
         level = newLevel > 0 ? newLevel : level;
+        Debug.Log("Game is now in level " + level);
     }
 
     public int getLevel()
@@ -112,5 +118,10 @@ public class GameController : MonoBehaviour
         {
             Time.timeScale = 0.0f;
         }
+    }
+
+    public int GetCurrentCoins()
+    {
+        return goldCollected;
     }
 }

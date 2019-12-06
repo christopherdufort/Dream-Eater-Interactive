@@ -20,10 +20,12 @@ public class PlayerController : MonoBehaviour
 
     [Space]
     [Header("Base attributes:")]
-    public float PLAYER_BASE_SPEED = 2.5f;
+    public const float PLAYER_BASE_SPEED = 2.5f; // constant base to always refer back against
+    public float player_speed = PLAYER_BASE_SPEED;
     public float PLAYER_BASE_ACCELERATION = 0.5f;
     public float SLASH_DURATION = 0.125f;
-    public float POWER_UP_DURATION = 15.0f;
+    public const float BASE_POWER_UP_DURATION = 15.0f; // constant base to always refer back against
+    public float power_up_duration = BASE_POWER_UP_DURATION;
 
     [Space]
     [Header("Character Statistics:")]
@@ -32,7 +34,6 @@ public class PlayerController : MonoBehaviour
     public Vector2 movementDirection;
     public static Vector2 aimDirection;
     public static Vector3 playerPosition;
-    public int goldCollected = 0;
     public int invincibilityCount = 0;
     public int ricochetBulletCount = 0;
     public int infiniteAmmoCount = 0;
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
 	public TimeCreeperController timeCreeperController;
 
     public GameController gameController;
+    public GameController[] gameControllers;
 
 	[Space]
 	[Header("Combat Attributes")]
@@ -65,9 +67,11 @@ public class PlayerController : MonoBehaviour
     private bool created;
     private PlayerSlash sword;
     private float acceleratedSpeed;
-    [SerializeField] private int maxHealth = 10;
+    [SerializeField] private const int base_maxHealth = 10; // constant base to always refer back against
+    [SerializeField] private int maxHealth = base_maxHealth;
     [SerializeField] private int currentHealth;
-    [SerializeField] private int maxAmmo = 6;
+    [SerializeField] private const int base_maxAmmo = 6; // constant base to always refer back against
+    [SerializeField] private int maxAmmo = base_maxAmmo;
     [SerializeField] public static int currentAmmo;
     private bool reloading;
 
@@ -83,10 +87,33 @@ public class PlayerController : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+    void OnDestroy()
+    {
+        Debug.Log("Player Destroyed, transfering data to GameController");
+        gameController.invincibilityCount = this.invincibilityCount;
+        gameController.infiniteAmmoCount = this.infiniteAmmoCount;
+        gameController.spreadShotCount = this.spreadShotCount;
+
+    }
 
     void Start()
     {
-        gameController = FindObjectOfType<GameController>();
+        // Destroy duplicate gameController
+        gameControllers = FindObjectsOfType<GameController>();
+        if (gameControllers.Length == 1)
+        {
+            gameController = FindObjectOfType<GameController>();
+        }
+        else if (gameControllers[0].initializationTime > gameControllers[1].initializationTime)
+        {
+            Destroy(gameControllers[0].gameObject);
+            gameController = gameControllers[1];
+        }
+        else
+        {
+            Destroy(gameControllers[1].gameObject);
+            gameController = gameControllers[0];
+        }
 
         Debug.Log("The Player is starting");
         Time.timeScale = movementSpeed;
@@ -94,7 +121,6 @@ public class PlayerController : MonoBehaviour
 
         // Apply loaded save game stats
         LevelUpPlayer();
-
 
         currentHealth = maxHealth;
         currentAmmo = maxAmmo;
@@ -118,12 +144,19 @@ public class PlayerController : MonoBehaviour
         Slash();
     }
 
+    // Called after loading save data and creating the player instance
     public void LevelUpPlayer()
     {
-        this.maxHealth = maxHealth + gameController.playerData.Vitality;
-        this.maxAmmo = maxAmmo + gameController.playerData.Attunement;
-        this.POWER_UP_DURATION = POWER_UP_DURATION + gameController.playerData.Intelligence;
-        this.PLAYER_BASE_SPEED = PLAYER_BASE_SPEED + gameController.playerData.Agility;
+        // Always increment the value against the constant base to prevent double leveling
+        this.maxHealth = base_maxHealth + gameController.playerData.Vitality;
+        this.maxAmmo = base_maxAmmo + gameController.playerData.Attunement;
+        this.power_up_duration = BASE_POWER_UP_DURATION + gameController.playerData.Intelligence;
+        this.player_speed = PLAYER_BASE_SPEED + gameController.playerData.Agility;
+
+        // Load existing powerups from gamecontroller (carried over from last level)
+        this.invincibilityCount = gameController.invincibilityCount;
+        this.infiniteAmmoCount = gameController.infiniteAmmoCount;
+        this.spreadShotCount = gameController.spreadShotCount;
 
     }
     public void setTotalHealth(int newHealth)
@@ -246,7 +279,7 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         // Move the player's rigid body in the movement direction (based on user input)
-        rigidBody.velocity = movementDirection * movementSpeed * PLAYER_BASE_SPEED;
+        rigidBody.velocity = movementDirection * movementSpeed * player_speed;
 		
 		if (rigidBody.velocity.magnitude > 1f)
 		{
@@ -409,7 +442,7 @@ public class PlayerController : MonoBehaviour
                     invincible = true;
                     //Affect stats
                     //Start timer
-                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
+                    FindObjectOfType<TimerController>().StartTime(power_up_duration);
                 }
                 break;
             case PowerUp.InfiniteAmmoPowerup:
@@ -422,7 +455,7 @@ public class PlayerController : MonoBehaviour
                     infiniteAmmo = true;
                     //Affect stats
                     //Start timer
-                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
+                    FindObjectOfType<TimerController>().StartTime(power_up_duration);
                 }
                 break;
             case PowerUp.RicochetBulletPowerup:
@@ -432,7 +465,7 @@ public class PlayerController : MonoBehaviour
                     ricochetBulletCount--;
                     //Affect stats
                     //Start timer
-                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
+                    FindObjectOfType<TimerController>().StartTime(power_up_duration);
                 }
                 break;
             case PowerUp.SpreadShotPowerup:
@@ -444,7 +477,7 @@ public class PlayerController : MonoBehaviour
                     canPowerup = false;
                     //Affect stats
                     //Start timer
-                    FindObjectOfType<TimerController>().StartTime(POWER_UP_DURATION);
+                    FindObjectOfType<TimerController>().StartTime(power_up_duration);
                 }
                 break;
             default:
@@ -454,19 +487,19 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator PowerupDelay()
     {
-        yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
+        yield return new WaitForSecondsRealtime(power_up_duration);
         canPowerup = true;
     }
 
     IEnumerator InvincibilityDelay()
     {     
-        yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
+        yield return new WaitForSecondsRealtime(power_up_duration);
         invincible = false;
         FindObjectOfType<AudioManager>().Play("PowerDown");
     }
     IEnumerator InfiniteAmmoDelay()
     {
-        yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
+        yield return new WaitForSecondsRealtime(power_up_duration);
         infiniteAmmo = false;
         FindObjectOfType<AudioManager>().Play("PowerDown");
 
@@ -474,7 +507,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator SpreadShotDelay()
     {
-        yield return new WaitForSecondsRealtime(POWER_UP_DURATION);
+        yield return new WaitForSecondsRealtime(power_up_duration);
         spreadShot = false;
         FindObjectOfType<AudioManager>().Play("PowerDown");
 

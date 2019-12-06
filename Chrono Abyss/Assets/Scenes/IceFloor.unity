@@ -413,7 +413,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1452207109428218931}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1687072123
+--- !u!1001 &1702002647
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -463,7 +463,7 @@ PrefabInstance:
     - target: {fileID: 5012684597441910952, guid: 2d951397c2b984dba834b016d9847a53,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5012684597441910952, guid: 2d951397c2b984dba834b016d9847a53,
         type: 3}
@@ -480,30 +480,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5012684597441910953, guid: 2d951397c2b984dba834b016d9847a53,
-        type: 3}
-      propertyPath: pauseScreen
-      value: 
-      objectReference: {fileID: 1687072125}
-    - target: {fileID: 5012684597441910953, guid: 2d951397c2b984dba834b016d9847a53,
-        type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 1687072124}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d951397c2b984dba834b016d9847a53, type: 3}
---- !u!1 &1687072124 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8909409134900267351, guid: 2d951397c2b984dba834b016d9847a53,
-    type: 3}
-  m_PrefabInstance: {fileID: 1687072123}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1687072125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 118837352654404759, guid: 2d951397c2b984dba834b016d9847a53,
-    type: 3}
-  m_PrefabInstance: {fileID: 1687072123}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1713004960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -514,6 +492,11 @@ PrefabInstance:
     - target: {fileID: 4059907243214834308, guid: bc97c808960a94619a8ad3aa70b8e944,
         type: 3}
       propertyPath: m_Name
+      value: InGameUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059907243214834308, guid: bc97c808960a94619a8ad3aa70b8e944,
+        type: 3}
+      propertyPath: m_TagString
       value: InGameUI
       objectReference: {fileID: 0}
     - target: {fileID: 4059907243214834304, guid: bc97c808960a94619a8ad3aa70b8e944,

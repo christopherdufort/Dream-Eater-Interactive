@@ -51,19 +51,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ad0ceb02e39e0499efa7e2144ea497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PLAYER_BASE_SPEED: 4
+  Invincibility: {fileID: 0}
+  InfiniteAmmo: {fileID: 0}
+  SpreadShot: {fileID: 0}
+  player_speed: 2.5
   PLAYER_BASE_ACCELERATION: 1
   SLASH_DURATION: 0.5
+  power_up_duration: 15
   isShooting: 0
   movementSpeed: 0
   movementDirection: {x: 0, y: 0}
-  goldCollected: 0
+  invincibilityCount: 0
+  ricochetBulletCount: 0
+  infiniteAmmoCount: 0
+  spreadShotCount: 0
+  canPowerup: 1
+  invincible: 0
+  richochet: 0
+  infiniteAmmo: 0
+  spreadShot: 0
   rigidBody: {fileID: 1452207111059300987}
   animator: {fileID: 1452207111059300986}
   crosshair: {fileID: 1452207111236222852}
   bulletPrefab: {fileID: 6969866368786814147, guid: 7eaa77c6d7f5e884a9bec8f07594b187,
     type: 3}
   timeCreeperController: {fileID: 5334842310211750403}
+  gameController: {fileID: 5012684597441910953, guid: 383cbec6544cc9d40b70d43002f8e34e,
+    type: 3}
+  maxHealth: 10
+  currentHealth: 0
+  maxAmmo: 6
 --- !u!212 &1452207111059300982
 SpriteRenderer:
   m_ObjectHideFlags: 0
