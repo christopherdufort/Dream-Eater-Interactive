@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5954201050111428556}
   - component: {fileID: 5954201050111428559}
   - component: {fileID: 8744760117318755158}
+  - component: {fileID: 7323550737708932403}
   m_Layer: 0
   m_Name: OscillatingEnemyProjectile
   m_TagString: Enemy
@@ -106,7 +107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13, y: 0.13342105}
+  m_Size: {x: 0.33, y: 0.33}
   m_EdgeRadius: 0
 --- !u!114 &8744760117318755158
 MonoBehaviour:
@@ -124,6 +125,7 @@ MonoBehaviour:
   maxHitPoints: 1
   curHitPoints: 1
   attackValue: 0
+  canGetSlashed: 1
   moveSpeed: 2
   direction: {x: 0, y: 0}
   rigidBody: {fileID: 0}
@@ -141,3 +143,24 @@ MonoBehaviour:
   isIndestructible: 0
   amplitude: 5
   frequency: 10
+--- !u!50 &7323550737708932403
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954201050111428547}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7

@@ -55,7 +55,11 @@ public class EnemyProjectile : Enemy
 				}
 				else
 				{
-					if (collision.transform.CompareTag("Wall"))
+					if (collision.transform.tag == "Wall")
+					{
+						//Debug.Log("Enemy projectile came in contact with wall");
+						Destroy(this.gameObject);
+					} else if (collision.CompareTag("Door"))
 					{
 						Destroy(this.gameObject);
 					}
@@ -96,5 +100,15 @@ public class EnemyProjectile : Enemy
 		target = GameObject.FindWithTag("Player");
 		Vector2 dir = ((Vector2)(target.transform.position - transform.position)).normalized;
 		SetDirection(dir);
+	}
+
+	void SetMaxDistance(float val)
+	{
+		maxDistance = val;
+	}
+
+	void SetMoveSpeed(float val)
+	{
+		moveSpeed = val;
 	}
 }

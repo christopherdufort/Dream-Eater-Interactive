@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8073341946504543444}
   - component: {fileID: 8073341946504543447}
   - component: {fileID: 8073341946504543446}
+  - component: {fileID: -8709338191470092555}
   m_Layer: 0
   m_Name: BrorgimonBasicProjectile
   m_TagString: Enemy
@@ -106,7 +107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13, y: 0.13342105}
+  m_Size: {x: 0.33, y: 0.33}
   m_EdgeRadius: 0
 --- !u!114 &8073341946504543446
 MonoBehaviour:
@@ -140,3 +141,24 @@ MonoBehaviour:
   maxDistance: 10
   distTravelled: 0
   isIndestructible: 0
+--- !u!50 &-8709338191470092555
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8073341946504543451}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7

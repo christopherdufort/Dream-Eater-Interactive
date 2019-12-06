@@ -16,6 +16,7 @@ MonoBehaviour:
   maxHitPoints: 1
   curHitPoints: 1
   attackValue: 1
+  canGetSlashed: 1
   moveSpeed: 3
   direction: {x: 0, y: 0}
   rigidBody: {fileID: 0}
@@ -122,6 +123,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.20325589
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260248437830479597, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260248437830479597, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996114895083777204, guid: 0fbeba43e075dae49a3d0c4f8424f3eb,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8260248437830479596, guid: 0fbeba43e075dae49a3d0c4f8424f3eb, type: 3}
