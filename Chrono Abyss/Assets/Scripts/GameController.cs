@@ -31,15 +31,6 @@ public class GameController : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         initializationTime = Time.realtimeSinceStartup;
-        //TODO this logic of deleting other gamecontrollers breaks stuff
-        //if (gameController == null)
-        //{
-        //    gameController = this;
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
 
         Debug.Log("The GameController is awake");
         // reset game time
