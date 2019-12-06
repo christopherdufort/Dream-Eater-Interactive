@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
 	public TimeCreeperController timeCreeperController;
 
     public GameController gameController;
+    public GameController[] gameControllers;
 
 	[Space]
 	[Header("Combat Attributes")]
@@ -97,7 +98,22 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        gameController = FindObjectOfType<GameController>();
+        // Destroy duplicate gameController
+        gameControllers = FindObjectsOfType<GameController>();
+        if (gameControllers.Length == 1)
+        {
+            gameController = FindObjectOfType<GameController>();
+        }
+        else if (gameControllers[0].initializationTime > gameControllers[1].initializationTime)
+        {
+            Destroy(gameControllers[0].gameObject);
+            gameController = gameControllers[1];
+        }
+        else
+        {
+            Destroy(gameControllers[1].gameObject);
+            gameController = gameControllers[0];
+        }
 
         Debug.Log("The Player is starting");
         Time.timeScale = movementSpeed;

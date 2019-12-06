@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
 
     // Sole self reference
     private static GameController gameController;
+    public float initializationTime;
 
     [Header("References to UI Menus")]
     public GameObject pauseScreen;
@@ -29,11 +30,13 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this);
+        initializationTime = Time.realtimeSinceStartup;
         //TODO this logic of deleting other gamecontrollers breaks stuff
         //if (gameController == null)
         //{
         //    gameController = this;
-        //}else
+        //}
+        //else
         //{
         //    Destroy(gameObject);
         //}
