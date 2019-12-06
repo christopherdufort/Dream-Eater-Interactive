@@ -31,7 +31,7 @@ public class PlayerBullet : MonoBehaviour
         rigidBody.velocity = trajectory * BULLET_BASE_SPEED /** Mathf.Clamp(PlayerController.movementSpeed, 0.0125f, 1.0f)*/;
 
         gameController = GameObject.Find("GameController");
-
+        attackValue += gameController.GetComponent<GameController>().playerData.Dexterity;
         BULLET_DURATION = base_BULLET_DURATION + gameController.GetComponent<GameController>().playerData.Skill;
     }
 
