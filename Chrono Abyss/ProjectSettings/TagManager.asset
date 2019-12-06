@@ -28,6 +28,7 @@ TagManager:
   - SpreadShotPowerup
   - Portal
   - Chest
+  - InGameUI
   layers:
   - Default
   - TransparentFX

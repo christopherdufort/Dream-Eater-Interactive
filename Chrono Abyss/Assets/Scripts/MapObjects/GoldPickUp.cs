@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class GoldPickUp : MonoBehaviour
 {
+    GameObject gameController;
+    void Start()
+    {
+        gameController = GameObject.Find("GameController");
+    }
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		PlayerController player = collision.transform.GetComponent<PlayerController>();
-		if (player != null)
-		{
-			++player.goldCollected;
-			Destroy(this.gameObject);
-		}
+        if (collision.gameObject.CompareTag("Player") && gameController != null)
+        { 
+            ++gameController.GetComponent<GameController>().goldCollected;
+            Debug.Log("Total gold collected " + gameController.GetComponent<GameController>().goldCollected);
+            Destroy(this.gameObject);
+        }
 	}
 }
