@@ -57,7 +57,7 @@ public class EnemyProjectile : Enemy
 				{
 					if (collision.transform.tag == "Wall")
 					{
-						Debug.Log("Enemy projectile came in contact with wall");
+						//Debug.Log("Enemy projectile came in contact with wall");
 						Destroy(this.gameObject);
 					} else if (collision.CompareTag("Door"))
 					{
