@@ -6,9 +6,15 @@ public class TimeCreeperSeekerProjectile : SeekerProjectile
 {
 	public GameController gameController;
 
+	protected new void Awake()
+	{
+		base.Awake();
+		gameController = FindObjectOfType<GameController>();
+	}
+
 	protected new void Update()
 	{
-		if (!CheckDead())
+		if ((!CheckDead())&&(!gameController.paused))
 		{
 			SetDirection(((Vector2)(target.transform.position - transform.position)).normalized);     // re-compute direction so projectile can follow player
 

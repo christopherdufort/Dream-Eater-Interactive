@@ -170,7 +170,7 @@ public class TimeCreeper : Shooter
 
 	IEnumerator CanHurtAgain()
 	{
-		yield return new WaitForSeconds(attackCooldown);
+		yield return new WaitForSecondsRealtime(attackCooldown);
 		canHurtPlayer = true;
 	}
 

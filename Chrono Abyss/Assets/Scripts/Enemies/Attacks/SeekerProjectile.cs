@@ -5,13 +5,7 @@ using UnityEngine;
 // An enemy projectile that follows the player around until it gets destroyed or exceeds its max distance travelled allowed
 public class SeekerProjectile : EnemyProjectile
 {
-	// Start is called before the first frame update
-	new void Awake()
-	{
-		InitProjectile();
-	}
-
-	new void Update()
+	protected new void Update()
     {
 		if (!CheckDead())
 		{
