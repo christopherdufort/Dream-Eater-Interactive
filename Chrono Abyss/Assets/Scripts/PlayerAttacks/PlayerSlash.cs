@@ -12,10 +12,14 @@ public class PlayerSlash : MonoBehaviour
 	public float slashDurationRemaining;
 
 	private Vector2 dir;
-	
-	private void Start()
-	{
-		anim = GetComponent<Animator>();
+    public GameObject gameController;
+
+    private void Start()
+    {
+        gameController = GameObject.Find("GameController");
+        attackValue += gameController.GetComponent<GameController>().playerData.Dexterity;
+
+        anim = GetComponent<Animator>();
 		isSlashing = false;
 	}
 
