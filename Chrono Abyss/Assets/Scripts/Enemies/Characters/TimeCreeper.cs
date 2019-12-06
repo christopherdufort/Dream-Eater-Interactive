@@ -138,7 +138,8 @@ public class TimeCreeper : Shooter
 			if (canHurtPlayer)
 			{
 				PlayerController player = collision.transform.GetComponent<PlayerController>();
-				player.setCurrentHealth(player.getCurrentHealth() - (int)attackValue);
+				// takes away 20% of player's max health per second on contact
+				player.setCurrentHealth((int)(player.getCurrentHealth() - (player.getMaxHealth() * 0.2)));
 				canHurtPlayer = false;
 				StartCoroutine("CanHurtAgain");
 			}
@@ -170,7 +171,7 @@ public class TimeCreeper : Shooter
 
 	IEnumerator CanHurtAgain()
 	{
-		yield return new WaitForSeconds(attackCooldown);
+		yield return new WaitForSecondsRealtime(attackCooldown);
 		canHurtPlayer = true;
 	}
 

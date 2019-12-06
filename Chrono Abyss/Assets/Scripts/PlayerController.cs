@@ -428,7 +428,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void ActivatePowerup(PowerUp powerUp)
+	private void OnTriggerStay2D(Collider2D collision)
+	{
+		// check if dead and tell game controller to end game
+		if (currentHealth <= 0)
+		{
+			FindObjectOfType<GameController>().gameOver();
+		}
+	}
+
+	public void ActivatePowerup(PowerUp powerUp)
     {
         Debug.Log("Trying to use powerup "+ powerUp.ToString());
         Debug.Log("powerUp count:" + invincibilityCount + " " + infiniteAmmoCount + " " + ricochetBulletCount + " " + spreadShotCount);

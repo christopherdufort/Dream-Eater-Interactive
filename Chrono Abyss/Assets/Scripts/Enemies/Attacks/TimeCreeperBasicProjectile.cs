@@ -6,9 +6,15 @@ public class TimeCreeperBasicProjectile : EnemyProjectile
 {
 	public GameController gameController;
 
+	protected new void Awake()
+	{
+		base.Awake();
+		gameController = FindObjectOfType<GameController>();
+	}
+
 	protected new void Update()
 	{
-		if (!CheckDead())
+		if ((!CheckDead()) && (!gameController.paused))
 		{
 			float travelIncrement = 0f;
 			if (distTravelled < maxDistance)
