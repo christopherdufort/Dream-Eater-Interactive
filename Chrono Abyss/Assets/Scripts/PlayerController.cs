@@ -41,8 +41,9 @@ public class PlayerController : MonoBehaviour
     public bool invincible = false;
     public bool richochet = false;
     public bool infiniteAmmo = false;
-    public bool spreadShot = false; 
-    
+    public bool spreadShot = false;
+    public bool resuming = false;
+
     [Space]
     [Header("Component References:")]
     public Rigidbody2D rigidBody;
@@ -207,6 +208,7 @@ public class PlayerController : MonoBehaviour
             aimDirection = Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition);
             aimDirection = aimDirection - (Vector2)transform.position; 
 
+            if(!FindObjectOfType<GameController>().paused && !resuming)
             // isShooting is true when Fire1 button is pressed
             isShooting = Input.GetButtonUp("Fire1");
             
@@ -318,13 +320,13 @@ public class PlayerController : MonoBehaviour
             }
 
             timeCreeperController.NotifyMeaningfulEvent();
-        }else if(isShooting && currentAmmo == 0)
+        }else if(isShooting && currentAmmo == 0 && !FindObjectOfType<GameController>().paused && !resuming)
             FindObjectOfType<AudioManager>().Play("NoAmmo");     
     }
 
     void Reload()
     {
-        if (Input.GetKey("r") && currentAmmo != maxAmmo)
+        if (Input.GetKey("r") && currentAmmo != maxAmmo && !reloading && !FindObjectOfType<GameController>().paused && !resuming)
         {
             FindObjectOfType<AudioManager>().Play("Reload");
             StartCoroutine("ReloadDelay");
@@ -440,6 +442,7 @@ public class PlayerController : MonoBehaviour
                 {
                     Debug.Log("Player has activated powerup " + powerUp.ToString());
                     spreadShotCount--;
+                    FindObjectOfType<AudioManager>().Play("PowerUp");
                     spreadShot = true;
                     canPowerup = false;
                     //Affect stats
@@ -478,6 +481,12 @@ public class PlayerController : MonoBehaviour
         spreadShot = false;
         FindObjectOfType<AudioManager>().Play("PowerDown");
 
+    }
+
+    IEnumerator ResumeDelay()
+    {
+        yield return new WaitForSecondsRealtime(0.25f);
+        resuming = false;
     }
 
     public void CollectPowerup(String powerUpName)

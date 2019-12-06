@@ -49,35 +49,35 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
-    bypassEffects: 0
+    bypassEffects: 1
     source: {fileID: 0}
   - name: DesertFloor
     clip: {fileID: 8300000, guid: 151592c9ac62cab4a8aceb1f5b9b2fe4, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    bypassEffects: 0
+    bypassEffects: 1
     source: {fileID: 0}
   - name: IceFloor
     clip: {fileID: 8300000, guid: 1324029e8496a8141a644f015c2ea71d, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    bypassEffects: 0
+    bypassEffects: 1
     source: {fileID: 0}
   - name: LavaFloor
     clip: {fileID: 8300000, guid: 92f9b665e655fe0499c379e6eee6c941, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    bypassEffects: 0
+    bypassEffects: 1
     source: {fileID: 0}
   - name: PlayerDeath
     clip: {fileID: 8300000, guid: 08528b702793fa14b9ffac2899c50e62, type: 3}
     volume: 1
     pitch: 1
     loop: 1
-    bypassEffects: 0
+    bypassEffects: 1
     source: {fileID: 0}
   - name: Button
     clip: {fileID: 8300000, guid: b944819567c869c4f8f8b26de46c8151, type: 3}
@@ -91,7 +91,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
-    bypassEffects: 0
+    bypassEffects: 1
     source: {fileID: 0}
   - name: Shoot
     clip: {fileID: 8300000, guid: 0486146b92ff1b845813d12a48eda832, type: 3}
@@ -112,7 +112,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
-    bypassEffects: 0
+    bypassEffects: 1
     source: {fileID: 0}
   - name: NoAmmo
     clip: {fileID: 8300000, guid: ef4f2d10d7971ba48b6ed2294f9af033, type: 3}
@@ -133,7 +133,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
-    bypassEffects: 0
+    bypassEffects: 1
     source: {fileID: 0}
   - name: PowerUp
     clip: {fileID: 8300000, guid: 48812238cbb19304f8bfdabde1961b39, type: 3}
@@ -153,13 +153,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: fd0e76f6b2c8b7a458f05d7e1b4c9f33, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     bypassEffects: 1
     source: {fileID: 0}
   - name: FinalBossFightScene
     clip: {fileID: 8300000, guid: ebb0d5a683cea904d891ae4bd583e4d7, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     bypassEffects: 1
     source: {fileID: 0}

@@ -49,8 +49,8 @@ public class AudioManager : MonoBehaviour
     {
         foreach (Sound s in sounds)
         {
-            if (s.source.loop != true && !s.source.name.ToString().Equals("PowerUp") && !s.source.name.ToString().Equals("PowerDown") && !s.source.name.ToString().Equals("PlayerHurt"))
-                s.source.pitch = Mathf.Clamp(Time.timeScale, 0.4f, 1.0f);
+            if (!s.source.bypassEffects)
+                s.source.pitch = Mathf.Clamp(Time.timeScale, 0.25f, 1.0f);
         }
     }
 
