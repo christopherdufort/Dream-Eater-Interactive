@@ -158,9 +158,9 @@ MonoBehaviour:
     type: 3}
   target: {fileID: 0}
   hitPointUpMin: 0
-  hitPointUpMax: 0
+  hitPointUpMax: 1
   attackUpMin: 0
-  attackUpMax: 0
+  attackUpMax: 1
   moveSpeedUpMin: 0
   moveSpeedUpMax: 0
   attackRange: 1.25
@@ -170,7 +170,7 @@ MonoBehaviour:
   - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
   - {fileID: 2862652258032647293, guid: 5a7ebdeba05d75a4fa05d0303c680052, type: 3}
   dropOdds:
-  - 0.3
+  - 0.8
   - 0.3
 --- !u!95 &1021725994392096418
 Animator:

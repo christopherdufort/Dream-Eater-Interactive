@@ -156,9 +156,9 @@ MonoBehaviour:
     type: 3}
   target: {fileID: 0}
   hitPointUpMin: 0
-  hitPointUpMax: 0
+  hitPointUpMax: 1
   attackUpMin: 0
-  attackUpMax: 0
+  attackUpMax: 1
   moveSpeedUpMin: 0
   moveSpeedUpMax: 0
   attackRange: 6

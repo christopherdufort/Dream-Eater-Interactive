@@ -21,7 +21,6 @@ public class FinalBossTeleport : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.transform.GetComponentInChildren<TimeCreeperController>().NotifyPlayerInBossRoom(true);
             FindObjectOfType<AudioManager>().StopCurrent();
             SceneManager.LoadScene("FinalBossFightScene", LoadSceneMode.Single);
         }

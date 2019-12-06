@@ -76,8 +76,9 @@ public class TimeCreeperController : MonoBehaviour
 	private void SpawnTimeCreeper()
 	{
 		timeCreeper = Instantiate(timeCreeperObj, transform.position + GenerateLocationOffset(), Quaternion.identity).GetComponent<TimeCreeper>();
-		//Debug.Log("Creeper instantiated at " + timeCreeper.transform.position.ToString() + " after player didn't do squat for " + timeSinceLastMeaningfulAction + " seconds!");
+		Debug.Log("Creeper instantiated at " + timeCreeper.transform.position.ToString() + " after player didn't do squat for " + timeSinceLastMeaningfulAction + " seconds!");
 		timeCreeper.SetCanMove(true);
+		timeCreeper.creeperController = this;
 	}
 
 	// in case the Time Creeper is too far away, relocates it near the player
@@ -86,6 +87,7 @@ public class TimeCreeperController : MonoBehaviour
 		if (Vector2.Distance(transform.position, timeCreeper.transform.position) > 20f)
 		{
 			timeCreeper.transform.position = transform.position + GenerateLocationOffset();
+			Debug.Log("Creeper relocated to" + timeCreeper.transform.position.ToString() + " after player didn't do squat for " + timeSinceLastMeaningfulAction + " seconds!");
 		}
 	}
 
@@ -115,7 +117,7 @@ public class TimeCreeperController : MonoBehaviour
 		return offset;
 	}
 
-	public void NotifyPlayerInBossRoom(bool val)
+	public void NotifyLeavePlayerAlone(bool val)
 	{
 		if (val == true)
 		{

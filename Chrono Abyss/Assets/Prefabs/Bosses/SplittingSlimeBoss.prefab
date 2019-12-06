@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slimeList: []
-  maxHitPoints: 100
-  curHitPoints: 100
+  maxHitPoints: 200
+  curHitPoints: 200
 --- !u!1001 &1110825679599718987
 PrefabInstance:
   m_ObjectHideFlags: 0

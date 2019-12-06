@@ -12,21 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SplittingSlimeR4 Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
-        type: 3}
-      propertyPath: roundNumber
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
-        type: 3}
-      propertyPath: maxHitPoints
-      value: 12.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
-        type: 3}
-      propertyPath: curHitPoints
-      value: 12.5
-      objectReference: {fileID: 0}
     - target: {fileID: 2153488234372801453, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -91,6 +76,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.6875
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: roundNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: maxHitPoints
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: curHitPoints
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7912005708959445683, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
         type: 3}

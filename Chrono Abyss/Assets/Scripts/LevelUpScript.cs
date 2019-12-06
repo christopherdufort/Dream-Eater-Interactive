@@ -71,8 +71,8 @@ public class LevelUpScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		Debug.Log("LevelUpScript Very Start");
         StartCoroutine("CollectPlayerForLevelUp");
-
         // Get references to all the text fields - must be called from Awake or Enabled
         totalCoinCount = GameObject.Find("TotalCoinsText").GetComponent<Text>();
         totalLevelCount = GameObject.Find("TotalLevelText").GetComponent<Text>();
@@ -102,9 +102,10 @@ public class LevelUpScript : MonoBehaviour
         nextEnduranceLevel = GameObject.Find("NextEnduranceLevelCostText").GetComponent<Text>();
 
         gameController = GameObject.Find("GameController");
-        LoadPlayerData();
+		LoadPlayerData();
+		Debug.Log("LevelUpScript After");
 
-        totalLevelCount.text = totalLevel.ToString();
+		totalLevelCount.text = totalLevel.ToString();
         totalCoinCount.text = totalGold.ToString();
 
 
@@ -129,7 +130,6 @@ public class LevelUpScript : MonoBehaviour
 
     public void LoadPlayerData()
     {
-
         totalGold = player.GetComponent<PlayerController>().goldCollected;
         totalLevel = gameController.GetComponent<GameController>().playerData.PlayerLevel;
         vitality = gameController.GetComponent<GameController>().playerData.Vitality;
@@ -154,9 +154,12 @@ public class LevelUpScript : MonoBehaviour
         player.GetComponent<PlayerController>().LevelUpPlayer();
 
         string randomFloorScene = ((FloorTheme)Random.Range(0, 4)).ToString() + "Floor";
-        SceneManager.LoadScene(randomFloorScene);
-        //May Need to bring player into the scene
-    }
+        FindObjectOfType<AudioManager>().StopCurrent();
+		// place player back into scene
+		SceneManager.LoadScene(randomFloorScene);
+		//May Need to bring player into the scene
+		player.transform.position = new Vector3(0f, 1.61f, 0f);
+	}
     public void QuitGame()
     {
         Debug.Log("Quit Clicked");

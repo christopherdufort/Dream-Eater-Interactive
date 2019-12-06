@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TimeCreeperSeekerProjectile : SeekerProjectile
 {
+	public GameController gameController;
+
 	protected new void Update()
 	{
 		if (!CheckDead())

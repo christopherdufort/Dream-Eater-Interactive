@@ -33,6 +33,7 @@ public class EnemyProjectile : Enemy
 			if (!isIndestructible)
 			{
 				this.curHitPoints -= bullet.attackValue;
+				Destroy(collision.gameObject);
 			}
 		} else
 		{

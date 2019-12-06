@@ -158,9 +158,9 @@ MonoBehaviour:
     type: 3}
   target: {fileID: 0}
   hitPointUpMin: 0
-  hitPointUpMax: 0
+  hitPointUpMax: 1
   attackUpMin: 0
-  attackUpMax: 0
+  attackUpMax: 1
   moveSpeedUpMin: 0
   moveSpeedUpMax: 0
   attackRange: 1.75
@@ -170,8 +170,8 @@ MonoBehaviour:
   - {fileID: 5972302242325917508, guid: 607c217a93e10dc40a6a1ee353d05462, type: 3}
   - {fileID: 2862652258032647293, guid: 5a7ebdeba05d75a4fa05d0303c680052, type: 3}
   dropOdds:
-  - 0.4
-  - 0.4
+  - 0.8
+  - 0.3
 --- !u!95 &1693237144
 Animator:
   serializedVersion: 3
@@ -258,16 +258,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3089590022160737130, guid: a28f8a53966434f2aac0a1db6c6f64d8,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3496174974550902524, guid: a28f8a53966434f2aac0a1db6c6f64d8,
         type: 3}
       propertyPath: enemy
       value: 
       objectReference: {fileID: 7878037983573983524}
+    - target: {fileID: 3089590022160737130, guid: a28f8a53966434f2aac0a1db6c6f64d8,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a28f8a53966434f2aac0a1db6c6f64d8, type: 3}
 --- !u!4 &2003907270917525841 stripped

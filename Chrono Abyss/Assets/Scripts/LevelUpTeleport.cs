@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class LevelUpTeleport : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
 
     }
@@ -22,6 +22,7 @@ public class LevelUpTeleport : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().StopCurrent();
             //StartCoroutine(LoadAsyncScene(other.gameObject));
             SceneManager.LoadScene("LevelUpScene", LoadSceneMode.Single);
         }
