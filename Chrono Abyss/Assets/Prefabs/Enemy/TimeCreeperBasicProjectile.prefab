@@ -135,7 +135,7 @@ MonoBehaviour:
   hitPointUpMin: 0
   hitPointUpMax: 0
   attackUpMin: 0
-  attackUpMax: 0
+  attackUpMax: 1
   moveSpeedUpMin: 0
   moveSpeedUpMax: 0
   maxDistance: 20

@@ -92,6 +92,11 @@ PrefabInstance:
       propertyPath: curHitPoints
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 546938951492447711, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: hitPointUpMax
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7912005708959445683, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
         type: 3}
       propertyPath: splittingSlimePrefabs.Array.data[2]
@@ -103,5 +108,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5025760776218114006, guid: 7ca84cc31aae1fa45a6b032b220a0308,
         type: 3}
+    - target: {fileID: 2986891061793477574, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d0bfa5cf3d9bf74a9016bf6d5785fd7, type: 3}

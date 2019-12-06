@@ -58,6 +58,7 @@ public abstract class EnemyCharacer : Enemy
 	// call this thing at the start for every enemy
 	protected void EnemyInitialize()
 	{
+		ScaleLevel();
 		attackCooldownCountdown = attackCooldown;
 		curHitPoints = maxHitPoints;
 		target = GameObject.FindWithTag("Player");

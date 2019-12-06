@@ -177,7 +177,7 @@ MonoBehaviour:
     type: 3}
   target: {fileID: 0}
   hitPointUpMin: 0
-  hitPointUpMax: 0
+  hitPointUpMax: 20
   attackUpMin: 0
   attackUpMax: 0
   moveSpeedUpMin: 0
@@ -334,7 +334,7 @@ PrefabInstance:
     - target: {fileID: 838575570991477400, guid: a28f8a53966434f2aac0a1db6c6f64d8,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3496174974550902524, guid: a28f8a53966434f2aac0a1db6c6f64d8,
         type: 3}

@@ -89,8 +89,10 @@ public abstract class Enemy : MonoBehaviour
 	// scales enemy stats, dependent on floor level
 	protected void ScaleLevel()
 	{
+		level = FindObjectOfType<GameController>().getLevel();
         for (int i = 1; i < level; i++)
 		{
+			//Debug.Log("Enemy " + gameObject.name + " leveled up!");
 			maxHitPoints += Random.Range(hitPointUpMin, hitPointUpMax);
 			attackValue += Random.Range(attackUpMin, attackUpMax);
 			moveSpeed += Random.Range(moveSpeedUpMin, moveSpeedUpMax);

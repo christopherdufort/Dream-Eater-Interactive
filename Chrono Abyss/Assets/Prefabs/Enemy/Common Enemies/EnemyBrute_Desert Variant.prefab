@@ -77,5 +77,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 991e1130fc2991446985c7417aa0da08, type: 2}
+    - target: {fileID: 7878037983573983524, guid: 512abcd8b0fcee24a9723a5d9869061e,
+        type: 3}
+      propertyPath: hitPointUpMax
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512abcd8b0fcee24a9723a5d9869061e, type: 3}
