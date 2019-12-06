@@ -1662,7 +1662,7 @@ GameObject:
   - component: {fileID: 4585052955042956815}
   m_Layer: 8
   m_Name: Dungeon Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
