@@ -9,13 +9,15 @@ public class HealthBarController : MonoBehaviour
     [SerializeField] private PlayerController playerController;
 	[SerializeField] private int maxHealth;
     private RectTransform rectTransform;
-    
+    private RectTransform clockBar;
+
     // Start is called before the first frame update
     void Start()
     {
         playerController = FindObjectOfType<PlayerController>();
         maxHealth = playerController.getMaxHealth();
         rectTransform = GetComponent<RectTransform>();
+        clockBar = GameObject.Find("ClockBar").GetComponent<RectTransform>(); 
     }
 
     // Update is called once per frame
@@ -25,16 +27,12 @@ public class HealthBarController : MonoBehaviour
         int currentHealth = playerController.getCurrentHealth();
         
         // calculate health bar's new scale and pos
-        float scale = Mathf.Clamp((float) currentHealth / maxHealth, 0.0f, 1.0f);
-        float pos = calculateBarPos(scale);
-        
-        // apply transformations
-        rectTransform.localScale = new Vector3(scale, 1, 1);
-        rectTransform.position = new Vector3(pos + 100, rectTransform.position.y, rectTransform.position.z);
-    }
+        float scale = currentHealth * 0.4545455f / maxHealth;
 
-    private float calculateBarPos(float barScale)
-    {
-        return (barScale * 60) - 20;
+        //float pos = calculateBarPos(scale);
+
+        // apply transformations
+        rectTransform.localScale = new Vector3(scale, 0.4545455f, 1);
+        //rectTransform.position = new Vector3(pos + 100, rectTransform.position.y, rectTransform.position.z);
     }
 }
